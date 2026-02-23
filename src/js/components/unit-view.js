@@ -38,6 +38,12 @@ export function renderUnit(container, moduleId, unitId) {
         if (index < 0 || index >= unit.cards.length) return;
 
         const card = unit.cards[index];
+
+        // Final Quiz Logic: If it's a quiz, ensure it's the last card or treat it specially?
+        // Current requirement: "am ende jedes Lernprozesses bekomme ich dann ein quiz"
+        // The data structure allows mixing quizzes. We should ideally ensure the quiz is the last item.
+        // For now, we render the card as is, but we could add a visual cue if it's the final card.
+
         let cardHtml = '';
 
         switch (card.type) {

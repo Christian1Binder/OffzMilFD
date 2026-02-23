@@ -1,4 +1,4 @@
-// Content Repository - Expanded
+// Content Repository - Expanded with Deep Dive
 
 export const curriculum = {
     modules: [
@@ -123,40 +123,77 @@ export const curriculum = {
                     id: '30years',
                     title: 'The 30 Years\' War (1618-1648)',
                     cards: [
-                        { type: 'text', content: '<h3>Trigger: Defenestration of Prague (1618)</h3><p>Prager Fenstersturz. Conflict between Protestants and Catholics.</p>' },
-                        { type: 'text', content: '<h3>Key Figures</h3><p>Wallenstein (Military Entrepreneur) & Gustav II Adolf (Swedish King).</p>' },
-                        { type: 'text', content: '<h3>Peace of Westphalia (1648)</h3><p>Osnabrück & Münster. Recognized 3 confessions (Catholics, Lutherans, Calvinists). Basis for German federalism.</p>' },
-                        { type: 'quiz', question: 'What ended the 30 Years\' War?', options: ['Treaty of Versailles', 'Peace of Westphalia', 'Congress of Vienna'], answer: 1 }
+                        { type: 'text', content: '<h3>Trigger (1618)</h3><p><strong>Defenestration of Prague</strong> (Prager Fenstersturz). The catalyst for the war. Tensions between Protestants and Catholics had been rising since the 1580s.</p>' },
+                        { type: 'text', content: '<h3>Religious Context</h3><p><strong>Cuius regio, eius religio:</strong> The ruler determines the religion of the territory. Bohemia was a special case with a Protestant population but a Catholic King.</p>' },
+                        { type: 'text', content: '<h3>Key Figures</h3><p><strong>Wallenstein (1583–1634):</strong> The great military entrepreneur.<br><strong>Gustav II. Adolf (1594–1632):</strong> The Swedish King who intervened for the Protestants.</p>' },
+                        { type: 'text', content: '<h3>Peace of Westphalia (1648)</h3><p>Ended the war. Signed in <strong>Osnabrück</strong> (Swedes) and <strong>Münster</strong> (French). Recognized the equality of three confessions: Catholic, Lutheran, Calvinist.</p>' },
+                        { type: 'flashcard', front: 'Significance of Westphalia', back: 'Basis for interstate regulations and German Federalism.' },
+                        { type: 'quiz', question: 'Who was the Swedish King in the 30 Years War?', options: ['Wallenstein', 'Gustav II Adolf', 'Ferdinand II'], answer: 1 }
                     ]
                 },
                 {
-                    id: 'prussia_napoleon',
-                    title: 'Prussia & Napoleon (1789-1815)',
+                    id: 'prussia_rise',
+                    title: 'Rise of Prussia (1740-1786)',
                     cards: [
-                        { type: 'text', content: '<h3>French Revolution (1789)</h3><p>Monarchy abolished (1792). Napoleon rises (1799).</p>' },
-                        { type: 'text', content: '<h3>Jena-Auerstedt (1806)</h3><p>Prussia defeated. Reasons: Outdated linear tactics, old commanders vs. French flexibility (Divisions, Skirmishers).</p>' },
-                        { type: 'text', content: '<h3>Prussian Reforms (1807)</h3><p>Scharnhorst, Gneisenau, Clausewitz. Abolition of nobility privilege. General Staff. Krümper System (evading draft ban).</p>' },
-                        { type: 'flashcard', front: 'Iron Cross (1813)', back: 'First award for ALL ranks. Symbol of chivalry & duty.' }
+                        { type: 'text', content: '<h3>7 Years\' War</h3><p><strong>Pentarchy:</strong> Prussia, GB, Russia, France, Austria.<br>Prussia allied with GB against the continental powers.</p>' },
+                        { type: 'text', content: '<h3>Absolutism</h3><p>Monarch has undivided state power. "By the Grace of God". No participation of other social groups. Ruler stands above the law but is a "Servant of God".</p>' }
                     ]
                 },
                 {
-                    id: 'world_wars',
-                    title: 'World Wars (1914-1945)',
+                    id: 'napoleon_era',
+                    title: 'Napoleonic Era (1789-1815)',
                     cards: [
-                        { type: 'text', content: '<h3>WWI Trigger (1914)</h3><p>Assassination of Archduke Franz Ferdinand in Sarajevo (28.06.1914). Triggers alliance systems.</p>' },
-                        { type: 'text', content: '<h3>Schlieffen Plan</h3><p>German strategy to avoid a two-front war by quickly knocking out France before Russia mobilized. Failed.</p>' },
-                        { type: 'text', content: '<h3>Weimar Military</h3><p>Covert rearmament (Lipetsk/Kazan/Tomka) with USSR. "Truppenamt" as hidden General Staff.</p>' },
-                        { type: 'text', content: '<h3>WWII Conferences</h3><p>Tehran (1943), Yalta (1945), Potsdam (1945). Decided division of Germany.</p>' }
+                        { type: 'text', content: '<h3>French Revolution (1789-1799)</h3><p>War declaration on Austria (1792). Monarchy abolished (1792), King executed (1793). Napoleon ends the revolution in 1799.</p>' },
+                        { type: 'text', content: '<h3>Coalition Wars</h3><p><strong>1st Coalition (1792-1797):</strong> Cannonade of Valmy. Napoleon\'s Egyptian Expedition.<br><strong>2nd Coalition (1798-1802):</strong> Foundation for Napoleon\'s political rise.</p>' },
+                        { type: 'text', content: '<h3>Jena-Auerstedt (1806)</h3><p><strong>Prussian Defeat:</strong> Arrogance, old commanders, linear tactics, artillery only as support.<br><strong>French Victory:</strong> Flexible divisions, column tactics, independent artillery, annihilation strategy.</p>' },
+                        { type: 'text', content: '<h3>Peace of Tilsit (1807)</h3><p>Prussia loses all land west of the Elbe. Army limited to 42,000 men. French occupation of Berlin. Poverty and humiliation.</p>' },
+                        { type: 'checklist', title: 'Prussian Reforms (1807)', items: ['Abolition of Nobility Privilege', 'Krümper System (evading draft ban)', 'General Staff & War Academy', 'Skirmisher Tactics (Tirailleur)', 'Iron Cross (1813)'] },
+                        { type: 'text', content: '<h3>Wars of Liberation</h3><p><strong>Iron Cross:</strong> Founded 10.03.1813. First award for ALL ranks. Values: Chivalry, Duty, Love of Fatherland.<br><strong>Colors:</strong> Black/Red/Gold from Lützow Rangers uniforms ("Gold for Iron").</p>' },
+                        { type: 'quiz', question: 'What was the Krümper System?', options: ['A new weapon', 'Evading the draft ban', 'A type of bread'], answer: 1 }
+                    ]
+                },
+                {
+                    id: 'restoration',
+                    title: 'Restoration & Empire (1815-1890)',
+                    cards: [
+                        { type: 'text', content: '<h3>Congress of Vienna (1815)</h3><p><strong>Leader:</strong> Metternich.<br><strong>Principles:</strong> Restoration (pre-1789), Legitimacy (Monarchs), Solidarity (against revolution).<br><strong>Balance of Power:</strong> Pentarchy restored.</p>' },
+                        { type: 'text', content: '<h3>German Confederation (Deutscher Bund)</h3><p>Loose federation of 41 states. Defensive orientation. Disappointment for nationalists seeking a unified state.</p>' },
+                        { type: 'text', content: '<h3>Revolution of 1848</h3><p>Paulskirche Parliament. Goal: National State "from below". Failed because King Friedrich Wilhelm IV refused the "crown from the gutter".</p>' },
+                        { type: 'text', content: '<h3>Wars of Unification</h3><p>1864: German-Danish War (Düppeler Schanzen).<br>1866: German War (Königgrätz).<br>1870/71: Franco-Prussian War (Sedan). Trigger: Ems Dispatch.</p>' },
+                        { type: 'text', content: '<h3>Empire Proclamation (1871)</h3><p>18.01.1871 in Versailles. Bismarck\'s Policy: Isolation of France, complex alliances (Three Emperors League, Reinsurance Treaty) to prevent a two-front war.</p>' },
+                        { type: 'text', content: '<h3>Wilhelmine Era (1890+)</h3><p>"Place in the Sun". Bismarck dismissed. Encirclement of Germany begins. Naval arms race.</p>' }
+                    ]
+                },
+                {
+                    id: 'world_war_1',
+                    title: 'World War I (1914-1918)',
+                    cards: [
+                        { type: 'text', content: '<h3>The Spark (1914)</h3><p>Assassination of Franz Ferdinand in Sarajevo (28.06.1914). Blank Cheque to Austria. Chain reaction of alliances.</p>' },
+                        { type: 'text', content: '<h3>Schlieffen Plan</h3><p>Germany\'s plan to avoid a two-front war: Knock out France quickly via Belgium before Russia mobilizes. Failed at the Marne.</p>' },
+                        { type: 'text', content: '<h3>War Years</h3><p>1916: Verdun (Materialschlachten).<br>1917: US Entry (Turning Point).<br>1918: Armistice at Compiègne (11.11.1918).</p>' },
+                        { type: 'text', content: '<h3>Treaty of Versailles</h3><p><strong>Art. 231:</strong> War Guilt Clause.<br><strong>Military:</strong> 100k Army, No Air Force/Tanks/Subs, Demilitarized Rhineland.<br><strong>Dolchstoßlegende:</strong> Myth that the army was "undefeated in the field" and betrayed by civilians.</p>' },
+                        { type: 'quiz', question: 'What was the purpose of the Schlieffen Plan?', options: ['Invade Russia first', 'Avoid a two-front war', 'Capture London'], answer: 1 }
+                    ]
+                },
+                {
+                    id: 'interwar_ww2',
+                    title: 'Interwar & WWII',
+                    cards: [
+                        { type: 'text', content: '<h3>Weimar Military</h3><p>Seeckt builds a "Führerheer" (Leaders Army). Covert cooperation with USSR (Kazan-Tanks, Lipetsk-Air). "Truppenamt" hides the General Staff.</p>' },
+                        { type: 'text', content: '<h3>Hitler\'s Rise</h3><p>1923: Failed Putsch (Munich). 1933: Seizure of Power. 1938: Munich Agreement (Sudetenland). 1939: Invasion of "Rest-Czechia".</p>' },
+                        { type: 'text', content: '<h3>Allied Conferences</h3><p><strong>Tehran (1943):</strong> Planning D-Day.<br><strong>Yalta (1945):</strong> Division of Germany.<br><strong>Potsdam (1945):</strong> 4 Ds (Demilitarization, Denazification, Decentralization, Democratization).</p>' }
                     ]
                 },
                 {
                     id: 'cold_war',
                     title: 'Cold War & Bundeswehr',
                     cards: [
-                        { type: 'text', content: '<h3>Alliances</h3><p>NATO (1949, Art. 5) vs. Warsaw Pact (1955).</p>' },
-                        { type: 'text', content: '<h3>Bundeswehr Founding (1955)</h3><p>Himmerod Memorandum (1950). Joined NATO 1955. 12 Divisions planned.</p>' },
-                        { type: 'text', content: '<h3>Crises</h3><p>Berlin Wall (1961). Cuban Missile Crisis (1962). NATO Double-Track Decision (1979).</p>' },
-                        { type: 'quiz', question: 'When was the Bundeswehr founded?', options: ['1949', '1955', '1961'], answer: 1 }
+                        { type: 'text', content: '<h3>Formation of Blocs</h3><p><strong>NATO (1949):</strong> Collective Defense.<br><strong>Warsaw Pact (1955):</strong> Soviet Response.</p>' },
+                        { type: 'text', content: '<h3>Bundeswehr (1955)</h3><p><strong>Himmerod Memorandum (1950):</strong> Blueprint for rearmament.<br><strong>1955:</strong> Joined NATO. 500,000 men target. Concept of "Innere Führung" (Citizen in Uniform).</p>' },
+                        { type: 'text', content: '<h3>NVA (East Germany)</h3><p>Founded 1956. Soviet model. "Kasernierte Volkspolizei" as precursor.</p>' },
+                        { type: 'text', content: '<h3>Crises</h3><p><strong>Berlin Wall (1961):</strong> "Anti-Fascist Protection Rampart".<br><strong>Cuba (1962):</strong> World on brink of nuclear war.<br><strong>NATO Double-Track (1979):</strong> Stationing Pershing II vs SS-20.</p>' },
+                        { type: 'text', content: '<h3>End of Cold War</h3><p>1991: Dissolution of USSR.</p>' },
+                        { type: 'quiz', question: 'Which document planned the rearmament of West Germany?', options: ['Potsdam Agreement', 'Himmerod Memorandum', 'Schlieffen Plan'], answer: 1 }
                     ]
                 }
             ]
@@ -165,25 +202,44 @@ export const curriculum = {
             id: 'polbil',
             title: 'Politische Bildung',
             icon: '🌍',
-            description: 'Understanding International Security & German Policy.',
+            description: 'International Security & German Policy.',
             units: [
                 {
-                    id: 'organizations',
-                    title: 'International Organizations',
+                    id: 'uno',
+                    title: 'United Nations (UN)',
                     cards: [
-                        { type: 'text', content: '<h3>United Nations (UN)</h3><p>Goal: World Peace. Security Council: 5 Permanent (Veto) + 10 Rotating. General Assembly.</p>' },
-                        { type: 'text', content: '<h3>NATO</h3><p>North Atlantic Treaty Org. Collective Defense (Art. 5). Political decision body: North Atlantic Council (NAC).</p>' },
-                        { type: 'text', content: '<h3>European Union (EU)</h3><p>Commission (Executive), Council (Member States), Parliament (Citizens). Petersberg Tasks: Peacekeeping, Crisis Management.</p>' },
-                        { type: 'quiz', question: 'Which body has Veto power in the UN?', options: ['General Assembly', 'Security Council (P5)', 'Secretariat'], answer: 1 }
+                        { type: 'text', content: '<h3>Goal (Art. 1)</h3><p>Maintain world peace and international security.</p>' },
+                        { type: 'text', content: '<h3>Organs</h3><p><strong>General Assembly:</strong> All 193 members. Recommendations.<br><strong>Security Council:</strong> 5 Permanent (US, RU, CN, UK, FR) with Veto + 10 Rotating. Binding resolutions.<br><strong>Secretariat:</strong> Admin (Guterres).</p>' },
+                        { type: 'text', content: '<h3>Germany\'s Role</h3><p>Seeking permanent seat. Non-permanent member 2019/2020 (and applying for 27/28).</p>' },
+                        { type: 'quiz', question: 'Who has Veto power in the UN?', options: ['General Assembly', 'Security Council (P5)', 'Secretariat'], answer: 1 }
+                    ]
+                },
+                {
+                    id: 'nato',
+                    title: 'NATO',
+                    cards: [
+                        { type: 'text', content: '<h3>North Atlantic Treaty (1949)</h3><p>Value alliance. <strong>Article 5:</strong> Collective Defense (Attack on one is attack on all).</p>' },
+                        { type: 'text', content: '<h3>Structure</h3><p><strong>NAC (Council):</strong> Highest political body (Ambassadors).<br><strong>SACEUR:</strong> Supreme Allied Commander Europe (Always US General, currently Cavoli).</p>' },
+                        { type: 'text', content: '<h3>Current Situation</h3><p>Eastern Flank reinforcement (EFP in Baltics/Poland). 2% GDP Goal. Finland/Sweden accession.</p>' }
+                    ]
+                },
+                {
+                    id: 'eu',
+                    title: 'European Union (EU)',
+                    cards: [
+                        { type: 'text', content: '<h3>Institutions</h3><p><strong>European Council:</strong> Heads of State (Guidance).<br><strong>Commission:</strong> "Government" (Ursula von der Leyen).<br><strong>Council of EU:</strong> Ministers.<br><strong>Parliament:</strong> Legislation/Budget (Roberta Metsola).</p>' },
+                        { type: 'text', content: '<h3>Security (CSDP)</h3><p><strong>Petersberg Tasks:</strong> Humanitarian, Peacekeeping, Crisis Management.<br><strong>Battlegroups (EUBG):</strong> Rapid Reaction Forces.</p>' },
+                        { type: 'text', content: '<h3>Accession</h3><p><strong>Copenhagen Criteria:</strong> Democracy, Market Economy, Ability to adopt EU law.</p>' }
                     ]
                 },
                 {
                     id: 'security_policy',
                     title: 'German Security Policy',
                     cards: [
-                        { type: 'text', content: '<h3>National Security Strategy (NSS)</h3><p>Integrated Security: Politics, Economy, Military, Society. Resilience is key.</p>' },
-                        { type: 'text', content: '<h3>Threat Analysis</h3><p>Cyber, Terrorism, Hybrid Threats, Climate Change, Geopolitical Tensions.</p>' },
-                        { type: 'text', content: '<h3>Parliamentary Reservation</h3><p>Armed deployments require Bundestag mandate (50% + 1 vote). Exception: Danger in delay (rescue).</p>' }
+                        { type: 'text', content: '<h3>National Security Strategy (NSS)</h3><p>Integrated Security Approach. Values: Democracy, Rule of Law.<br><strong>Threats:</strong> Cyber, Terror, Hybrid, Russia.</p>' },
+                        { type: 'text', content: '<h3>Bundeswehr Missions</h3><p>1. National/Alliance Defense (LV/BV).<br>2. Crisis Management.<br>3. Homeland Security (Amtshilfe).</p>' },
+                        { type: 'text', content: '<h3>Legal Basis</h3><p><strong>Parliamentary Army:</strong> Armed deployments require Bundestag Mandate (Simple Majority).<br><strong>Mandate Content:</strong> Mission, Area, Forces, Duration, Cost.</p>' },
+                        { type: 'quiz', question: 'What majority is needed for a mandate?', options: ['2/3 Majority', 'Simple Majority (50%+1)', 'Unanimous'], answer: 1 }
                     ]
                 }
             ]
@@ -195,12 +251,20 @@ export const curriculum = {
             description: 'Advanced decision making and tactical analysis.',
             units: [
                 {
-                    id: 'decision_making',
-                    title: 'Decision Making Process',
+                    id: 'lageaenderung',
+                    title: 'Beurteilung der Lage',
                     cards: [
-                        { type: 'text', content: '<h3>Check: Situation Change?</h3><p>Has the situation changed fundamentally from the original order?</p>' },
-                        { type: 'checklist', title: 'Handlungsbedarf? (Need for Action)', items: ['Is mission success threatened?', 'Is there an opportunity to seize initiative?', 'Can I still act within my intent?'] },
-                        { type: 'text', content: '<h3>Process</h3><p>Analyze Situation -> Weigh Factors -> Decide -> Issue Order.</p>' }
+                        { type: 'text', content: '<h3>Basic Question</h3><p><strong>Fundamental Change?</strong> Has the situation developed in a way the superior did not foresee?</p>' },
+                        { type: 'text', content: '<h3>Checklist</h3><p>1. Would the superior have given the same order if they knew this?<br>2. Can the mission still be accomplished within the area?<br>3. Is the "Essential Task" (Wesentliche Leistung) still achievable?</p>' }
+                    ]
+                },
+                {
+                    id: 'handlungsbedarf',
+                    title: 'Handlungsbedarf',
+                    cards: [
+                        { type: 'text', content: '<h3>When to Act?</h3><p>1. Threat to mission success (Danger).<br>2. Opportunity to seize initiative (Chance).</p>' },
+                        { type: 'text', content: '<h3>Process</h3><p>Situation Analysis (A) -> Factors (Forces, Space, Time) -> Comparison -> Decision -> Order.</p>' },
+                        { type: 'quiz', question: 'What is the primary trigger for changing a plan?', options: ['Boredom', 'Fundamental Situation Change', 'Radio Silence'], answer: 1 }
                     ]
                 }
             ]

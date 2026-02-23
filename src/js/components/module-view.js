@@ -15,7 +15,7 @@ export function renderModules(container) {
 }
 
 function renderModuleList(container) {
-    let html = `<h2>Field Manuals</h2>`;
+    let html = `<h2>Field Manuals</h2><div class="module-grid">`;
 
     curriculum.modules.forEach(mod => {
         // Calculate progress
@@ -25,22 +25,24 @@ function renderModuleList(container) {
         const percent = Math.round((completedCount / totalUnits) * 100);
 
         html += `
-            <div class="card module-card" onclick="window.location.hash='#modules/${mod.id}'">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div style="font-size: 2rem;">${mod.icon}</div>
-                    <div style="flex-grow: 1; margin-left: 15px;">
-                        <h3>${mod.title}</h3>
-                        <p class="text-dim">${mod.description}</p>
-                        <div class="progress-container" style="height: 4px; margin-top: 5px;">
-                            <div class="progress-fill" style="width: ${percent}%"></div>
-                        </div>
+            <div class="module-tile" onclick="window.location.hash='#modules/${mod.id}'">
+                <div class="module-icon">${mod.icon}</div>
+                <h3>${mod.title}</h3>
+                <p class="text-dim" style="flex-grow: 1; margin-bottom: 10px;">${mod.description}</p>
+                <div style="width: 100%;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 5px;">
+                        <span>Progress</span>
+                        <span class="text-primary">${percent}%</span>
                     </div>
-                    <div style="color: var(--color-primary); font-weight: bold;">${percent}%</div>
+                    <div class="progress-container" style="height: 6px;">
+                        <div class="progress-fill" style="width: ${percent}%"></div>
+                    </div>
                 </div>
             </div>
         `;
     });
 
+    html += `</div>`;
     container.innerHTML = html;
 }
 
