@@ -112,6 +112,98 @@ export const curriculum = {
                     ]
                 }
             ]
+        },
+        {
+            id: 'milhistory',
+            title: 'Militärgeschichte',
+            icon: '⚔️',
+            description: 'From 30 Years\' War to the Cold War.',
+            units: [
+                {
+                    id: '30years',
+                    title: 'The 30 Years\' War (1618-1648)',
+                    cards: [
+                        { type: 'text', content: '<h3>Trigger: Defenestration of Prague (1618)</h3><p>Prager Fenstersturz. Conflict between Protestants and Catholics.</p>' },
+                        { type: 'text', content: '<h3>Key Figures</h3><p>Wallenstein (Military Entrepreneur) & Gustav II Adolf (Swedish King).</p>' },
+                        { type: 'text', content: '<h3>Peace of Westphalia (1648)</h3><p>Osnabrück & Münster. Recognized 3 confessions (Catholics, Lutherans, Calvinists). Basis for German federalism.</p>' },
+                        { type: 'quiz', question: 'What ended the 30 Years\' War?', options: ['Treaty of Versailles', 'Peace of Westphalia', 'Congress of Vienna'], answer: 1 }
+                    ]
+                },
+                {
+                    id: 'prussia_napoleon',
+                    title: 'Prussia & Napoleon (1789-1815)',
+                    cards: [
+                        { type: 'text', content: '<h3>French Revolution (1789)</h3><p>Monarchy abolished (1792). Napoleon rises (1799).</p>' },
+                        { type: 'text', content: '<h3>Jena-Auerstedt (1806)</h3><p>Prussia defeated. Reasons: Outdated linear tactics, old commanders vs. French flexibility (Divisions, Skirmishers).</p>' },
+                        { type: 'text', content: '<h3>Prussian Reforms (1807)</h3><p>Scharnhorst, Gneisenau, Clausewitz. Abolition of nobility privilege. General Staff. Krümper System (evading draft ban).</p>' },
+                        { type: 'flashcard', front: 'Iron Cross (1813)', back: 'First award for ALL ranks. Symbol of chivalry & duty.' }
+                    ]
+                },
+                {
+                    id: 'world_wars',
+                    title: 'World Wars (1914-1945)',
+                    cards: [
+                        { type: 'text', content: '<h3>WWI Trigger (1914)</h3><p>Assassination of Archduke Franz Ferdinand in Sarajevo (28.06.1914). Triggers alliance systems.</p>' },
+                        { type: 'text', content: '<h3>Schlieffen Plan</h3><p>German strategy to avoid a two-front war by quickly knocking out France before Russia mobilized. Failed.</p>' },
+                        { type: 'text', content: '<h3>Weimar Military</h3><p>Covert rearmament (Lipetsk/Kazan/Tomka) with USSR. "Truppenamt" as hidden General Staff.</p>' },
+                        { type: 'text', content: '<h3>WWII Conferences</h3><p>Tehran (1943), Yalta (1945), Potsdam (1945). Decided division of Germany.</p>' }
+                    ]
+                },
+                {
+                    id: 'cold_war',
+                    title: 'Cold War & Bundeswehr',
+                    cards: [
+                        { type: 'text', content: '<h3>Alliances</h3><p>NATO (1949, Art. 5) vs. Warsaw Pact (1955).</p>' },
+                        { type: 'text', content: '<h3>Bundeswehr Founding (1955)</h3><p>Himmerod Memorandum (1950). Joined NATO 1955. 12 Divisions planned.</p>' },
+                        { type: 'text', content: '<h3>Crises</h3><p>Berlin Wall (1961). Cuban Missile Crisis (1962). NATO Double-Track Decision (1979).</p>' },
+                        { type: 'quiz', question: 'When was the Bundeswehr founded?', options: ['1949', '1955', '1961'], answer: 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'polbil',
+            title: 'Politische Bildung',
+            icon: '🌍',
+            description: 'Understanding International Security & German Policy.',
+            units: [
+                {
+                    id: 'organizations',
+                    title: 'International Organizations',
+                    cards: [
+                        { type: 'text', content: '<h3>United Nations (UN)</h3><p>Goal: World Peace. Security Council: 5 Permanent (Veto) + 10 Rotating. General Assembly.</p>' },
+                        { type: 'text', content: '<h3>NATO</h3><p>North Atlantic Treaty Org. Collective Defense (Art. 5). Political decision body: North Atlantic Council (NAC).</p>' },
+                        { type: 'text', content: '<h3>European Union (EU)</h3><p>Commission (Executive), Council (Member States), Parliament (Citizens). Petersberg Tasks: Peacekeeping, Crisis Management.</p>' },
+                        { type: 'quiz', question: 'Which body has Veto power in the UN?', options: ['General Assembly', 'Security Council (P5)', 'Secretariat'], answer: 1 }
+                    ]
+                },
+                {
+                    id: 'security_policy',
+                    title: 'German Security Policy',
+                    cards: [
+                        { type: 'text', content: '<h3>National Security Strategy (NSS)</h3><p>Integrated Security: Politics, Economy, Military, Society. Resilience is key.</p>' },
+                        { type: 'text', content: '<h3>Threat Analysis</h3><p>Cyber, Terrorism, Hybrid Threats, Climate Change, Geopolitical Tensions.</p>' },
+                        { type: 'text', content: '<h3>Parliamentary Reservation</h3><p>Armed deployments require Bundestag mandate (50% + 1 vote). Exception: Danger in delay (rescue).</p>' }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'taktik2',
+            title: 'Taktik II (Advanced)',
+            icon: '♟️',
+            description: 'Advanced decision making and tactical analysis.',
+            units: [
+                {
+                    id: 'decision_making',
+                    title: 'Decision Making Process',
+                    cards: [
+                        { type: 'text', content: '<h3>Check: Situation Change?</h3><p>Has the situation changed fundamentally from the original order?</p>' },
+                        { type: 'checklist', title: 'Handlungsbedarf? (Need for Action)', items: ['Is mission success threatened?', 'Is there an opportunity to seize initiative?', 'Can I still act within my intent?'] },
+                        { type: 'text', content: '<h3>Process</h3><p>Analyze Situation -> Weigh Factors -> Decide -> Issue Order.</p>' }
+                    ]
+                }
+            ]
         }
     ]
 };
