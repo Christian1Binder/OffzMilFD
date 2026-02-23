@@ -1,57 +1,68 @@
 # Content Analysis & Curriculum Structure
 
-Based on the provided text, the learning platform will cover two main modules: **Befehlsrecht** (Command Law) and **Führung im Einsatz** (Leadership in Action).
-
 ## Module 1: Befehlsrecht (Command Law)
-
-### Unit 1: The Lawful Command
-*   **Core Concepts:** Definition of a command (§2 Nr.2 WstG), Superior status (§1(3) SG), Claim to obedience (§11(1) SG).
-*   **Legality Check (Commander's View):** Service purpose, International Law (HVR), Laws, Regulations.
-*   **Binding Nature (Recipient's View):** Service purpose, Human Dignity/HVR, Reasonableness (Proportionality), No Crimes.
-
-### Unit 2: Soldier's Duties (§7 - §17 SG)
-*   **Basic Duties:** Loyalty to legal order (§7), Service performance, Federal assets.
-*   **FDGO:** Human dignity, Democracy, Rule of law (§8).
-*   **Superior's Duties (§10):** Supervision, Care, Lawfulness, Enforcement, Restraint.
-*   **Subordinate's Duties:** Obedience (§11), Comradeship (§12), Behavior on/off duty (§17).
-
-### Unit 3: Disciplinary Law & Offenses
-*   **Disciplinary Offense:** Objective vs. Subjective elements (Intent vs. Negligence).
-*   **Specific WstG Offenses:**
-    *   AWOL (§15 WstG): >3 days absence.
-    *   Deception (§18 WstG): Evading service via deceit.
-    *   Disobedience (§19 WstG): Serious consequences.
-    *   Abuse of Authority (§32 WstG).
-
-### Unit 4: Complaints & Rights
-*   **Complaint vs. Report:** Difference (Claim to decision).
-*   **Process:** WBO vs. WDO complaints.
-*   **Requirements:** Admissibility (Form, Deadline, Grievance).
-*   **Processing:** Chain of command (Disciplinary Superior).
-
----
+(Existing content maintained)
 
 ## Module 2: Führung im Einsatz (Leadership in Action)
+(Existing content maintained)
 
-### Unit 1: Leadership Principles
-*   **Core Tenets:** Mission Command (Führen mit Auftrag), Effect-based thinking, Networked approach, Combined Arms.
-*   **Leadership Process:** Decision making, Time & Information management.
+## Module 3: Militärgeschichte (Military History)
 
-### Unit 2: Tactical Elements
-*   **Factors:** Information, Forces, Space, Time.
-*   **Main Effort (Schwerpunkt):** Concentration of forces/fire to force a decision.
-*   **Reserves:** Purpose (exploit success, counter crisis), Employment rules.
-*   **Combat Elements:** Fire and Movement + Obstacles.
+### Unit 1: 30 Years' War (1618-1648)
+*   **Trigger:** Defenestration of Prague (1618).
+*   **Conflict:** Protestants vs. Catholics (Confessional tension since 1580s).
+*   **Key Figures:** Wallenstein (Military Entrepreneur), Gustav II Adolf (Swedish King).
+*   **Peace of Westphalia (1648):** Osnabrück/Münster. Recognition of 3 confessions. Basis for federalism.
 
-### Unit 3: Operations
-*   **Space:** Area of Responsibility vs. Area of Interest.
-*   **Defense:** Purpose (Hold ground or Attrit enemy).
-*   **Offense:** Counter-attack (planned/reserves) vs. Counter-stroke (immediate/local).
-*   **Breach vs. Breakthrough:** Tactical vs. Strategic success.
+### Unit 2: Rise of Prussia & Absolutism
+*   **7 Years' War:** Prussia allied with GB vs. Pentarchy (FR, RU, AT).
+*   **Absolutism:** Monarch has undivided power ("By Grace of God").
+*   **French Revolution (1789):** Monarchy abolished 1792. Napoleon ends revolution 1799.
 
-### Unit 4: Combat Support
-*   **FAWU:** Leadership, Recon, Effects, Support.
-*   **Fire Support:** General Support (GS), Direct Support (DS), Reinforcing (R), GS-R.
-*   **Engineer Support:** Mobility, Counter-mobility (Obstacles), Survivability.
-*   **Capabilities:** PzGren (Puma, 3km range), Pz (Leopard, 3-5km range).
-*   **Tactics:** Hammer & Anvil principle.
+### Unit 3: Napoleonic Wars (1792-1815)
+*   **Jena-Auerstedt (1806):** Prussian defeat due to outdated tactics vs. French flexibility.
+*   **Prussian Reforms (1807):** Scharnhorst/Gneisenau/Clausewitz. Abolition of nobility privilege, Krümper system, General Staff.
+*   **Iron Cross (1813):** First award for all ranks. Values: Chivalry, Duty, Love of Fatherland.
+*   **Wars of Liberation:** Black/Red/Gold colors (Lützow Rangers).
+
+### Unit 4: Restoration to Empire (1815-1871)
+*   **Congress of Vienna (1815):** Metternich. Restoration, Legitimacy, Solidarity. Balance of Power.
+*   **German Confederation:** Loose federation of 41 states.
+*   **1848 Revolution:** Failed attempt at unity "from below".
+*   **Wars of Unification:** 1864 (Denmark), 1866 (Austria), 1870/71 (France).
+*   **Empire (1871):** Proclaimed in Versailles. Bismarck's alliance system (Isolation of France).
+
+### Unit 5: World War I (1914-1918)
+*   **Trigger:** Sarajevo Assassination (28.06.1914).
+*   **Schlieffen Plan:** Strategy for two-front war.
+*   **Turning Point 1917:** US Entry.
+*   **Armistice (1918):** Compiègne.
+*   **Versailles:** Art. 231 (War Guilt), Disarmament (100k army).
+
+### Unit 6: World War II & Cold War
+*   **Weimar Military:** Covert rearmament (Lipetsk, Kazan).
+*   **WWII:** Appeasement (Munich 1938), Conferences (Tehran, Yalta, Potsdam).
+*   **NATO (1949) vs Warsaw Pact (1955).**
+*   **Bundeswehr (1955):** Himmerod Memorandum. 12 Divisions.
+*   **Cold War Crises:** Berlin Wall (1961), Cuba (1962), NATO Double-Track (1979).
+
+## Module 4: Politische Bildung (Political Education)
+
+### Unit 1: International Organizations
+*   **UNO:** Security Council (5 Permanent + 10 Non-permanent), General Assembly, Secretariat. Goal: World Peace.
+*   **NATO:** Art. 5 (Collective Defense). North Atlantic Council (NAC). 2% Goal.
+*   **EU:** Commission (Executive), Council (Ministers), Parliament (Legislative). Criteria (Copenhagen).
+    *   **Petersberg Tasks:** Humanitarian, Peacekeeping, Crisis Management.
+
+### Unit 2: German Security Policy
+*   **National Security Strategy (NSS):** Integrated Security (Politics, Economy, Military).
+*   **Threats:** Cyber, Terror, Hybrid, Climate.
+*   **Bundeswehr Mission:** Deterrence, Defense (LV/BV), Crisis Management.
+*   **Parliamentary Reservation:** Mandate required (50%+1).
+
+## Module 5: Taktik II (Advanced Tactics)
+
+### Unit 1: Decision Making (Entscheidungsfindung)
+*   **Assessment:** Has the situation changed fundamentally?
+*   **Action Need:** Threat to mission? Opportunity?
+*   **Process:** Analyze Situation -> Compare Factors -> Decide.
