@@ -2,35 +2,38 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offizierausbildung Lernplattform</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TacLearn: Officer Command</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Offizierausbildung Lernplattform</h1>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
-    </header>
-    <main>
-        <p>Willkommen zur Lernplattform für Offizieranwärter. Wählen Sie ein Thema:</p>
-        <nav>
-            <ul>
-                <li><a href="militaergeschichte.html">Militärgeschichte</a></li>
-                <li><a href="politische_bildung.html">Politische Bildung</a></li>
-                <li><a href="fuehrung_im_einsatz.html">Führung im Einsatz</a></li>
-                <li><a href="befehlsrecht.html">Befehlsrecht</a></li>
-                <li><a href="taktik_ii.html">Taktik II</a></li>
-            </ul>
-        </nav>
-    </main>
-    <footer>
-        <p>&copy; 2023 Offizierausbildung</p>
-    </footer>
-    <script src="script.js"></script>
+    <div id="particles"></div>
+    <div id="app">
+        <!-- SPA Container -->
+        <div id="dashboard-view" class="view hidden"></div>
+        <div id="module-view" class="view hidden"></div>
+        <div id="unit-view" class="view hidden"></div>
+        <div id="quiz-view" class="view hidden"></div>
+        <div id="profile-view" class="view hidden"></div>
+    </div>
+
+    <!-- Navigation Bar (Always Visible) -->
+    <nav id="main-nav">
+        <button class="nav-btn active" data-target="dashboard">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </button>
+        <button class="nav-btn" data-target="modules">
+            <span class="icon">📚</span>
+            <span class="label">Modules</span>
+        </button>
+        <button class="nav-btn" data-target="profile">
+            <span class="icon">🎖️</span>
+            <span class="label">Profile</span>
+        </button>
+    </nav>
+
+    <script type="module" src="src/js/main.js"></script>
 </body>
 </html>
