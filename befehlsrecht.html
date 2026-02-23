@@ -7,20 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
     <header>
         <h1>Befehlsrecht</h1>
+        <div class="theme-switch-wrapper">
+             <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
         <nav><a href="index.html">Zurück zur Übersicht</a></nav>
     </header>
     <main>
-        <section class="content">
-            <p>Hier Inhalt für Befehlsrecht einfügen...</p>
-        </section>
-         <section class="quiz-container" id="quiz-container" data-topic="befehlsrecht">
-             <h2>Quiz</h2>
-            <div id="quiz-content">
-                 <p>Klicken Sie auf "Quiz starten", um Ihr Wissen zu testen.</p>
+        <section id="learning-section">
+            <h2>Lernmodul: Befehl und Gehorsam</h2>
+
+            <button class="accordion">Der rechtmäßige Befehl</button>
+            <div class="panel">
+              <p>Ein Befehl muss zu dienstlichen Zwecken erteilt werden und darf nicht gegen die Menschenwürde verstoßen oder eine Straftat anordnen.</p>
             </div>
-            <button id="start-quiz">Quiz starten</button>
+
+             <button class="accordion">Gehorsamspflicht</button>
+            <div class="panel">
+              <p>Soldaten sind verpflichtet, ihren Vorgesetzten gehorsam zu leisten. Dies gilt nicht für unverbindliche Befehle.</p>
+            </div>
+
+            <h3>Rechtsgrundlagen</h3>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Soldatengesetz</h3>
+                </div>
+                <div class="flip-card-back">
+                  <h1>§ 7 bis § 17 SG</h1>
+                </div>
+              </div>
+            </div>
+
+             <button id="start-quiz">Zum Quiz</button>
+        </section>
+
+        <section id="quiz-section" class="quiz-container" data-topic="befehlsrecht" style="display:none;">
+            <h2>Quiz</h2>
+            <div id="quiz-content">
+                 <p>Quiz wird geladen...</p>
+            </div>
         </section>
     </main>
     <footer>

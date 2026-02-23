@@ -7,20 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
     <header>
         <h1>Militärgeschichte</h1>
+        <div class="theme-switch-wrapper">
+             <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
         <nav><a href="index.html">Zurück zur Übersicht</a></nav>
     </header>
     <main>
-        <section class="content">
-            <p>Hier Inhalt für Militärgeschichte einfügen...</p>
+        <section id="learning-section">
+            <h2>Lernmodul: Historische Entwicklung</h2>
+            <p>Willkommen im Lernmodul Militärgeschichte. Hier lernen Sie die wichtigsten Ereignisse und Persönlichkeiten kennen.</p>
+
+            <button class="accordion">Der Erste Weltkrieg</button>
+            <div class="panel">
+              <p>Der Erste Weltkrieg begann 1914 und endete 1918. Er gilt als die Urkatastrophe des 20. Jahrhunderts.</p>
+            </div>
+
+            <button class="accordion">Preußische Heeresreformen</button>
+            <div class="panel">
+              <p>Nach der Niederlage gegen Napoleon 1806 reformierten Scharnhorst, Gneisenau und Clausewitz die preußische Armee. Kernpunkte waren die Abschaffung der Prügelstrafe und die Einführung der allgemeinen Wehrpflicht.</p>
+            </div>
+
+            <h3>Wichtige Jahreszahlen</h3>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Beginn 1. Weltkrieg</h3>
+                </div>
+                <div class="flip-card-back">
+                  <h1>1914</h1>
+                </div>
+              </div>
+            </div>
+
+            <button id="start-quiz">Zum Quiz</button>
         </section>
-        <section class="quiz-container" id="quiz-container" data-topic="militaergeschichte">
+
+        <section id="quiz-section" class="quiz-container" data-topic="militaergeschichte" style="display:none;">
             <h2>Quiz</h2>
             <div id="quiz-content">
-                 <p>Klicken Sie auf "Quiz starten", um Ihr Wissen zu testen.</p>
+                 <p>Quiz wird geladen...</p>
             </div>
-            <button id="start-quiz">Quiz starten</button>
         </section>
     </main>
     <footer>

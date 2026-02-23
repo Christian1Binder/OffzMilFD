@@ -7,20 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
     <header>
         <h1>Führung im Einsatz</h1>
+        <div class="theme-switch-wrapper">
+             <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
         <nav><a href="index.html">Zurück zur Übersicht</a></nav>
     </header>
     <main>
-        <section class="content">
-            <p>Hier Inhalt für Führung im Einsatz einfügen...</p>
-        </section>
-        <section class="quiz-container" id="quiz-container" data-topic="fuehrung_im_einsatz">
-             <h2>Quiz</h2>
-            <div id="quiz-content">
-                 <p>Klicken Sie auf "Quiz starten", um Ihr Wissen zu testen.</p>
+        <section id="learning-section">
+            <h2>Lernmodul: Grundlagen der Führung</h2>
+
+            <button class="accordion">Führen mit Auftrag</button>
+            <div class="panel">
+              <p>Das Führen mit Auftrag ist das oberste Führungsprinzip der Bundeswehr. Es gibt das Ziel vor, lässt aber Freiheit im Weg der Durchführung.</p>
             </div>
-            <button id="start-quiz">Quiz starten</button>
+
+            <button class="accordion">Führungsebenen</button>
+            <div class="panel">
+              <p>Man unterscheidet zwischen der taktischen, operativen und strategischen Führungsebene.</p>
+            </div>
+
+            <h3>Prinzipien</h3>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Wichtigste Eigenschaft</h3>
+                </div>
+                <div class="flip-card-back">
+                  <h1>Entschlusskraft</h1>
+                </div>
+              </div>
+            </div>
+
+             <button id="start-quiz">Zum Quiz</button>
+        </section>
+
+        <section id="quiz-section" class="quiz-container" data-topic="fuehrung_im_einsatz" style="display:none;">
+            <h2>Quiz</h2>
+            <div id="quiz-content">
+                 <p>Quiz wird geladen...</p>
+            </div>
         </section>
     </main>
     <footer>

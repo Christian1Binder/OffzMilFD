@@ -62,12 +62,73 @@ const quizzes = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const startButton = document.getElementById('start-quiz');
-    const quizContainer = document.getElementById('quiz-container');
+    // Dark Mode Logic
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
 
-    if (startButton && quizContainer) {
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    if(toggleSwitch) {
+        toggleSwitch.addEventListener('change', switchTheme);
+    }
+
+    // Scroll Progress Bar
+    window.onscroll = function() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        const progressBar = document.getElementById("progress-bar");
+        if(progressBar) {
+            progressBar.style.width = scrolled + "%";
+        }
+    };
+
+    // Accordion Logic
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+    // Flip Card Logic
+    const cards = document.querySelectorAll('.flip-card');
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    });
+
+    // Quiz Logic
+    const startButton = document.getElementById('start-quiz');
+    const quizSection = document.getElementById('quiz-section');
+
+    if (startButton && quizSection) {
         startButton.addEventListener('click', () => {
-            const topic = quizContainer.getAttribute('data-topic');
+            const topic = quizSection.getAttribute('data-topic');
+            document.getElementById('learning-section').style.display = 'none';
+            quizSection.style.display = 'block';
             startQuiz(topic);
         });
     }
@@ -76,11 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function startQuiz(topic) {
     const questions = quizzes[topic];
     const quizContent = document.getElementById('quiz-content');
-    const startButton = document.getElementById('start-quiz');
 
     if (!questions) {
         quizContent.innerHTML = "<p>Kein Quiz für dieses Thema verfügbar.</p>";
-        startButton.style.display = 'none';
         return;
     }
 
@@ -102,7 +161,6 @@ function startQuiz(topic) {
     html += `<button id="submit-quiz" onclick="submitQuiz('${topic}')">Absenden</button>`;
 
     quizContent.innerHTML = html;
-    startButton.style.display = 'none';
 }
 
 function submitQuiz(topic) {
