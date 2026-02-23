@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+header nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navigation List in Index */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2980b9;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+/* Content Sections */
+section.content {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+/* Quiz Section */
+.quiz-container {
+    background-color: #e8f6f3;
+    padding: 20px;
+    border: 1px solid #d1f2eb;
+    border-radius: 5px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
