@@ -12,27 +12,27 @@ export function renderDashboard(container) {
 
     container.innerHTML = `
         <div class="card text-center pulse-border">
-            <h2>Rank: ${currentRank}</h2>
+            <h2>Dienstgrad: ${currentRank}</h2>
             <div class="progress-container">
                 <div class="progress-fill" style="width: ${Math.min(progress, 100)}%"></div>
             </div>
             <p class="text-dim mt-2">${state.xp} / ${nextLevelXP} XP</p>
             <div class="streak-badge" style="margin-top: 10px; font-size: 1.2rem;">
-                🔥 Streak: ${state.streak} Days
+                🔥 Streak: ${state.streak} Tage
             </div>
         </div>
 
-        <h3>Active Mission</h3>
+        <h3>Aktuelle Mission</h3>
         <div class="card" onclick="window.location.hash='#modules'">
-            <h4>Continue Training</h4>
-            <p>Select a module to proceed with your officer training.</p>
-            <button class="btn">To Briefing Room</button>
+            <h4>Ausbildung fortsetzen</h4>
+            <p>Wählen Sie ein Modul, um Ihre Offiziersausbildung fortzusetzen.</p>
+            <button class="btn">Zum Briefing</button>
         </div>
 
-        <h3>Daily Intel</h3>
+        <h3>Tagesbefehl</h3>
         <div class="card">
-            <h4>Tip of the Day</h4>
-            <p>"Führen mit Auftrag requires trust. Trust your subordinates!"</p>
+            <h4>Tipp des Tages</h4>
+            <p>"Führen mit Auftrag erfordert Vertrauen. Vertrauen Sie Ihren Untergebenen!"</p>
         </div>
     `;
 }
