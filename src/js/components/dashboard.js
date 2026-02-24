@@ -1,5 +1,5 @@
 import { getState } from '../state.js';
-import { getModule } from '../data.js?v=3';
+import { getModule } from '../data.js?v=5';
 
 export function renderDashboard(container) {
     const state = getState();

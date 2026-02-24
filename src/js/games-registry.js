@@ -1,5 +1,5 @@
 // Registry to map curriculum content to interactive games
-// Version 4.0 - Added Crosswords
+// Version 5.0 - Added Crosswords with Icon Fix
 // Does NOT modify original data.js, but references IDs from it.
 
 export const gameRegistry = {

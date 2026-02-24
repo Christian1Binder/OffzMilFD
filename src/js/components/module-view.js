@@ -1,4 +1,4 @@
-import { curriculum, getModule } from '../data.js?v=3';
+import { curriculum, getModule } from '../data.js?v=5';
 import { getState } from '../state.js';
 
 export function renderModules(container) {
