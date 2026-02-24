@@ -1,4 +1,9 @@
 // data.js – Vollversion mit vollständigem ZIP-Inhalt
+// ---------------------------------------------------------
+// STRUKTURHINWEIS
+// curriculum.modules[] enthält die Kurs-Module (z.B. Befehlsrecht, Taktik, Militärgeschichte …)
+// Jedes Modul hat units[] (Lernfelder/Unterthemen) und jede Unit hat cards[] (Lernkarten).
+// ---------------------------------------------------------
 
 export const curriculum = {
 modules: [
@@ -7,6 +12,9 @@ modules: [
    BEFEHLSRECHT – Vollständig & prüfungstauglich integriert
 ========================================================= */
 
+// =========================================================
+// MODUL 1: BEFEHLSRECHT & WEHRRECHT
+// =========================================================
 {
   id: 'befehlsrecht',
   title: 'Befehlsrecht & Wehrrecht',
@@ -14,6 +22,7 @@ modules: [
   description: 'Umfassende Rechtsgrundlagen: Soldatengesetz, Wehrstrafrecht und Beschwerdewesen.',
   units: [
 
+    // UNIT 1: Befehlsbegriff & Vorgesetzte
     /* ---------------------------------------------------------
        1. Der Befehlsbegriff & Vorgesetzte
     --------------------------------------------------------- */
@@ -47,6 +56,7 @@ modules: [
       ]
     },
 
+    // UNIT 2: Rechtmäßigkeit & Verbindlichkeit
     /* ---------------------------------------------------------
        2. Rechtmäßigkeit & Verbindlichkeit
     --------------------------------------------------------- */
@@ -86,6 +96,7 @@ modules: [
       ]
     },
 
+    // UNIT 3: Pflichtenstruktur des SG
     /* ---------------------------------------------------------
        3. Soldatengesetz - Pflichten des Soldaten
     --------------------------------------------------------- */
@@ -114,6 +125,7 @@ modules: [
       ]
     },
 
+    // UNIT 4: Tatbestände des WStG
     /* ---------------------------------------------------------
        4. Dienstvergehen & Wehrstrafrecht
     --------------------------------------------------------- */
@@ -152,6 +164,7 @@ modules: [
       ]
     },
 
+    // UNIT 5: Beschwerdewesen (WBO)
     /* ---------------------------------------------------------
        5. Beschwerde & Meldeordnung
     --------------------------------------------------------- */
@@ -179,6 +192,7 @@ modules: [
       ]
     },
 
+    // UNIT 6: Abgabe an StA (A-2160/6)
     /* ---------------------------------------------------------
        6. Zusammenarbeit mit der Staatsanwaltschaft
     --------------------------------------------------------- */
@@ -202,12 +216,16 @@ modules: [
     TAKTIK & TRUPPENFÜHRUNG – ULTIMATIVE VERSION
 ========================================================= */
 
+// =========================================================
+// MODUL 2: TAKTIK & TRUPPENFÜHRUNG
+// =========================================================
 {
   id: 'taktik_leadership_ultimate',
   title: 'Taktik & Truppenführung',
   icon: '🎖️',
   description: 'Vollständige taktische Grundsätze, operative Faktoren und technische Daten.',
   units: [
+    // UNIT 1: Truppenführung & Handlungsfelder
     {
       id: 'fuehrungslehre_grundlagen',
       title: 'Truppenführung & Handlungsfelder',
@@ -245,6 +263,7 @@ modules: [
         }
       ]
     },
+    // UNIT 2: Schwerpunkt & Reserven
     {
       id: 'schwerpunkt_reserve_detail',
       title: 'Schwerpunkt & Reserven',
@@ -270,6 +289,7 @@ modules: [
         }
       ]
     },
+    // UNIT 3: Verteidigung & Gegenmaßnahmen
     {
       id: 'verteidigung_aktiv',
       title: 'Verteidigung & Gegenmaßnahmen',
@@ -302,6 +322,7 @@ modules: [
         }
       ]
     },
+    // UNIT 4: Gefechtsführung & Technik
     {
       id: 'gefechtsfuehrung_technik_stf',
       title: 'Gefechtsführung & Technik',
@@ -336,6 +357,7 @@ modules: [
         }
       ]
     },
+    // UNIT 5: Pionierwesen & Beratung
     {
       id: 'pioniere_beratung_sperren',
       title: 'Pionierwesen & Beratung',
@@ -359,6 +381,7 @@ modules: [
         }
       ]
     },
+    // UNIT 6: Planung & Verspätungen
     {
       id: 'planung_besonderheiten_vstk',
       title: 'Planung & Verspätungen',
@@ -391,6 +414,9 @@ modules: [
     MILITÄRGESCHICHTE – VOLLSTÄNDIG & DETAILREICH
 ========================================================= */
 
+// =========================================================
+// MODUL 3: MILITÄRGESCHICHTE
+// =========================================================
 {
   id: 'milhistory',
   title: 'Militärgeschichte',
@@ -590,7 +616,8 @@ modules: [
             <h3>Krisen bis zum Zerfall</h3>
             • <b>Kubakrise 1962:</b> Raketen TR (USA) vs. Kuba (RU); Seeblockade; Abzug beider Seiten.<br>
             • <b>NATO-Doppelbeschluss (1979):</b> Reaktion auf sowjet. Aufrüstung; Aufstellung Mittelstrecke vs. Verhandlung.<br>
-            • <b>12/1991:</b> Ende UdSSR; Rücktritt Gorbatschow.` 
+            • <b>12/1991:</b> Ende UdSSR; Rücktritt Gorbatschow.
+            ` 
         }
       ]
     }
@@ -601,6 +628,9 @@ modules: [
     POLITISCHE BILDUNG – VOLLSTÄNDIG AUS NOTIZEN
 ========================================================= */
 
+// =========================================================
+// MODUL 4: POLITISCHE BILDUNG
+// =========================================================
 {
   id: 'pol_education',
   title: 'Politische Bildung',
@@ -773,6 +803,9 @@ modules: [
     TAKTIK II – VERTIEFUNG & OPERATIVE DETAILS
 ========================================================= */
 
+// =========================================================
+// MODUL 5: TAKTIK II (VERTIEFUNG)
+// =========================================================
 {
   id: 'taktik_detail_v2',
   title: 'Taktik II (Vertiefung)',
@@ -897,6 +930,720 @@ modules: [
         }
       ]
     }
+  ]
+},
+
+// =========================================================
+// MODUL 6: TAKTIK GRUNDLAGEN
+// =========================================================
+{
+  id: 'taktik_grundlagen',
+  title: 'Taktik Grundlagen',
+  icon: '🎯',
+  description: 'Grundlagen der Truppenführung und Landoperationen.',
+  units: [
+    {
+      id: 'einleitung',
+      title: 'Einführung',
+      cards: [
+        {
+      type: 'text',
+      content: `
+        <h3>Soldatisches Führen – „Führen von Vorne“</h3>
+
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; text-align:left;">
+            
+            <tr>
+              <td style="border:1px solid #ccc; padding:10px; vertical-align:top;">
+                • Vertrauen<br>
+                • Kameradschaft<br>
+                • Disziplin
+              </td>
+
+              <td style="border:1px solid #ccc; padding:10px; vertical-align:top;">
+                • Persönliche Haltung<br>
+                • Urteilsfähigkeit<br>
+                • Beweglich im Denken<br>
+                • Beweglich im Handeln
+              </td>
+
+              <td style="border:1px solid #ccc; padding:10px; vertical-align:top;">
+                • Moral und Korpsgeist<br>
+                • Verantwortungsfreude<br>
+                • Kritikfähig<br>
+                • Fürsorge<br>
+                • Gemeinsamer Zeichenvorrat
+              </td>
+            </tr>
+          </table>
+        </div>
+      `
+    }
+  ]
+},
+
+/* =========================================================
+      Frage 2
+----------------------------------------------------------*/
+{
+  id: 'leitende_prinzipien_truppenfuehrung',
+  title: 'Leitende Prinzipien der Truppenführung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Erfolgreiches Führen mit Auftrag setzt voraus:</h3>
+        <ul style="line-height:1.7;">
+          <li>Die eindeutige Formulierung der eigenen Absicht mit einer realistischen Zielsetzung.</li>
+          <li>Die Zuweisung erforderlicher Kräfte, Mittel und Zeit sowie die Bereitstellung von Informationen zur Auftragsdurchführung.</li>
+          <li>Den Willen, Verantwortung zu delegieren, ohne sich der Gesamtverantwortung zu entziehen.</li>
+          <li>Die Bereitschaft und Fähigkeit, Handlungsspielraum im Sinne der Absicht der übergeordneten Führung zu nutzen und zu gewähren.</li>
+          <li>Eine angemessene Bereitschaft, Fehler zu akzeptieren.</li>
+        </ul>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Eigene Absicht</h3>
+        <p style="line-height:1.7;">
+          Im Rahmen einer Beurteilung der Lage (BdL) leitet sich die eigene Absicht aus der 
+          <b>Absicht der übergeordneten Führung</b> sowie dem eigenen <b>Auftrag</b> ab 
+          und beschreibt die <b>zu erzielende wesentliche Leistung</b> unter Berücksichtigung 
+          der gegebenen Rahmenbedingungen.
+        </p>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Abweichen vom Auftrag</h3>
+        <p style="line-height:1.7;">
+          Das Prinzip des Führens mit Auftrag erfordert vom jeweiligen Truppenführer die Fähigkeit, 
+          bei veränderter Lage eigenständig zu handeln. 
+          Weicht die tatsächliche Lage wesentlich von den Annahmen ab, 
+          kann ein Abweichen vom ursprünglichen Auftrag erforderlich sein, 
+          sofern dies im Sinne der <b>Absicht der übergeordneten Führung</b> geschieht.
+        </p>
+      `
+    }
+  ]
+}, 
+
+/* =========================================================
+      Frage 3
+----------------------------------------------------------*/
+
+{
+  id: 'vernetzter_ansatz_struktur',
+  title: 'Vernetzter Ansatz – Strukturmodell',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Struktur des Vernetzten Ansatzes</h3>
+
+        <div style="margin-top:20px;">
+
+          <!-- Dach -->
+          <div style="
+            text-align:center;
+            padding:14px;
+            background:#1e293b;
+            color:#f1f5f9;
+            font-weight:bold;
+            font-size:1.1rem;
+            border-radius:10px 10px 0 0;
+          ">
+            Vernetzter Ansatz
+          </div>
+
+          <!-- Wirkdimension -->
+          <div style="
+            display:flex;
+            justify-content:space-between;
+            background:#334155;
+            color:#f8fafc;
+            padding:10px;
+            font-weight:600;
+          ">
+            <div>Sicherheit</div>
+            <div>+</div>
+            <div>Stabilität</div>
+            <div>+</div>
+            <div>Wiederaufbau</div>
+          </div>
+
+          <!-- Säulen -->
+          <div style="
+            display:flex;
+            justify-content:space-between;
+            background:#0f172a;
+            padding:20px 10px;
+            gap:10px;
+          ">
+
+            <div style="
+              flex:1;
+              background:#1e293b;
+              color:#f1f5f9;
+              text-align:center;
+              padding:18px 10px;
+              border-radius:8px;
+              font-weight:600;
+            ">
+              AuswA
+            </div>
+
+            <div style="
+              flex:1;
+              background:#1e293b;
+              color:#f1f5f9;
+              text-align:center;
+              padding:18px 10px;
+              border-radius:8px;
+              font-weight:600;
+            ">
+              BMVg
+            </div>
+
+            <div style="
+              flex:1;
+              background:#1e293b;
+              color:#f1f5f9;
+              text-align:center;
+              padding:18px 10px;
+              border-radius:8px;
+              font-weight:600;
+            ">
+              BMI
+            </div>
+
+            <div style="
+              flex:1;
+              background:#1e293b;
+              color:#f1f5f9;
+              text-align:center;
+              padding:18px 10px;
+              border-radius:8px;
+              font-weight:600;
+            ">
+              BMZ
+            </div>
+
+          </div>
+
+          <!-- Handlungsfelder -->
+          <div style="
+            display:flex;
+            justify-content:space-between;
+            background:#334155;
+            color:#f8fafc;
+            padding:12px;
+            border-radius:0 0 10px 10px;
+            font-weight:500;
+          ">
+            <div>Diplomatie</div>
+            <div>Militär</div>
+            <div>Polizei</div>
+            <div>Entwicklungshilfe</div>
+          </div>
+
+        </div>
+      `
+    }
+  ]
+},
+
+/* =========================================================
+      Frage 4
+----------------------------------------------------------*/
+
+{
+  id: 'wirkungsorientiertes_denken',
+  title: 'Wirkungsorientiertes Denken',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Wirkungsorientiertes Denken</h3>
+
+        <div style="margin-top:40px; display:flex; justify-content:center;">
+  <div style="
+    position:relative;
+    width:100%;
+    max-width:950px;
+  ">
+
+    <!-- Kreis: Wille (oben) -->
+    <div style="
+      position:absolute;
+      top:-50px;
+      left:50%;
+      transform:translateX(-50%);
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:#1e293b;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      color:#f1f5f9;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    ">
+      Wille
+    </div>
+
+    <!-- Kreis: Ziel (rechts) -->
+    <div style="
+      position:absolute;
+      top:50%;
+      right:-80px;
+      transform:translateY(-50%);
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:#1e293b;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      color:#f1f5f9;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    ">
+      Ziel
+    </div>
+
+    <!-- Kreis: Legitimierung (unten) -->
+    <div style="
+      position:absolute;
+      bottom:-70px;
+      left:50%;
+      transform:translateX(-50%);
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:#1e293b;
+      color:#f1f5f9;
+      font-weight:bold;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    ">
+      Legitimierung
+    </div>
+
+    <!-- Kreis: Mittel (links) -->
+    <div style="
+      position:absolute;
+      top:50%;
+      left:-80px;
+      transform:translateY(-50%);
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:#1e293b;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:600;
+      color:#f1f5f9;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    ">
+      Mittel
+    </div>
+
+    <!-- Deine bestehende 2x2 Matrix bleibt hier unverändert -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+      
+      <div style="background:#1e293b;padding:24px;border-radius:14px;text-align:center;">
+        <b>Offensives Vorgehen</b><br><br>
+        Agieren und<br>Entscheidungen suchen
+      </div>
+
+      <div style="background:#1e293b;padding:24px;border-radius:14px;text-align:center;">
+        <b>Defensives Vorgehen</b><br><br>
+        Reagieren und<br>Schwächen suchen
+      </div>
+
+      <div style="background:#334155;padding:24px;border-radius:14px;text-align:center;">
+        <b>Direktes Vorgehen</b><br><br>
+        Wirkung gegen Gegner
+      </div>
+
+      <div style="background:#334155;padding:24px;border-radius:14px;text-align:center;">
+        <b>Indirektes Vorgehen</b><br><br>
+        Unmittelbare Wirkung<br>durch Überraschung
+      </div>
+
+    </div>
+
+    <!-- Zentrum -->
+    <div style="
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      background:#0f172a;
+      color:#38bdf8;
+      padding:14px 22px;
+      border-radius:12px;
+      font-weight:bold;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    ">
+      Operation / Gefecht
+    </div>
+
+  </div>
+</div>
+
+      `
+    }
+  ]
+},
+/* =========================================================
+      Frage 5
+----------------------------------------------------------*/
+{
+  id: 'grundsaetze_operationsfuehrung',
+  title: 'Grundsätze der Operationsführung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Erfolg und Risiko</h3>
+        Das Ergreifen der Initiative verlangt vom milTrFhr Risikobereitschaft,
+        denn zunächst ist der Erfolg eigenen Handelns immer ungewiss.<br><br>
+
+        Jeder Vorsprung vor dem Feind vergrößert die eigene Handlungsfreiheit
+        und engt die des anderen ein.<br><br>
+
+        <b>Aber niemals gehen militärische Führer unkalkulierbare Risiken ein.</b>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Klarheit und Einfachheit</h3>
+        Nur das Einfache hat Erfolg.<br><br>
+
+        Militärische Führer weichen nicht ohne Not von ihrem Entschluss ab.
+      `
+    }
+  ]
+},
+/* =========================================================
+    Frage 6
+========================================================= */
+
+{
+  id: 'beweglichkeit_schnelligkeit',
+  title: 'Beweglichkeit & Schnelligkeit',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Beweglichkeit</h3>
+
+        Beweglich Führen heißt zunächst auch beweglich zu denken.
+        Beweglichkeit bedeutet für mil Fhr, sich ständig der Entwicklung
+        der Lage und der Intensität anzupassen, schnell und überlegt
+        zu befehlen und zu handeln.<br><br>
+
+        Im Gefecht wechseln mil Fhr geschickt ihr Vorgehen und Koordinieren zielstrebige Feuer und Bewegung.
+       
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Schnelligkeit</h3>
+
+        Schnelligkeit in der Operationsführung wird bestimmt
+        durch Geschwindigkeit der Entscheidungsfindung,
+        Planung, Befehlsgebung sowie deren Umsetzung.<br><br>
+
+        Schnelligkeit darf mil Fhr nicht zur Hast werden.
+        Auch im komplexen Lagen Führen und Handeln sie überlegt.<br><br>
+
+        Unzulässige Forderungen nach Schnelligkeit überfordert und schwächt
+        die Truppe lageabhängig ist nicht allerdings nicht Schnelligkeit,
+        sondern Geduld erforderlich.
+      `
+    }
+  ]
+},
+
+/* =========================================================
+      Frage 7
+----------------------------------------------------------*/
+{
+  id: 'operation_verbundene_kraefte',
+  title: 'Operation verbundener Kräfte',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Die Operation verbundener Kräfte</h3>
+
+        <p><b>Definition:</b></p>
+        <p>
+        Das Zusammenwirken verschiedener nationaler oder multinationaler
+        Kräfte <br>
+        Mittel aauf taktischer Ebene <br>
+        unter einheitlicher militärischer Führung<br>
+        mit gemeinsamer Zielsetzung <br>
+        auch unter Einbindung nichtmilitärischer Fähigkeiten.
+        </p><br>
+
+        <p><b>Denkebene:</b></p>
+        <p>
+        Ausrichtung aller verfügbaren Kräfte und Mittel nach deren Fähigkeiten
+        / Wirkungen auf ein Ziel – nach festgelegten <b>Prinzipien.</b>
+        </p>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Gefecht der verbundenen Waffen</h3>
+
+        <p><b>Einordnung:</b></p>
+        <p>
+        Teil der Führungsprinzipien <b>OPVGUWA</b>.
+        </p><br>
+
+        <p><b>Merkmal:</b></p>
+        <p>
+        Der kinetische Kampf gegen ebenfalls kenetischen Feind in der Dimension Land.
+        </p><br>
+
+        <p><b>Anwendungsebene:</b></p>
+        <p>
+        Zielgerichteter und koordinierter Einsatz von Waffen
+        (Truppengattungen) für und in einem Gefecht.
+        </p>
+      `
+    }
+  ]
+},
+
+{
+  id: 'schwerpunktbildung',
+  title: 'Schwerpunktbildung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Schwerpunktbildung</h3>
+
+        <p>
+        Es ist stets <b>ein</b> Schwerpunkt zu bilden.
+        Zersplitterung der Kräfte ist zu vermeiden.
+        </p> <br>
+
+        <p>
+        Erfolg hat, wer die Wirkung aller nötigen Kräfte und Mittel
+        zur richtigen Zeit am richtigen Ort auf das richtige Ziel
+        konzentriert.
+        </p><br>
+
+        <p>
+        Wird die Entscheidung gesucht, kann man nie stark genug sein.
+        Daher entscheiden mil Fhr, wo sie die Anstrengungen zur
+        Auftragserfüllung konzentrieren.
+        </p><br>
+
+        <p>
+        Hierbei müssen sie bereit sein, an anderer Stelle Risiken
+        einzugehen.
+        </p>
+      `
+    }
+  ]
+},
+
+{
+  id: 'merkmale_landoperationen',
+  title: 'Allgemeine Merkmale von Landoperationen',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Allgemeine Merkmale von Landoperationen</h3>
+
+        <p>
+        <b>Operationen</b> sind militärische Handlungen, die zeitlich und
+        räumlich zusammenhängen, auf eine gemeinsame Zielsetzung ausgerichtet
+        sind und auf allen Führungsebenen geführt werden.
+        </p><br>
+
+        <p>
+        <b>Operationsführung</b> ist Planung und Steuerung militärischer
+        Handlungen von Streitkräften oder Teilen davon zur Erfüllung
+        strategischer, operativer und taktischer Aufträge.
+        </p>
+      `
+    }
+  ]
+},
+
+{
+  id: 'mittel_schwerpunktbildung',
+  title: 'Mittel zur Schwerpunktbildung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Mittel zur Schwerpunktbildung</h3>
+
+        <p>Zur Schwerpunktbildung tragen bei:</p>
+
+        • Verdichten der Aufklärung<br>
+        • Planung und Einsatz von Reserven<br>
+        • Einsatz zusätzlicher Kräfte und Mittel (z.B. luftbewegliche Kräfte)<br>
+        • Unterstützung durch Kräfte und Wirkung aus anderen Dimensionen<br>
+        • Vorrang beim Feuer<br>
+        • Maßnahmen zum Wirken im Informationsumfeld<br>
+        • Elektronischer Kampf<br>
+        • Vorrang in der logistischen und sanitätsdienstlichen Unterstützung<br>
+        • Vorrang in der Führungsunterstützung<br>
+        • Besondere Maßnahmen zum Fördern, Hemmen und Kanalisieren von Bewegung<br>
+        • Änderung der Raumordnung (z.B. ein kleinerer Verantwortungsbereich)
+      `
+    }
+  ]
+},
+
+{
+  id: 'reserven_grundsatz_einsatz',
+  title: 'Reserven – Grundsatz & Einsatz',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Reserven</h3>
+
+        <p>
+        Reserven werden <b>geschlossen eingesetzt</b>. 
+        Zersplitterung führt zum Misserfolg. 
+        Die Reserve darf nicht frühzeitig gebunden oder in feindlicher Wirkung ausgesetzt sein.
+        </p>
+
+        <p>
+        Ist die Reserve eingesetzt, muss schnellstmöglich eine neue gebildet werden.
+        </p><br>
+
+        <h4>Reserven werden grundsätzlich...</h4>
+        • aus eigenen Kräften und Mitteln gebildet<br>
+        • durch den militärischen Führer eingesetzt<br>
+        • zur eigenen Verfügung bereitgehalten<br>
+        • mit ihren Aufträgen vorgeplant<br>
+        • ihre Aufträge erkundet<br><br>
+
+        <h4>Reserven werden eingesetzt um...</h4>
+        • die Entscheidung zu erzwingen<br>
+        • den Schwerpunkt zu verlegen<br>
+        • Krisen zu überwinden<br><br>
+
+        <h4>Bedeutung</h4>
+        <p>
+        Durch das Einsetzen der Reserve zum richtigen Zeitpunkt hat die Reserve eine entscheidende Bedeutung.
+        Der militärische Führer erzielt in der Regel dann die größte Wirkung, wenn durch den Einsatz der Reserve der Feind überrascht werden kann.
+        </p>
+      `
+    }
+  ]
+},
+
+{
+  id: 'verstaerken_abloesung_gegenangriff_reserve_schema',
+  title: 'Verstärken – Ablösung – Gegenangriff (Schema)',
+  cards: [
+    {
+      type: 'text',
+      content:
+        '<h3>Verstärken – Ablösung – Gegenangriff</h3>' +
+
+        '<p><b>Verstärken:</b> Um frühzeitig drohende Gefahr im Entstehen abzuwenden.</p><br>' +
+        '<p><b>Auffangen:</b> Bei Fein einbruch, wenn ein Gegenangriff keinen Erfolg verspricht.</p><br>' +
+        '<p><b>Gegenangriff:</b><br> Nach Grundsätzen des Angriffs geführt,<br>' +
+        '<p> wenn Fein verlustreich aufgefangen ist,<br>' +
+        '<p>wenn möglich mit weit gestrechkem Ziel,<br>' +
+        '<p> Einsatz aller verfügbaren Kräfte bevor sich weitere FdKr auswirken können.</p>' +
+
+        '<div style="margin:16px 0; padding:12px; border:1px solid rgba(255,255,255,.18); border-radius:12px; overflow:auto;">' +
+
+          // SVG (Inline, ohne <style>, ohne Template-Backticks)
+          '<svg viewBox="0 0 920 520" width="100%" height="auto" role="img" aria-label="Schema um die Reserve">' +
+            '<defs>' +
+              '<marker id="arrGrey" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">' +
+                '<path d="M0,0 L10,3 L0,6 Z" fill="rgba(230,230,230,.95)"></path>' +
+              '</marker>' +
+              '<marker id="arrGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">' +
+                '<path d="M0,0 L10,3 L0,6 Z" fill="#22c55e"></path>' +
+              '</marker>' +
+              '<marker id="arrBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">' +
+                '<path d="M0,0 L10,3 L0,6 Z" fill="#60a5fa"></path>' +
+              '</marker>' +
+              '<marker id="arrPink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">' +
+                '<path d="M0,0 L10,3 L0,6 Z" fill="#fb7185"></path>' +
+              '</marker>' +
+            '</defs>' +
+
+            // Rahmen
+            '<rect x="18" y="18" width="884" height="484" rx="16" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.14)"></rect>' +
+
+            // Knoten oben links: Verstärken
+            '<rect x="70" y="70" width="300" height="96" rx="14" fill="rgba(34,197,94,.10)" stroke="#22c55e" stroke-width="2"></rect>' +
+            '<text x="220" y="112" text-anchor="middle" font-size="22" fill="#22c55e" font-weight="800">Verstärken</text>' +
+            '<text x="220" y="140" text-anchor="middle" font-size="14" fill="rgba(240,240,240,.95)">Gefahr früh abwenden / stabilisieren</text>' +
+
+            // Knoten oben rechts: Gegenangriff
+            '<rect x="550" y="70" width="300" height="96" rx="14" fill="rgba(96,165,250,.10)" stroke="#60a5fa" stroke-width="2"></rect>' +
+            '<text x="700" y="112" text-anchor="middle" font-size="22" fill="#60a5fa" font-weight="800">Gegenangriff</text>' +
+            '<text x="700" y="140" text-anchor="middle" font-size="14" fill="rgba(240,240,240,.95)">Initiative zurück / Entscheidung suchen</text>' +
+
+            // Knoten mittig: Ablösung (schräger Block)
+            '<polygon points="350,240 520,175 590,255 420,320" fill="rgba(251,113,133,.10)" stroke="#fb7185" stroke-width="2"></polygon>' +
+            '<text x="470" y="250" text-anchor="middle" font-size="18" fill="#fb7185" font-weight="800">Ablösung</text>' +
+            '<text x="470" y="274" text-anchor="middle" font-size="13" fill="rgba(240,240,240,.95)">Neuordnung / Regeneration</text>' +
+
+            // Reserve unten
+            '<circle cx="460" cy="410" r="56" fill="rgba(250,204,21,.12)" stroke="#facc15" stroke-width="3"></circle>' +
+            '<rect x="430" y="395" width="60" height="30" rx="8" fill="rgba(15,23,42,.95)" stroke="rgba(250,204,21,.55)"></rect>' +
+            '<text x="460" y="415" text-anchor="middle" font-size="18" fill="#facc15" font-weight="800">Res</text>' +
+
+            // Bögen wie in Skizze (gestrichelt)
+            // Res -> Verstärken
+            '<path d="M 430 392 C 250 360, 150 285, 150 170" fill="none" stroke="rgba(230,230,230,.85)" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrGreen)"></path>' +
+            // Res -> Gegenangriff
+            '<path d="M 490 392 C 670 360, 770 285, 770 170" fill="none" stroke="rgba(230,230,230,.85)" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrBlue)"></path>' +
+            // Res -> Ablösung
+            '<path d="M 450 372 C 420 340, 405 325, 390 310" fill="none" stroke="rgba(230,230,230,.85)" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrPink)"></path>' +
+
+            // Brücken Ablösung -> (gedanklich) Verstärken / Gegenangriff
+            '<path d="M 410 300 C 300 260, 250 225, 220 170" fill="none" stroke="rgba(230,230,230,.55)" stroke-width="3" stroke-dasharray="7 10" marker-end="url(#arrGrey)"></path>' +
+            '<path d="M 590 240 C 640 215, 670 200, 700 170" fill="none" stroke="rgba(230,230,230,.55)" stroke-width="3" stroke-dasharray="7 10" marker-end="url(#arrGrey)"></path>' +
+
+            // Labels
+            '<text x="92" y="270" font-size="14" fill="rgba(240,240,240,.85)">Einsatz der Reserve</text>' +
+            '<text x="828" y="270" font-size="14" fill="rgba(240,240,240,.85)" text-anchor="end">Einsatz der Reserve</text>' +
+          '</svg>' +
+
+        '</div>' +
+
+        '<p><b>Merksatz:</b> Verstärken stabilisiert · Ablösung ordnet neu · Reserve befähigt · Gegenangriff entscheidet.</p>'
+    }
+  ]
+}
+
+
+
+/* Fragen immer über dieser Zeile einfügen */
   ]
 }
 
