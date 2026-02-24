@@ -8,12 +8,15 @@ import { renderClozeGame } from './cloze-game.js';
 import { addXP } from '../../state.js';
 import { showXP } from '../gamification.js';
 
-export function launchGame(container, gameId) {
+export function launchGame(container, gameId, moduleId) {
     const config = getGameConfig(gameId);
     if (!config) {
         container.innerHTML = '<p>Spiel nicht gefunden.</p>';
         return;
     }
+
+    // Pass moduleId to config so sub-games can use it for back buttons
+    config.moduleId = moduleId;
 
     const onComplete = (xp) => {
         addXP(xp, true); // true = isPractice
@@ -21,7 +24,7 @@ export function launchGame(container, gameId) {
         // Maybe wait and go back?
         setTimeout(() => {
             if(confirm("Training abgeschlossen! Zurück zur Übersicht?")) {
-                window.location.hash = '#practice';
+                window.location.hash = `#practice/${moduleId}`;
             }
         }, 1500);
     };

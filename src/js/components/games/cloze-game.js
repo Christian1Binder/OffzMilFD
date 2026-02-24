@@ -7,8 +7,9 @@ export function renderClozeGame(container, config, onComplete) {
         textHtml = textHtml.replace(`{${b.index}}`, `<input type="text" data-index="${b.index}" class="cloze-input" style="background: transparent; border: none; border-bottom: 2px solid var(--color-primary); color: white; width: 100px; text-align: center;">`);
     });
 
+    let backHash = config.moduleId ? `#practice/${config.moduleId}` : '#practice';
     let html = `
-        <button class="btn btn-secondary" onclick="window.location.hash='#practice'" style="margin-bottom: 20px;">← Zurück</button>
+        <button class="btn btn-secondary" onclick="window.location.hash='${backHash}'" style="margin-bottom: 20px;">← Zurück</button>
         <h2>${config.title}</h2>
         <p>${config.description}</p>
         <div class="card" style="line-height: 2.5rem; font-size: 1.2rem;">

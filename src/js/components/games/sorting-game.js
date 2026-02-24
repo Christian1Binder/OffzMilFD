@@ -5,8 +5,9 @@ export function renderSortingGame(container, config, onComplete) {
     // Shuffle items
     items.sort(() => Math.random() - 0.5);
 
+    let backHash = config.moduleId ? `#practice/${config.moduleId}` : '#practice';
     let html = `
-        <button class="btn btn-secondary" onclick="window.location.hash='#practice'" style="margin-bottom: 20px;">← Zurück</button>
+        <button class="btn btn-secondary" onclick="window.location.hash='${backHash}'" style="margin-bottom: 20px;">← Zurück</button>
         <h2>${config.title}</h2>
         <p>${config.description}</p>
         <div class="sorting-container" style="margin-top: 20px;">
