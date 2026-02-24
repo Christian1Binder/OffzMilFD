@@ -15,7 +15,7 @@ export function renderModules(container) {
 }
 
 function renderModuleList(container) {
-    let html = `<h2>Dienstvorschriften</h2><div class="module-grid">`;
+    let html = `<h2>Lernfelder</h2><div class="module-grid">`;
 
     curriculum.modules.forEach(mod => {
         // Calculate progress
