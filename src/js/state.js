@@ -14,7 +14,12 @@ let state = {
 export async function initState() {
     const saved = localStorage.getItem('taclearn_state');
     if (saved) {
-        state = { ...state, ...JSON.parse(saved) };
+        try {
+            state = { ...state, ...JSON.parse(saved) };
+        } catch (e) {
+            console.error("State corrupted, resetting:", e);
+            localStorage.removeItem('taclearn_state');
+        }
     }
 
     // Streak Logic

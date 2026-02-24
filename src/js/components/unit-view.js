@@ -1,4 +1,4 @@
-import { getUnit } from '../data.js';
+import { getUnit } from '../data.js?v=3';
 import { completeUnit, addXP } from '../state.js';
 import { showXP, showLevelUp } from './gamification.js';
 

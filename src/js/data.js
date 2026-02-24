@@ -1,4 +1,5 @@
 // Content Repository - German Translation
+// Version 3.0 - Force Refresh
 
 export const curriculum = {
     modules: [

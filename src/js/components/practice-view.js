@@ -1,5 +1,5 @@
-import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js';
-import { getModule } from '../data.js';
+import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js?v=3';
+import { getModule } from '../data.js?v=3';
 
 export function renderPractice(container) {
     const hash = window.location.hash;
@@ -21,15 +21,22 @@ export function renderPractice(container) {
 
 function renderPracticeModules(container) {
     const moduleIds = getPracticeModules();
-    console.log("Practice Modules found:", moduleIds);
+    console.log("Practice Modules found in registry:", moduleIds);
 
     let html = `<h2>Gefechtsübung: Modulwahl</h2><p class="text-dim mb-2">Wähle ein Themengebiet.</p><div class="module-grid">`;
 
+    if (moduleIds.length === 0) {
+        html += `<p>Keine Übungsmodule gefunden.</p>`;
+    }
+
     moduleIds.forEach(modId => {
         const mod = getModule(modId); // Helper from data.js
-        console.log(`Loading Module: ${modId}`, mod);
+        console.log(`Loading Module for Practice: ${modId}`, mod);
+
         if (!mod) {
-            console.error(`Module ID ${modId} from games-registry not found in data.js!`);
+            console.error(`CRITICAL: Module ID '${modId}' exists in registry but NOT in data.js. Check data.js content.`);
+            // Fallback visualization for debugging in production if needed
+            // html += `<div class="module-tile error"><h3>Error: ${modId}</h3></div>`;
             return;
         }
 
