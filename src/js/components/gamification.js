@@ -35,8 +35,8 @@ export function showLevelUp(level) {
     modal.style.animation = 'fadeIn 0.5s';
 
     const ranks = [
-        'Schütze', 'Gefreiter', 'Obergefreiter', 'Unteroffizier',
-        'Feldwebel', 'Leutnant', 'Hauptmann', 'Major', 'Oberst', 'General'
+        'Schütze', 'Gefreiter', 'Obergefreiter', 'Hauptgefreiter', 'Stabsgefreiter', 'Oberstabsgefreiter', 'Korporal', 'Stabskorporal', 'Unteroffizier', 'Stabsunteroffizier',
+        'Feldwebel', 'Oberfeldwebel', 'Hauptfeldwebel', 'Stabsfeldwebel', 'Oberstabsfeldwebel', 'Leutnant', 'Oberleutnant', 'Hauptmann', 'Stabshauptmann', 'Major', 'Oberstleutnant', 'Oberst', 'Brigadegeneral', 'Generalmajor', 'Generalleutnant', 'General'
     ];
     const rankTitle = ranks[Math.min(level - 1, ranks.length - 1)];
 
