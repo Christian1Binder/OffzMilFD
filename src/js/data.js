@@ -404,29 +404,29 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **30-jähriger Krieg (1618–1648):**
-            • **Auslöser:** Prager Fenstersturz (1618).
-            • **Konflikt:** Protestanten gegen Katholiken, Spannungen seit den 1580ern.
-            • **Landesherr:** Bestimmt die Konfession (Cuius regio, eius religio).
-            • **Böhmen:** Sonderfall (prot. Volk / kath. König).
-            • **Akteure:** Wallenstein (Militärunternehmer), Gustav II. Adolf (Schwedenkönig).` 
+            <h3>30-jähriger Krieg (1618–1648)</h3>
+            • <b>Auslöser:</b> Prager Fenstersturz (1618).<br>
+            • <b>Konflikt:</b> Protestanten gegen Katholiken, Spannungen seit den 1580ern.<br>
+            • <b>Landesherr:</b> Bestimmt die Konfession (Cuius regio, eius religio).<br>
+            • <b>Böhmen:</b> Sonderfall (prot. Volk / kath. König).<br>
+            • <b>Akteure:</b> Wallenstein (Militärunternehmer), Gustav II. Adolf (Schwedenkönig).` 
         },
         { 
           type: 'text', 
           content: `
-            **Westfälischer Frieden (1648):**
-            • **Orte:** Rathaus Osnabrück & Münster.
-            • **Ereignis:** Schwur span. & niederl. Gesandter (Frieden von Münster).
-            • **Kern:** Gleichberechtigung von Katholiken, Lutheranern und Calvinisten.
-            • **Bedeutung:** Basis für dt. Föderalismus & zw.staatliche Regelungen.` 
+            <h3>Westfälischer Frieden (1648)</h3>
+            • <b>Orte:</b> Rathaus Osnabrück & Münster.<br>
+            • <b>Ereignis:</b> Schwur span. & niederl. Gesandter (Frieden von Münster).<br>
+            • <b>Kern:</b> Gleichberechtigung von Katholiken, Lutheranern und Calvinisten.<br>
+            • <b>Bedeutung:</b> Basis für dt. Föderalismus & zw.staatliche Regelungen.` 
         },
         { 
           type: 'text', 
           content: `
-            **Absolutismus & Preußen:**
-            • **Herrschaft:** Souverän mit ungeteilter Staatsgewalt, keine Mitwirkung anderer Gruppen.
-            • **Legitimation:** "Von Gottes Gnaden", über dem Gesetz, aber "Diener Gottes".
-            • **7-jähriger Krieg:** Aufstieg Preußens in der Pentarchie (PR, GB, RU, FR, Ö). Bündnis PR-GB.` 
+            <h3>Absolutismus & Preußen</h3>
+            • <b>Herrschaft:</b> Souverän mit ungeteilter Staatsgewalt, keine Mitwirkung anderer Gruppen.<br>
+            • <b>Legitimation:</b> "Von Gottes Gnaden", über dem Gesetz, aber "Diener Gottes".<br>
+            • <b>7-jähriger Krieg:</b> Aufstieg Preußens in der Pentarchie (PR, GB, RU, FR, Ö). Bündnis PR-GB.` 
         }
       ]
     },
@@ -437,36 +437,37 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Französische Revolution (1789-1799):**
-            • 04/1792: Krieg an Österreich. 1792: Ende Monarchie. 1793: Hinrichtung König.
-            • Napoleon: Beendet Rev. 1799 (Überwinder).
-            • **Koalitionskriege:** 1. Krieg (1792-1797) mit Kanonade von Valmy. 2. Krieg (1798-1802) als Basis für Napoleons Aufstieg.
-            • Ägypten-Expedition (1798-1801).` 
+            <h3>Französische Revolution (1789-1799)</h3>
+            • <b>04/1792:</b> Krieg an Österreich. 1792: Ende Monarchie. 1793: Hinrichtung König.<br>
+            • <b>Napoleon:</b> Beendet Rev. 1799 (Überwinder).<br>
+            • <b>Koalitionskriege:</b> 1. Krieg (1792-1797) mit Kanonade von Valmy. 2. Krieg (1798-1802) als Basis für Napoleons Aufstieg.<br>
+            • <b>Ägypten-Expedition:</b> (1798-1801).` 
         },
         { 
           type: 'text', 
           content: `
-            **Zusammenbruch Preußens 1806/07:**
-            • **Schlacht von Jena (14.10.1806):** PR (Lineartaktik, alte Kommandeure, Überheblichkeit) unterliegt FR (Kolonnentaktik, flexible Divisionen, eigenst. Artillerie, Vernichtungsstrategie).
-            • **Frieden von Tilsit (1807):** Preußen als Pufferstaat; Verlust aller Gebiete westl. Elbe; max. 42.000 Mann Heer; Verbot der Wehrpflicht; Besetzung Berlins (18.000 Mann Vollversorgung). Folge: Armut & Demütigung.` 
+            <h3>Zusammenbruch Preußens 1806/07</h3>
+            • <b>Schlacht von Jena (14.10.1806):</b> PR (Lineartaktik, alte Kommandeure, Überheblichkeit) unterliegt FR (Kolonnentaktik, flexible Divisionen, eigenst. Artillerie, Vernichtungsstrategie).<br>
+            • <b>Frieden von Tilsit (1807):</b> Preußen als Pufferstaat; Verlust aller Gebiete westl. Elbe; max. 42.000 Mann Heer; Verbot der Wehrpflicht; Besetzung Berlins (18.000 Mann Vollversorgung).<br>
+            • <b>Folge:</b> Armut & Demütigung.` 
         },
         { 
           type: 'text', 
           content: `
-            **Preußische Heeresreform (Kernelemente):**
-            • Abschaffung Adelsprivileg.
-            • **Krümper-System:** Umgehung des Wehrpflichtverbots.
-            • Taktik: Kolonnen- & Tirailleur-Taktik.
-            • Struktur: Waffengemischte Divisionen, Kriegsministerium, Kriegsschulen/Akademien.
+            <h3>Preußische Heeresreform (Kernelemente)</h3>
+            • Abschaffung Adelsprivileg.<br>
+            • <b>Krümper-System:</b> Umgehung des Wehrpflichtverbots.<br>
+            • <b>Taktik:</b> Kolonnen- & Tirailleur-Taktik.<br>
+            • <b>Struktur:</b> Waffengemischte Divisionen, Kriegsministerium, Kriegsschulen/Akademien.<br>
             • Milderung des Wehrstrafrechts.` 
         },
         { 
           type: 'text', 
           content: `
-            **Nationale Erhebung & Symbole:**
-            • **Nationalfarben:** Uniform Lützower Jäger (Schwarz, Rot, Gold); "Gold gab ich für Eisen". Symbol für bestehende Einheit.
-            • **Eisernes Kreuz (10.03.1813):** Stiftung zum Geb. von Königin Luise. Erster Orden für alle Ränge (unabh. von Stand). Anlehnung an Deutschritter-Tatenkreuz.
-            • Werte: Ritterlichkeit, Freiheit, Vaterlandsliebe, Tapferkeit.` 
+            <h3>Nationale Erhebung & Symbole</h3>
+            • <b>Nationalfarben:</b> Uniform Lützower Jäger (Schwarz, Rot, Gold); "Gold gab ich für Eisen". Symbol für bestehende Einheit.<br>
+            • <b>Eisernes Kreuz (10.03.1813):</b> Stiftung zum Geb. von Königin Luise. Erster Orden für alle Ränge (unabh. von Stand). Anlehnung an Deutschritter-Tatenkreuz.<br>
+            • <b>Werte:</b> Ritterlichkeit, Freiheit, Vaterlandsliebe, Tapferkeit.` 
         }
       ]
     },
@@ -477,27 +478,27 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Wiener Kongress 1815 (Metternich):**
-            • **Motive:** Restauration, Legitimität, Solidarität gegen Revolution, Pentarchie-Gleichgewicht.
-            • **Ergebnisse:** FR bleibt Großmacht (1792); RU halbhegemonial; GB gewinnt Helgoland/Malta; PR erhält Rheinland & Sachsen ("Wacht am Rhein"); Ö wächst aus DEU heraus.` 
+            <h3>Wiener Kongress 1815 (Metternich)</h3>
+            • <b>Motive:</b> Restauration, Legitimität, Solidarität gegen Revolution, Pentarchie-Gleichgewicht.<br>
+            • <b>Ergebnisse:</b> FR bleibt Großmacht (1792); RU halbhegemonial; GB gewinnt Helgoland/Malta; PR erhält Rheinland & Sachsen ("Wacht am Rhein"); Ö wächst aus DEU heraus.` 
         },
         { 
           type: 'text', 
           content: `
-            **Der Deutsche Bund (1815):**
-            • Lockerer Staatenbund (41 Staaten); Nachfolge HRRDN.
-            • Führung: PR & Ö. Inkl. GB, Dänemark, Niederlande.
-            • Ziel: Europ. Sicherheit & eigene Kriegsverfassung.
-            • **Vormärz:** Konflikt Fürsten (Restauration) vs. Bürgertum (Liberalismus).` 
+            <h3>Der Deutsche Bund (1815)</h3>
+            • Lockerer Staatenbund (41 Staaten); Nachfolge HRRDN.<br>
+            • <b>Führung:</b> PR & Ö. Inkl. GB, Dänemark, Niederlande.<br>
+            • <b>Ziel:</b> Europ. Sicherheit & eigene Kriegsverfassung.<br>
+            • <b>Vormärz:</b> Konflikt Fürsten (Restauration) vs. Bürgertum (Liberalismus).` 
         },
         { 
           type: 'text', 
           content: `
-            **Revolution & Einigungskriege:**
-            • **Frankfurt 1848:** Nationalstaat "von unten", Teilhabe, Versammlungsfreiheit. Scheitert an Kronenablehnung Friedr. Wilh. IV.
-            • **Erfurter Union:** Gescheiterte Einigung "von oben".
-            • **Kriege:** 1864 Dänemark (Düppeler Schanzen); 1866 Ö (Königgrätz/Bruderkrieg); 1870/71 FR (Emser Depesche/Sedan).
-            • **18.01.1871:** Kaiserproklamation Versailles.` 
+            <h3>Revolution & Einigungskriege</h3>
+            • <b>Frankfurt 1848:</b> Nationalstaat "von unten", Teilhabe, Versammlungsfreiheit. Scheitert an Kronenablehnung Friedr. Wilh. IV.<br>
+            • <b>Erfurter Union:</b> Gescheiterte Einigung "von oben".<br>
+            • <b>Kriege:</b> 1864 Dänemark (Düppeler Schanzen); 1866 Ö (Königgrätz/Bruderkrieg); 1870/71 FR (Emser Depesche/Sedan).<br>
+            • <b>18.01.1871:</b> Kaiserproklamation Versailles.` 
         }
       ]
     },
@@ -508,26 +509,27 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Bismarcks Bündnispolitik (Isolation FR):**
-            • Dreikaiserbund (1872/73), Zweibund (1879), Dreibund (1882), Beitritt Rumänien (1883), Rückversicherungsvertrag (1887), Mittelmeerabkommen (1887).
-            • **Dreikaiserjahr 1888:** Wilhelm I. †, Friedrich III. †, Wilhelm II. tritt an.` 
+            <h3>Bismarcks Bündnispolitik (Isolation FR)</h3>
+            • Dreikaiserbund (1872/73), Zweibund (1879), Dreibund (1882), Beitritt Rumänien (1883), Rückversicherungsvertrag (1887), Mittelmeerabkommen (1887).<br><br>
+            • <b>Dreikaiserjahr 1888:</b> Wilhelm I. †, Friedrich III. †, Wilhelm II. tritt an.` 
         },
         { 
           type: 'text', 
           content: `
-            **Wilhelminismus & Balkan:**
-            • 1890: Bismarck-Entlassung; Ende Konsolidierung; Weltpolitik & Flotte.
-            • Schutzzollpolitik (ab 1878); Nichtverlängerung Rückvers.-Vertrag; Einkreisung.
-            • **Balkankriege 1912/13:** Balkanbund vs. Osm. Reich. RU (Schutzmacht Slawen) vs. Ö-U. Ergebnis: Albanien-Gründung, Gebietsgewinne Serbien/GR/Montenegro.` 
+            <h3>Wilhelminismus & Balkan</h3>
+            • <b>1890:</b> Bismarck-Entlassung; Ende Konsolidierung; Weltpolitik & Flotte.<br>
+            • Schutzzollpolitik (ab 1878); Nichtverlängerung Rückvers.-Vertrag; Einkreisung.<br>
+            • <b>Balkankriege 1912/13:</b> Balkanbund vs. Osm. Reich. RU (Schutzmacht Slawen) vs. Ö-U.<br>
+            • <b>Ergebnis:</b> Albanien-Gründung, Gebietsgewinne Serbien/GR/Montenegro.` 
         },
         { 
           type: 'text', 
           content: `
-            **Erster Weltkrieg (1914-1918):**
-            • **Ausbruch:** 28.06. Sarajevo (Franz Ferdinand †). Blankoscheck 06.07. Ultimatum 23.07. Kriegserklärungen ab 28.07.
-            • **Militär:** Schlieffenplan (Zweifrontenkrieg); Verdun 1916 (Stellungskrieg).
-            • **Wende 1917:** USA-Eintritt (Zimmermann-Telegramm).
-            • **Ende:** 11.11.1918, 11 Uhr, Compiègne (Erzberger/Foch).` 
+            <h3>Erster Weltkrieg (1914-1918)</h3>
+            • <b>Ausbruch:</b> 28.06. Sarajevo (Franz Ferdinand †). Blankoscheck 06.07. Ultimatum 23.07. Kriegserklärungen ab 28.07.<br>
+            • <b>Militär:</b> Schlieffenplan (Zweifrontenkrieg); Verdun 1916 (Stellungskrieg).<br>
+            • <b>Wende 1917:</b> USA-Eintritt (Zimmermann-Telegramm).<br>
+            • <b>Ende:</b> 11.11.1918, 11 Uhr, Compiègne (Erzberger/Foch).` 
         }
       ]
     },
@@ -538,27 +540,27 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Versailles & Geheimrüstung:**
-            • **Versailles:** Art. 231 (Schuld); 100k Heer; 15k Marine; 4k Offiziere; 12/25 J. Verpflichtung; Verbot Lw/Pz/Gas/GenStab.
-            • **Dolchstoßlegende:** Heer "im Felde unbesiegt" (Hindenburg/Ludendorff).
-            • **Geheim-Kooperation UdSSR:** Kasan (Pz), Tomka (Chem.), Lipezk (Flugzeug).
-            • **Struktur:** Führerheer, Truppenamt (GenStab-Ersatz), Schwarze Reichswehr.` 
+            <h3>Versailles & Geheimrüstung</h3>
+            • <b>Versailles:</b> Art. 231 (Schuld); 100k Heer; 15k Marine; 4k Offiziere; 12/25 J. Verpflichtung; Verbot Lw/Pz/Gas/GenStab.<br>
+            • <b>Dolchstoßlegende:</b> Heer "im Felde unbesiegt" (Hindenburg/Ludendorff).<br>
+            • <b>Geheim-Kooperation UdSSR:</b> Kasan (Pz), Tomka (Chem.), Lipezk (Flugzeug).<br>
+            • <b>Struktur:</b> Führerheer, Truppenamt (GenStab-Ersatz), Schwarze Reichswehr.` 
         },
         { 
           type: 'text', 
           content: `
-            **NS-Aufstieg & Kriegsvorbereitung:**
-            • 09.11.1923: Hitler-Putsch scheitert; Haft; Legalitätstaktik.
-            • 1938: Münchner Abkommen (Sudeten). Chamberlain lenkt ein.
-            • 15.03.1939: Zerschlagung "Resttschechei".` 
+            <h3>NS-Aufstieg & Kriegsvorbereitung</h3>
+            • <b>09.11.1923:</b> Hitler-Putsch scheitert; Haft; Legalitätstaktik.<br>
+            • <b>1938:</b> Münchner Abkommen (Sudeten). Chamberlain lenkt ein.<br>
+            • <b>15.03.1939:</b> Zerschlagung "Resttschechei".` 
         },
         { 
           type: 'text', 
           content: `
-            **Alliierte Konferenzen:**
-            • **Teheran (1943):** Mil. Vorgehen, Kapitulation, Aufteilung PR.
-            • **Jalta (02/1945):** 4 Zonen, Entmilitarisierung, Entnazifizierung.
-            • **Potsdam (08/1945):** Die 5 Ds (Demil., Denaz., Dezentr., Demokr., Demontage).` 
+            <h3>Alliierte Konferenzen</h3>
+            • <b>Teheran (1943):</b> Mil. Vorgehen, Kapitulation, Aufteilung PR.<br>
+            • <b>Jalta (02/1945):</b> 4 Zonen, Entmilitarisierung, Entnazifizierung.<br>
+            • <b>Potsdam (08/1945):</b> Die 5 Ds (Demil., Denaz., Dezentr., Demokr., Demontage).` 
         }
       ]
     },
@@ -569,26 +571,26 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **NATO & Warschauer Pakt:**
-            • **NATO (1949):** Reaktion auf CZ-Umsturz & Berlin-Blockade.
-            • **WP (1955-1991):** Sozialist. Hilfeleistung; sowjet. Präsenz; keine Wirtschaftskomponente.
-            • **Neutralität:** IRL, Ö, CH (Neutral), FIN/SWE (Neutral bis 2022).` 
+            <h3>NATO & Warschauer Pakt</h3>
+            • <b>NATO (1949):</b> Reaktion auf CZ-Umsturz & Berlin-Blockade.<br>
+            • <b>WP (1955-1991):</b> Sozialist. Hilfeleistung; sowjet. Präsenz; keine Wirtschaftskomponente.<br>
+            • <b>Neutralität:</b> IRL, Ö, CH (Neutral), FIN/SWE (Neutral bis 2022).` 
         },
         { 
           type: 'text', 
           content: `
-            **Wiederbewaffnung BRD & DDR:**
-            • **BRD:** Himmeroder Denkschrift (1950); NATO-Beitritt 09.05.1955 (12 Div., 20 Geschw., 172 Schiffe).
-            • **DDR:** KVP -> NVA-Gründung (01.03.1956); Wehrpflicht 1962; sowjet. Vorbild; kaum Wehrmacht-Veteranen.
-            • 13.08.1961: Mauerbau ("Antifa Schutzwall").` 
+            <h3>Wiederbewaffnung BRD & DDR</h3>
+            • <b>BRD:</b> Himmeroder Denkschrift (1950); NATO-Beitritt 09.05.1955 (12 Div., 20 Geschw., 172 Schiffe).<br>
+            • <b>DDR:</b> KVP -> NVA-Gründung (01.03.1956); Wehrpflicht 1962; sowjet. Vorbild; kaum Wehrmacht-Veteranen.<br>
+            • <b>13.08.1961:</b> Mauerbau ("Antifa Schutzwall").` 
         },
         { 
           type: 'text', 
           content: `
-            **Krisen bis zum Zerfall:**
-            • **Kubakrise 1962:** Raketen TR (USA) vs. Kuba (RU); Seeblockade; Abzug beider Seiten.
-            • **NATO-Doppelbeschluss (1979):** Reaktion auf sowjet. Aufrüstung; Aufstellung Mittelstrecke vs. Verhandlung.
-            • **12/1991:** Ende UdSSR; Rücktritt Gorbatschow.` 
+            <h3>Krisen bis zum Zerfall</h3>
+            • <b>Kubakrise 1962:</b> Raketen TR (USA) vs. Kuba (RU); Seeblockade; Abzug beider Seiten.<br>
+            • <b>NATO-Doppelbeschluss (1979):</b> Reaktion auf sowjet. Aufrüstung; Aufstellung Mittelstrecke vs. Verhandlung.<br>
+            • <b>12/1991:</b> Ende UdSSR; Rücktritt Gorbatschow.` 
         }
       ]
     }
@@ -596,7 +598,7 @@ modules: [
 },
    
 /* =========================================================
-    POLITISCHE BILDUNG – Vollständig aus Notizen
+    POLITISCHE BILDUNG – VOLLSTÄNDIG AUS NOTIZEN
 ========================================================= */
 
 {
@@ -612,23 +614,23 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Prozess bewaffnete Einsätze (7 Schritte):**
-            1. Konfliktsituation entsteht.
-            2. VN-Sicherheitsrat analysiert + Rechtsgrundlage.
-            3. NATO/VN/EU autorisiert den Einsatz.
-            4. Bitte an die Bundesregierung.
-            5. Mandatsentwurf & Kabinettsentschluss.
-            6. Beratung in Verteidigungs- & Auswärtigem Ausschuss.
-            7. Bundestag-Abstimmung (Genehmigung 50+1) -> Entsendung.` 
+            <h3>Prozess bewaffnete Einsätze (7 Schritte)</h3>
+            1. Konfliktsituation entsteht.<br>
+            2. <b>VN-Sicherheitsrat</b> analysiert + Rechtsgrundlage.<br>
+            3. NATO/VN/EU autorisiert den Einsatz.<br>
+            4. Bitte an die Bundesregierung.<br>
+            5. Mandatsentwurf & Kabinettsentschluss.<br>
+            6. Beratung in Verteidigungs- & Auswärtigem Ausschuss.<br>
+            7. <b>Bundestag-Abstimmung</b> (Genehmigung 50+1) -> Entsendung.` 
         },
         { 
           type: 'text', 
           content: `
-            **Parlamentsbeteiligungsgesetz:**
-            Gibt vor, wie/wann Anträge an den BT gestellt werden. Pflichtangaben:
-            • Einsatzauftrag & Einsatzgebiet.
-            • Rechtliche Grundlagen.
-            • Höchstzahl der Soldaten & Fähigkeiten der SK.
+            <h3>Parlamentsbeteiligungsgesetz</h3>
+            Gibt vor, wie/wann Anträge an den BT gestellt werden. Pflichtangaben:<br><br>
+            • Einsatzauftrag & Einsatzgebiet.<br>
+            • Rechtliche Grundlagen.<br>
+            • Höchstzahl der Soldaten & Fähigkeiten der SK.<br>
             • Geplante Dauer & voraussichtliche Kosten.` 
         }
       ]
@@ -640,37 +642,37 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Nationale Sicherheitsstrategie (NSS) - Kap. 1:**
-            Ganzheitlicher Ansatz (Politik, Wirtschaft, Gesellschaft, Militär).
-            • **Ziel:** Freiheit, Sicherheit, Stabilität, Bewahrung der Demokr. Grundordnung.
-            • **Werte:** Demokratie, Rechtsstaat, Menschenrechte, int. Zusammenarbeit.` 
+            <h3>Nationale Sicherheitsstrategie (NSS)</h3>
+            <b>Ganzheitlicher Ansatz:</b> Politik, Wirtschaft, Gesellschaft, Militär.<br><br>
+            • <b>Ziel:</b> Freiheit, Sicherheit, Stabilität, Bewahrung der Demokr. Grundordnung.<br>
+            • <b>Werte:</b> Demokratie, Rechtsstaat, Menschenrechte, int. Zusammenarbeit.` 
         },
         { 
           type: 'text', 
           content: `
-            **Bedrohungsanalyse gemäß NSS (Kap. 2):**
-            • Cyberangriffe, Terrorismus, hybride Bedrohungen.
-            • Klimawandel, globale Krisen, geopolitische Spannungen.
-            • Inner-/zwischenstaatliche Konflikte, Demographie, Ressourcenkampf, Org. Kriminalität.
-            • Notwendigkeit: Resilienz, schnelle Reaktion & Integration aller Bereiche.` 
+            <h3>Bedrohungsanalyse gemäß NSS</h3>
+            • Cyberangriffe, Terrorismus, hybride Bedrohungen.<br>
+            • Klimawandel, globale Krisen, geopolitische Spannungen.<br>
+            • Inner-/zwischenstaatliche Konflikte, Demographie, Ressourcenkampf, Org. Kriminalität.<br><br>
+            <i>Notwendigkeit: Resilienz, schnelle Reaktion & Integration aller Bereiche.</i>` 
         },
         { 
           type: 'text', 
           content: `
-            **Kernaufträge gemäß VPR:**
-            • Abschreckung (Hoheits- & Bündnisgebiet) in allen Dimensionen.
-            • Landesverteidigung (LV) & territoriale Verteidigung.
-            • Bündnisverteidigung (BV) bei Angriffen auf Partner.
-            • Abwehr terroristischer & hybrider Bedrohungen.
+            <h3>Kernaufträge gemäß VPR</h3>
+            • <b>Abschreckung:</b> Hoheits- & Bündnisgebiet in allen Dimensionen.<br>
+            • <b>Landesverteidigung (LV):</b> & territoriale Verteidigung.<br>
+            • <b>Bündnisverteidigung (BV):</b> bei Angriffen auf Partner.<br>
+            • Abwehr terroristischer & hybrider Bedrohungen.<br>
             • Festigung transatlantischer & europäischer Verteidigungsfähigkeit.` 
         },
         { 
           type: 'text', 
           content: `
-            **Single Set of Forces:**
-            Fähigkeiten sind in einem Kräftedispositiv gebündelt (Flexibilität/Agilität).
-            • Ermöglicht Einsatz in versch. Regionen/Bedrohungen.
-            • Einbindung multinationaler Partner zur Wirkungsgradsteigerung.
+            <h3>Single Set of Forces</h3>
+            Fähigkeiten sind in einem Kräftedispositiv gebündelt (Flexibilität/Agilität).<br><br>
+            • Ermöglicht Einsatz in versch. Regionen/Bedrohungen.<br>
+            • Einbindung multinationaler Partner zur Wirkungsgradsteigerung.<br>
             • Schnelle Nutzung von Hochtechnologie-Innovationen.` 
         }
       ]
@@ -682,35 +684,38 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Artikel 5 & LV/BV Maßnahmen:**
-            • **Art. 5:** Angriff auf einen = Angriff auf alle. Kollektive Verteidigung.
-            • **Maßnahmen:** Übungen zur Einsatzbereitschaft, Modernisierung, verstärkte Präsenz im Bündnisgebiet, Verteidigungsplanung (NATO-Plan/Bund).` 
+            <h3>Artikel 5 & LV/BV Maßnahmen</h3>
+            • <b>Art. 5:</b> Angriff auf einen = Angriff auf alle. Kollektive Verteidigung.<br><br>
+            <b>Maßnahmen:</b><br>
+            Übungen zur Einsatzbereitschaft, Modernisierung, verstärkte Präsenz im Bündnisgebiet, Verteidigungsplanung (NATO-Plan/Bund).` 
         },
         { 
           type: 'text', 
           content: `
-            **Gipfelentscheidung W24 & Führung:**
-            • Ausbau mil. Kapazitäten, Solidarität, Fokus auf Osteuropa & Cyber/Hybrid. Erhöhung der Ausgaben.
-            • **NAC (North Atlantic Council):** Wichtigstes Gremium (Botschafter), polit. Entscheidungen.
-            • **SACEUR:** Gen. Christopher G. Cavoli (USA).
-            • **ACO/SHAPE:** Gen. Laubenthal ist Chief of Staff (COS).` 
+            <h3>Führung & Gremien</h3>
+            • <b>NAC (North Atlantic Council):</b> Wichtigstes Gremium (Botschafter), polit. Entscheidungen.<br>
+            • <b>SACEUR:</b> Gen. Christopher G. Cavoli (USA).<br>
+            • <b>ACO/SHAPE:</b> Gen. Laubenthal ist Chief of Staff (COS).<br><br>
+            <i>Gipfelentscheidung W24: Ausbau mil. Kapazitäten, Fokus auf Osteuropa & Cyber/Hybrid.</i>` 
         },
         { 
           type: 'text', 
           content: `
-            **Lage NATO-Ostflanke:**
-            • **Polen/Baltikum:** Multinationale Kampfgruppen & Präsenz.
-            • **Rumänien/Bulgarien:** Sicherung Südostflanke.
-            • **Infrastruktur:** Ausbau Logistik & Stützpunkte.
-            • **Speerspitze:** Schnelle Eingreifkräfte für Ernstfall-Reaktion.` 
+            <h3>Lage NATO-Ostflanke</h3>
+            • <b>Polen/Baltikum:</b> Multinationale Kampfgruppen & Präsenz.<br>
+            • <b>Rumänien/Bulgarien:</b> Sicherung Südostflanke.<br>
+            • <b>Infrastruktur:</b> Ausbau Logistik & Stützpunkte.<br>
+            • <b>Speerspitze:</b> Schnelle Eingreifkräfte für Ernstfall-Reaktion.` 
         },
         { 
           type: 'text', 
           content: `
-            **DEU Verteidigungsausgaben 2024:**
-            • Haushalt: 51,95 Mrd. € | Sondervermögen: 19,8 Mrd. €
-            • Munition: 280 Mio. | Kampffahrzeuge: 79 Mio.
-            • Flugzeuge: 320 Mio. | Schiffe: 80 Mio. | Mil. Ausrüstung (allg.): 2,48 Mrd. €` 
+            <h3>DEU Verteidigungsausgaben 2024</h3>
+            • <b>Haushalt:</b> 51,95 Mrd. € | <b>Sondervermögen:</b> 19,8 Mrd. €<br><br>
+            <b>Einzelposten (Beispiele):</b><br>
+            • Munition: 280 Mio. | Kampffahrzeuge: 79 Mio.<br>
+            • Flugzeuge: 320 Mio. | Schiffe: 80 Mio.<br>
+            • Mil. Ausrüstung (allg.): 2,48 Mrd. €` 
         }
       ]
     },
@@ -721,21 +726,21 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Prinzipien & Organe:**
-            • **Supranationalität:** Abgabe von Souveränität an EU-Institutionen (EU-Recht vor nationalem Recht).
-            • **Europäischer Rat:** Impulse (Antonio Costa).
-            • **EU Kommission:** Interessen weltweit (Ursula von der Leyen).
-            • **Rat der EU (Ministerrat):** Kaja Kallas (Außen-/Sicherheitspolitik).
-            • **EU Parlament:** Roberta Metsola (Bürgervertretung, Haushalt, Kontrolle).` 
+            <h3>Prinzipien & Organe</h3>
+            • <b>Supranationalität:</b> EU-Recht steht vor nationalem Recht.<br>
+            • <b>Europäischer Rat:</b> Impulse (Antonio Costa).<br>
+            • <b>EU Kommission:</b> Interessen weltweit (Ursula von der Leyen).<br>
+            • <b>Rat der EU:</b> Kaja Kallas (Außen-/Sicherheitspolitik).<br>
+            • <b>EU Parlament:</b> Roberta Metsola (Bürgervertretung, Haushalt).` 
         },
         { 
           type: 'text', 
           content: `
-            **Beitritt & Krisenreaktion:**
-            • **Kopenhagener Kriterien:** 1. Politisch (Demokratie/Rechtsstaat), 2. Wirtschaftlich (Marktwirtschaft), 3. Rechtlich (EU-Rechtsbestand übernehmen).
-            • **EUBG:** Schnelle Eingreiftruppe zur Friedenssicherung.
-            • **EU-RDC:** Teil der Verteidigungsplanung für mil. Einsätze.
-            • **Petersberg-Abkommen:** Aufgaben (humanitär, Krisenmanagement, Stabilisierung).` 
+            <h3>Beitritt & Krisenreaktion</h3>
+            <b>Kopenhagener Kriterien:</b> 1. Politisch, 2. Wirtschaftlich, 3. Rechtlich.<br><br>
+            • <b>EUBG:</b> Schnelle Eingreiftruppe zur Friedenssicherung.<br>
+            • <b>EU-RDC:</b> Teil der Verteidigungsplanung.<br>
+            • <b>Petersberg-Abkommen:</b> Aufgaben (humanitär, Krisenmanagement, Stabilisierung).` 
         }
       ]
     },
@@ -746,18 +751,18 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Ziele & Organe:**
-            • **Art. 1 Charta:** Weltfrieden, Sicherheit, friedliche Konfliktlösung, freundschaftliche Beziehungen.
-            • **Sekretariat:** GenSek Antonio Guterres (Vermittler/Repräsentant).
-            • **GenVersammlung:** 193 Staaten, Empfehlungen, Wahl nichtständiger Mitglieder.` 
+            <h3>Ziele & Organe</h3>
+            • <b>Art. 1 Charta:</b> Weltfrieden, Sicherheit, friedliche Konfliktlösung.<br>
+            • <b>Sekretariat:</b> GenSek Antonio Guterres (Vermittler).<br>
+            • <b>GenVersammlung:</b> 193 Staaten, Empfehlungen.` 
         },
         { 
           type: 'text', 
           content: `
-            **Sicherheitsrat (SR):**
-            • 15 Mitglieder (5 ständige: CHN, FRA, GBR, RUS, USA mit Veto | 10 nichtständige auf 2 Jahre).
-            • Beschlüsse sind bindend.
-            • **DEU Interessen:** Bewerbung für 2027/28 als nichtständiges Mitglied; Streben nach umfassender Reform inkl. ständigem Sitz.` 
+            <h3>Sicherheitsrat (SR)</h3>
+            • <b>15 Mitglieder:</b> 5 ständige (CHN, FRA, GBR, RUS, USA) mit Veto | 10 nichtständige.<br>
+            • Beschlüsse sind bindend.<br><br>
+            <b>DEU Interessen:</b> Bewerbung für 2027/28; Streben nach umfassender Reform inkl. ständigem Sitz.` 
         }
       ]
     }
@@ -781,26 +786,25 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Zweck des Verteidigens:**
-            Angriff zum Scheitern bringen durch:
-            1. **Halten des Raumes:** Statische Komponente, Geländebehauptung.
-            2. **Zerschlagen/Abnutzen:** Dynamische Komponente, Vernichtung der feindlichen Kampfkraft.
-            
-            **Definition "Aktiv":** Den eigenen Raum behaupten, den Gegner bereits im Vorfeld aufhalten/abschwächen und dadurch Zeit für Reserven gewinnen.` 
+            <h3>Zweck des Verteidigens</h3>
+            Angriff zum Scheitern bringen durch:<br><br>
+            1. <b>Halten des Raumes:</b> Statische Komponente, Geländebehauptung.<br>
+            2. <b>Zerschlagen/Abnutzen:</b> Dynamische Komponente, Vernichtung der feindlichen Kampfkraft.<br><br>
+            <b>Definition "Aktiv":</b> Den eigenen Raum behaupten, den Gegner bereits im Vorfeld aufhalten/abschwächen und dadurch Zeit für Reserven gewinnen.` 
         },
         { 
           type: 'text', 
           content: `
-            **Angriffsoperationen aus der Verteidigung:**
-            • **Gegenstoß:** Unmittelbare Reaktion aus der Lage. Führt der Führer vor Ort aus eigenem Entschluss mit Kräften, die bereits im Kampf stehen oder sofort verfügbar sind. Ziel: Begrenzt (Einbruch rückgängig machen).
-            • **Gegenangriff:** Strategische Maßnahme. Erfordert umfassende Planung & Vorbereitung. Meist durch Reserven geführt. Ziel: Zerschlagung des Feindes und Rückgewinnung der Handlungsfreiheit (Initiative).` 
+            <h3>Angriffsoperationen aus der Verteidigung</h3>
+            • <b>Gegenstoß:</b> Unmittelbare Reaktion aus der Lage. Führt der Führer vor Ort aus eigenem Entschluss mit Kräften aus dem laufenden Kampf aus. <i>Ziel: Begrenzt (Einbruch rückgängig machen).</i><br><br>
+            • <b>Gegenangriff:</b> Strategische Maßnahme mit umfassender Planung. Meist durch Reserven geführt. <i>Ziel: Zerschlagung des Feindes und Rückgewinnung der Initiative.</i>` 
         },
         { 
           type: 'text', 
           content: `
-            **Einbruch vs. Durchbruch:**
-            • **Einbruch:** Begrenztes Eindringen des Feindes in die Verteidigungsstellung. Kontrolle über den Abschnitt ist noch nicht nachhaltig verloren.
-            • **Durchbruch:** Komplette Überwindung des Stellungssystems. Feind beginnt Umgruppierung für den Stoß ins Hinterland (operative Freiheit).` 
+            <h3>Einbruch vs. Durchbruch</h3>
+            • <b>Einbruch:</b> Begrenztes Eindringen in die Verteidigungsstellung. Kontrolle über den Abschnitt ist noch nicht nachhaltig verloren.<br><br>
+            • <b>Durchbruch:</b> Komplette Überwindung des Stellungssystems. Feind beginnt Umgruppierung für den Stoß ins Hinterland (operative Freiheit).` 
         }
       ]
     },
@@ -811,25 +815,26 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **PzGrenKp - Waffensystem PUMA:**
-            • **Struktur:** 14 Schützenpanzer pro Kompanie.
-            • **Wirkung (KE):** Kinetische Energie (Wuchtgeschoss) bis 2000m.
-            • **Wirkung (ABM):** Air Burst Munition (programmierbar) bis 3000m.
-            • **Wirkung (MELLS):** Mehrrollenfähiges Leichtes Lenkflugkörper-System bis 4000m.` 
+            <h3>PzGrenKp - Waffensystem PUMA</h3>
+            • <b>Struktur:</b> 14 Schützenpanzer pro Kompanie.<br>
+            • <b>Wirkung (KE):</b> Kinetische Energie bis 2000m.<br>
+            • <b>Wirkung (ABM):</b> Air Burst Munition bis 3000m.<br>
+            • <b>Wirkung (MELLS):</b> Lenkflugkörper-System bis 4000m.` 
         },
         { 
           type: 'text', 
           content: `
-            **PzZg - Waffensystem LEOPARD 2:**
-            • **Struktur:** 4 Kampfpanzer pro Zug.
-            • **Wirkung (KE):** Kinetische Energie bis 3000m.
-            • **Wirkung (HE):** High Explosive (Sprenggranate) bis 5000m.` 
+            <h3>PzZg - Waffensystem LEOPARD 2</h3>
+            • <b>Struktur:</b> 4 Kampfpanzer pro Zug.<br>
+            • <b>Wirkung (KE):</b> Kinetische Energie bis 3000m.<br>
+            • <b>Wirkung (HE):</b> High Explosive (Sprenggranate) bis 5000m.` 
         },
         { 
           type: 'text', 
           content: `
-            **Stellungsbau & Raum:**
-            Ein **Stellungsraum** umfasst mehrere erkundete und vorbereitete Wechselstellungen sowie gedeckte Aufstellungsplätze. Er ermöglicht den Zügen das "Wirken aus der Tiefe" und den schnellen Stellungswechsel zur Vermeidung von feindlichem Gegenfeuer.` 
+            <h3>Stellungsbau & Raum</h3>
+            Ein <b>Stellungsraum</b> umfasst mehrere erkundete und vorbereitete Wechselstellungen sowie gedeckte Aufstellungsplätze.<br><br>
+            <b>Zweck:</b> Ermöglicht "Wirken aus der Tiefe" und schnellen Stellungswechsel zur Vermeidung von feindlichem Gegenfeuer.` 
         }
       ]
     },
@@ -840,23 +845,23 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Pionier-Unterstützungsarten:**
-            1. **Unmittelbar:** Schnelle Durchführung während der Operation (z.B. Minenräumen im Angriff).
-            2. **Allgemein:** Langfristige Infrastruktur (Gefechtsstände, feste Sperren, Instandsetzung von Wegen).
-            
-            **Kernaufgaben:**
-            • Bewegungen fördern (eigene).
-            • Bewegungen hemmen & kanalisieren (Feind).
-            • Überlebensfähigkeit erhöhen (Schanzen).
+            <h3>Pionier-Unterstützungsarten</h3>
+            1. <b>Unmittelbar:</b> Schnelle Durchführung während der Operation (z.B. Minenräumen im Angriff).<br>
+            2. <b>Allgemein:</b> Langfristige Infrastruktur (Gefechtsstände, feste Sperren).<br><br>
+            <b>Kernaufgaben:</b><br>
+            • Bewegungen fördern (eigene).<br>
+            • Bewegungen hemmen & kanalisieren (Feind).<br>
+            • Überlebensfähigkeit erhöhen (Schanzen).<br>
             • Beitrag zum Lagebild (Erkundung).` 
         },
         { 
           type: 'text', 
           content: `
-            **Sperrwesen:**
-            Sperren dienen dem Lenken, Hemmen, Stauen und Abnutzen.
-            • **Wichtigster Grundsatz:** Sperren ohne Überwachung und Feuerbedeckung sind wertlos. 
-            • **Hierarchie der Pi-Berater:** ZgFhr berät KpChef | KpChef berät BtlKdr | Btl berät Brigade | Brigade berät Regiment | Regiment berät Division.` 
+            <h3>Sperrwesen & Beratung</h3>
+            Sperren dienen dem Lenken, Hemmen, Stauen und Abnutzen.<br><br>
+            • <b>Wichtigster Grundsatz:</b> Sperren ohne Überwachung und Feuerbedeckung sind wertlos.<br><br>
+            <b>Hierarchie der Pi-Berater:</b><br>
+            ZgFhr → KpChef | KpChef → BtlKdr | Btl → Brigade | Brigade → Regiment | Regiment → Division.` 
         }
       ]
     },
@@ -867,28 +872,28 @@ modules: [
         { 
           type: 'text', 
           content: `
-            **Der Gegenangriff (Phasen & Zeit):**
-            Diese Auftragsart benötigt die **meiste Vorbereitungszeit**.
-            1. Erkundung der Anmarschwege.
-            2. Absprachen mit den Kräften am VRV (Vorderer Rand der Verteidigung) zur Feuerregelung.
+            <h3>Der Gegenangriff (Phasen)</h3>
+            Diese Auftragsart benötigt die <b>meiste Vorbereitungszeit</b>.<br><br>
+            1. Erkundung der Anmarschwege.<br>
+            2. Absprachen mit den Kräften am VRV (Vorderer Rand der Verteidigung) zur Feuerregelung.<br>
             3. Eigene detaillierte Planung und Befehlsgebung für den Stoß.` 
         },
         { 
           type: 'text', 
           content: `
-            **Führungsfaktor Zeit & Information:**
-            Der Kern des Führungsprozesses ist die **Entscheidungsfindung**.
-            • Zeitverzug bei der Befehlsgebung führt zu: Wenig Zeit für Erkundung, Absinken der Kampfkraft und Verzögerung bei der Bildung neuer Reserven.
-            • **60-Minuten-Regel:** Wenn Folgekräfte in weniger als 60 Min. wirken können, sind sie in der aktuellen Beurteilung als unmittelbar lageentscheidend zu werten.` 
+            <h3>Führungsfaktor Zeit & Information</h3>
+            Kern des Prozesses: <b>Entscheidungsfindung</b>.<br><br>
+            • <b>Folgen von Zeitverzug:</b> Wenig Zeit für Erkundung, Absinken der Kampfkraft, verzögerte Reservebildung.<br><br>
+            • <b>60-Minuten-Regel:</b> Wenn Folgekräfte in weniger als 60 Min. wirken können, gelten sie als unmittelbar lageentscheidend.` 
         },
         { 
           type: 'text', 
           content: `
-            **Wirkungsformen STF (Standardisierte Taktische Forderungen):**
-            • **Blind (bli):** Feind die Sicht nehmen (Nebel/Ausweichen).
-            • **Overwatch (ovw):** Überwachen von Räumen (z.B. durch ABRA).
-            • **Engage:** Bekämpfen (Auftrag bei Feindstau an RiMiSpe).
-            • **Annihilate:** Vernichten (Vollständige Zerschlagung).` 
+            <h3>Wirkungsformen STF</h3>
+            • <b>Blind (bli):</b> Feind die Sicht nehmen (Nebel/Ausweichen).<br>
+            • <b>Overwatch (ovw):</b> Überwachen von Räumen (z.B. ABRA).<br>
+            • <b>Engage:</b> Bekämpfen (Auftrag bei Feindstau an RiMiSpe).<br>
+            • <b>Annihilate:</b> Vernichten (Vollständige Zerschlagung).` 
         }
       ]
     }
