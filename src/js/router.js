@@ -21,7 +21,10 @@ export function initRouter() {
 
 function handleRoute() {
     const hash = window.location.hash || '#dashboard';
-    const [route, param1, param2] = hash.slice(1).split('/');
+    const parts = hash.slice(1).split('/');
+    const route = parts[0];
+    const param1 = parts[1];
+    const param2 = parts[2];
 
     hideAllViews();
     updateNav(route);

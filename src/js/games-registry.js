@@ -4,6 +4,7 @@
 export const gameRegistry = {
     // Map Unit ID -> Game Config
     '30years': {
+        moduleId: 'milhistory',
         type: 'sorting',
         title: '30-jähriger Krieg: Chronologie',
         description: 'Ordne die Ereignisse des 30-jährigen Krieges in die richtige zeitliche Reihenfolge.',
@@ -16,6 +17,7 @@ export const gameRegistry = {
         xpReward: 100
     },
     'napoleon_era': {
+        moduleId: 'milhistory',
         type: 'drag-drop',
         title: 'Preußen vs. Napoleon: Begriffe',
         description: 'Ordne die Begriffe den richtigen Erklärungen zu.',
@@ -28,6 +30,7 @@ export const gameRegistry = {
         xpReward: 100
     },
     'befehl_legality': {
+        moduleId: 'befehlsrecht',
         type: 'cloze',
         title: 'Lückentext: Rechtmäßigkeit',
         description: 'Ergänze die fehlenden Begriffe zur Rechtmäßigkeit von Befehlen.',
@@ -40,6 +43,7 @@ export const gameRegistry = {
         xpReward: 80
     },
     'nato': {
+        moduleId: 'polbil',
         type: 'drag-drop',
         title: 'NATO Struktur',
         description: 'Wer macht was in der NATO?',
@@ -62,4 +66,15 @@ export function getAllGames() {
         unitId: id,
         ...gameRegistry[id]
     }));
+}
+
+export function getGamesByModule(moduleId) {
+    return getAllGames().filter(game => game.moduleId === moduleId);
+}
+
+export function getPracticeModules() {
+    // Get unique module IDs that have games
+    const games = getAllGames();
+    const moduleIds = [...new Set(games.map(g => g.moduleId))];
+    return moduleIds;
 }
