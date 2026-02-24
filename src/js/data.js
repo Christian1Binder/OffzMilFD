@@ -25,8 +25,8 @@ cards: [
 
 { type: 'text', content: `
 <h3>Liegt ein Befehl vor gem. §2 Nr.2 WStG?</h3>
-1. Anweisung zu bestimmtem Verhalten?
-2. Militärischer Vorgesetzter gem. §1 Abs.3 SG?
+1. Anweisung zu bestimmtem Verhalten?\n
+2. Militärischer Vorgesetzter gem. §1 Abs.3 SG?\n
 3. Mit Anspruch auf Gehorsam §11 Abs.1 SG („keine Handlungsalternative“)?`},
 
 { type: 'text', content: `
