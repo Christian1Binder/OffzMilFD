@@ -42,18 +42,40 @@ export function showLevelUp(level) {
 
     modal.innerHTML = `
         <div class="card text-center pulse" style="border: 2px solid var(--color-primary); min-width: 300px;">
-            <h1 style="color: var(--color-primary); font-size: 3rem;">LEVEL UP!</h1>
-            <h2 style="color: var(--color-text);">Rank ${level}: ${rankTitle}</h2>
-            <p style="margin: 20px 0;">Outstanding performance, Officer!</p>
-            <button class="btn" id="close-modal">Continue Mission</button>
+            <h1 style="color: var(--color-primary); font-size: 3rem;">BEFÖRDERUNG!</h1>
+            <h2 style="color: var(--color-text);">Rang ${level}: ${rankTitle}</h2>
+            <p style="margin: 20px 0;">Hervorragende Leistung!</p>
+            <button class="btn" id="close-modal">Weitermachen</button>
         </div>
     `;
 
     document.body.appendChild(modal);
 
-    // Confetti effect could be added here
-
     document.getElementById('close-modal').addEventListener('click', () => {
         modal.remove();
     });
+}
+
+export function showBadge(name) {
+    const toast = document.createElement('div');
+    toast.className = 'badge-toast';
+    toast.style.position = 'fixed';
+    toast.style.top = '80px';
+    toast.style.right = '20px';
+    toast.style.backgroundColor = 'var(--color-warning)';
+    toast.style.color = 'var(--color-bg)';
+    toast.style.padding = '15px';
+    toast.style.borderRadius = 'var(--border-radius)';
+    toast.style.boxShadow = '0 0 10px rgba(255, 204, 0, 0.5)';
+    toast.style.zIndex = '4000';
+    toast.style.animation = 'slideInRight 0.5s ease-out';
+    toast.style.fontWeight = 'bold';
+    toast.innerHTML = `🏅 ABZEICHEN ERHALTEN:<br>${name}`;
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.style.animation = 'fadeOut 0.5s forwards';
+        setTimeout(() => toast.remove(), 500);
+    }, 3000);
 }

@@ -15,7 +15,7 @@ export function renderModules(container) {
 }
 
 function renderModuleList(container) {
-    let html = `<h2>Field Manuals</h2><div class="module-grid">`;
+    let html = `<h2>Dienstvorschriften</h2><div class="module-grid">`;
 
     curriculum.modules.forEach(mod => {
         // Calculate progress
@@ -31,7 +31,7 @@ function renderModuleList(container) {
                 <p class="text-dim" style="flex-grow: 1; margin-bottom: 10px;">${mod.description}</p>
                 <div style="width: 100%;">
                     <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 5px;">
-                        <span>Progress</span>
+                        <span>Fortschritt</span>
                         <span class="text-primary">${percent}%</span>
                     </div>
                     <div class="progress-container" style="height: 6px;">
@@ -55,10 +55,10 @@ function renderUnitList(container, moduleId) {
 
     let html = `
         <button class="btn btn-secondary" onclick="window.location.hash='#modules'" style="margin-bottom: 20px;">
-            ← Back to Manuals
+            ← Zurück zur Übersicht
         </button>
         <h2>${mod.title}</h2>
-        <p class="text-dim mb-2">Select a mission to begin.</p>
+        <p class="text-dim mb-2">Wähle eine Mission.</p>
     `;
 
     const state = getState();
@@ -77,7 +77,7 @@ function renderUnitList(container, moduleId) {
                     <span style="font-size: 1.5rem; margin-right: 15px;">${statusIcon}</span>
                     <div>
                         <h4>Mission ${index + 1}: ${unit.title}</h4>
-                        <span class="text-dim" style="font-size: 0.8rem;">${isCompleted ? 'Completed (+50 XP)' : 'Status: Pending'}</span>
+                        <span class="text-dim" style="font-size: 0.8rem;">${isCompleted ? 'Abgeschlossen (+50 XP)' : 'Status: Ausstehend'}</span>
                     </div>
                 </div>
             </div>
