@@ -8,262 +8,195 @@ modules: [
 ========================================================= */
 
 {
-id: 'befehlsrecht',
-title: 'Befehlsrecht',
-icon: '⚖️',
-description: 'Rechtsgrundlagen soldatischer Pflichten, Wehrstrafrecht und Beschwerdewesen.',
-units: [
+  id: 'befehlsrecht',
+  title: 'Befehlsrecht & Wehrrecht',
+  icon: '⚖️',
+  description: 'Umfassende Rechtsgrundlagen: Soldatengesetz, Wehrstrafrecht und Beschwerdewesen.',
+  units: [
 
-/* ---------------------------------------------------------
-   1. Liegt ein Befehl vor?
---------------------------------------------------------- */
+    /* ---------------------------------------------------------
+       1. Der Befehlsbegriff & Vorgesetzte
+    --------------------------------------------------------- */
+    {
+      id: 'befehlsbegriff',
+      title: 'Befehlsbegriff & Vorgesetzte',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Befehlsbegriff (§ 2 Nr. 2 WStG)</h3>
+            Ein Befehl ist eine Anweisung zu einem bestimmten Verhalten, die:<br><br>
+            <b>1. Anweisung:</b> Einseitige Willensäußerung (Tun, Dulden, Unterlassen).<br>
+            <b>2. Vorgesetzter:</b> Erteilt von einem mil. Vorgesetzten (§ 1 Abs. 3 SG).<br>
+            <b>3. Gehorsamsanspruch:</b> Mit Anspruch auf Gehorsam (§ 11 Abs. 1 SG).<br>
+            <b>4. Einzelfall/Allgemein:</b> Gegenüber Soldaten (einzeln oder nach Merkmalen bestimmt).<br>
+            <i>Merke: Höflichkeitsformen ("Ich bitte Sie...") ändern nichts am Befehlscharakter.</i>`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Vorgesetztenverhältnisse (VvV)</h3>
+            Festlegung, wer wem Befehle erteilen darf:<br><br>
+            <b>§ 1 Dienstgrad:</b> Innerhalb der Einheit (subsidiär).<br>
+            <b>§ 2 Dienststellung:</b> Kompaniechef, Zugführer etc. (stärkstes VvV).<br>
+            <b>§ 3 Besondere Anordnung:</b> "Hiermit unterstelle ich..." (Vfg. d. BMVg).<br>
+            <b>§ 4 Fachvorgesetzter:</b> Nur für den fachlichen Bereich (z.B. Arzt/Schirrmeister).<br>
+            <b>§ 5 Besondere Aufgaben:</b> Streife, Wache, Leiter v. Dienst.<br>
+            <b>§ 6 Gefahr im Verzug:</b> Wenn d. zuständige Vorgesetzte nicht erreichbar ist.`
+        }
+      ]
+    },
 
-{
-id: 'befehlsbegriff',
-title: 'Befehlsbegriff (§2 Nr.2 WStG)',
-cards: [
+    /* ---------------------------------------------------------
+       2. Rechtmäßigkeit & Verbindlichkeit
+    --------------------------------------------------------- */
+    {
+      id: 'rechtmaessigkeit',
+      title: 'Rechtmäßigkeit & Verbindlichkeit',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Rechtmäßigkeit (§ 10 Abs. 4 SG)</h3>
+            Prüfung aus Sicht des Befehlsgebers:<br><br>
+            <b>1. Dienstlicher Zweck:</b> Förderung der Aufgaben der Bundeswehr.<br>
+            <b>2. Völkerrecht:</b> Einhaltung v. Verträgen & Art. 25 GG.<br>
+            <b>3. Gesetze:</b> Kein Verstoß gegen StGB, WStG, etc.<br>
+            <b>4. Dienstvorschriften:</b> Beachtung der internen Regelwerke.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verbindlichkeit (§ 11 Abs. 1 & 2 SG)</h3>
+            Wann MUSS der Soldat gehorchen?<br><br>
+            <b>1. Dienstlicher Zweck:</b> Muss erkennbar sein.<br>
+            <b>2. Menschenwürde:</b> Verbot von entwürdigender Behandlung/Schikane.<br>
+            <b>3. Zumutbarkeit:</b> Prüfung der Verhältnismäßigkeit.<br>
+            <b>4. Keine Straftat:</b> Befehle zur Begehung einer Straftat sind unverbindlich (§ 11 Abs. 2 SG).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verhältnismäßigkeit (Prüfschema)</h3>
+            Bei Eingriffen in Grundrechte (z.B. Art. 2 GG):<br><br>
+            <b>1. Geeignetheit:</b> Ist die Maßnahme zwecktauglich?<br>
+            <b>2. Erforderlichkeit:</b> Gibt es ein milderes, gleich wirksames Mittel?<br>
+            <b>3. Angemessenheit:</b> Stehen Zweck und Mittel im vernünftigen Verhältnis? (Güterabwägung)`
+        }
+      ]
+    },
 
-{ type: 'text', content: `
-<h3>Liegt ein Befehl vor gem. §2 Nr.2 WStG?</h3>
-1. Anweisung zu bestimmtem Verhalten?<br>
-2. Militärischer Vorgesetzter gem. §1 Abs.3 SG?<br>
-3. Mit Anspruch auf Gehorsam §11 Abs.1 SG („keine Handlungsalternative“)?`},
+    /* ---------------------------------------------------------
+       3. Soldatengesetz - Pflichten des Soldaten
+    --------------------------------------------------------- */
+    {
+      id: 'soldatenpflichten',
+      title: 'Pflichtenstruktur des SG',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Kernpflichten (§§ 7 - 12 SG)</h3>
+            <b>§ 7 Treuepflicht:</b> Loyalität zur Verfassung & Schutz des Bundesvermögens.<br>
+            <b>§ 8 FDGO:</b> Aktives Eintreten für die Demokratie & Menschenwürde.<br>
+            <b>§ 10 Vorgesetztenpflichten:</b> Fürsorge (Abs. 3) & Dienstaufsicht (Abs. 2).<br>
+            <b>§ 12 Kameradschaft:</b> Beistandspflicht & Verbot von Ausgrenzung (Satz 2).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verhalten im/außer Dienst (§ 17 SG)</h3>
+            <b>Abs. 1:</b> Achtungs- & vertrauenswürdiges Verhalten (Im Dienst).<br>
+            <b>Abs. 2 S. 1/2:</b> Außer Dienst darf das Ansehen der Bw nicht ernsthaft gefährdet werden.<br>
+            <b>Abs. 2 S. 3:</b> Erhalt der Funktionsfähigkeit (z.B. Sport/Gesundheitspflicht).<br>
+            <b>Abs. 3:</b> Politische Zurückhaltung in Uniform.`
+        }
+      ]
+    },
 
-{ type: 'text', content: `
-<h3>Vorgesetztenverhältnis</h3>
-- Dienstgradvorgesetzter
-- Dienststellungsvorgesetzter
-- Fachvorgesetzter
-- Vorgesetzter mit besonderer Anordnung
-- Vorgesetzter bei Gefahr im Verzug
-Rechtsgrundlagen: Vorgesetztenverordnung, §21 WDO, Art. 65a GG, Art.115b GG`}
+    /* ---------------------------------------------------------
+       4. Dienstvergehen & Wehrstrafrecht
+    --------------------------------------------------------- */
+    {
+      id: 'straftaten_wstg',
+      title: 'Tatbestände des WStG',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 15 WStG: Eigenmächtige Abwesenheit</h3>
+            <b>I. Objektiver Tatbestand:</b><br>
+            1. Truppe verlassen oder fernbleiben.<br>
+            2. Eigenmächtigkeit (kein Urlaub/KE/Krankmeldung).<br>
+            3. Dauer: Länger als 3 volle Kalendertage.<br><br>
+            <b>II. Subjektiv:</b> Vorsatz bzgl. Fernbleiben; bzgl. Dauer reicht Fahrlässigkeit.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 19 WStG: Ungehorsam</h3>
+            <b>I. Objektiver Tatbestand:</b><br>
+            1. Nichtbefolgung eines verbindlichen Befehls.<br>
+            2. Schwerwiegende Folge: Tod, schwere Körperverletzung oder Sachschaden > 750 €.<br><br>
+            <b>Subjektiv:</b> Vorsatz bzgl. Nichtbefolgung; Fahrlässigkeit bzgl. Folge möglich.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 32 WStG: Missbrauch der Befehlsbefugnis</h3>
+            Straftat des Vorgesetzten:<br><br>
+            1. Missbrauch der Dienststellung zu dienstfremden Zwecken.<br>
+            2. Unzumutbare Forderungen oder Kränkungen des Untergebenen.<br>
+            3. Beeinträchtigung der Menschenwürde.`
+        }
+      ]
+    },
 
-]
-},
+    /* ---------------------------------------------------------
+       5. Beschwerde & Meldeordnung
+    --------------------------------------------------------- */
+    {
+      id: 'beschwerde',
+      title: 'Beschwerdewesen (WBO)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zulässigkeit der Beschwerde (§ 13 WBO)</h3>
+            <b>1. Statthaftigkeit:</b> Gegen jede Maßnahme/Unterlassung (§ 1 WBO).<br>
+            <b>2. Beschwer:</b> Persönliche Beeinträchtigung/Verletzung von Rechten.<br>
+            <b>3. Frist:</b> Frühestens nach 24 Std. (Nachtfrist), spätestens nach 1 Monat (§ 6 WBO).<br>
+            <b>4. Form:</b> Schriftlich oder mündlich zu Protokoll (§ 6 II WBO).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zuständigkeit & Ablauf</h3>
+            <b>Empfangszuständig:</b> Der nächste Disziplinarvorgesetzte.<br>
+            <b>Entscheidungszuständig:</b> Der Vorgesetzte, der die Maßnahme angeordnet hat (§ 9 WBO).<br>
+            <b>Wirkung:</b> Keine aufschiebende Wirkung (Befehl muss i.d.R. erst ausgeführt werden).`
+        }
+      ]
+    },
 
-/* ---------------------------------------------------------
-   2. Rechtmäßigkeit & Verbindlichkeit
---------------------------------------------------------- */
-
-{
-id: 'rechtmaessigkeit',
-title: 'Rechtmäßigkeit (§10 Abs.4 SG) & Verbindlichkeit (§11 SG)',
-cards: [
-
-{ type: 'text', content: `
-<h3>Rechtmäßigkeit (Sicht Befehlsgeber) §10 Abs.4 SG</h3>
-1. Dienstlicher Zweck
-2. Beachtung Völkerrecht (Art.25 GG)
-3. Beachtung Gesetze
-4. Dienstvorschriften beachten`},
-
-{ type: 'text', content: `
-<h3>Verbindlichkeit (Sicht Empfänger) §11 Abs.1 S.3, Abs.2 SG</h3>
-1. Dienstlicher Zweck
-2. Kein Verstoß gegen Menschenwürde oder HVR
-3. Keine Unzumutbarkeit
-   a) Eingriff in Grundrecht benennen
-   b) Verhältnismäßigkeit prüfen:
-      - Geeignetheit
-      - Erforderlichkeit
-      - Angemessenheit
-4. Keine Straftat (StGB, WStG, VStGB)`}
-
-]
-},
-
-/* ---------------------------------------------------------
-   3. Soldatengesetz – Pflichtenstruktur
---------------------------------------------------------- */
-
-{
-id: 'soldatenpflichten',
-title: 'Soldatische Pflichten (SG)',
-cards: [
-
-{ type: 'text', content: `
-<h3>§7 SG – Grundpflichten (Kernpflichten!)</h3>
-- Loyalität zur Rechtsordnung
-- Pflicht zur Dienstleistung
-- Wahrung Bundesvermögen
-Bezug zu §31 Abs.1 WStG und StGB bei Kernpflichtverletzung.`},
-
-{ type: 'text', content: `
-<h3>§8 SG – FDGO</h3>
-Würde des Menschen
-Demokratieprinzip
-Rechtsstaatlichkeit`},
-
-{ type: 'text', content: `
-<h3>§10 SG – Pflichten des Vorgesetzten</h3>
-Abs.2 Dienstaufsicht
-Abs.3 Fürsorgepflicht
-Abs.4 Rechtmäßigkeit
-Abs.5 Befehlsdurchsetzung
-Abs.6 Zurückhaltung bei Äußerungen`},
-
-{ type: 'text', content: `
-<h3>§11 SG – Gehorsam</h3>
-Abs.1 Gehorsamspflicht (Dienstplan etc.)
-Abs.2 Grenzen`},
-
-{ type: 'text', content: `
-<h3>§12 S.2 SG – Kameradschaft</h3>`},
-
-{ type: 'text', content: `
-<h3>§17 Abs.1–3 SG – Verhalten im und außer Dienst</h3>
-Abs.2 S.3 nur bei mittelschwerer Strafe (bis 2 Jahre)`},
-
-{ type: 'text', content: `
-Keine soldatische Pflicht:
-§30 Abs.3 & §32 Abs.3 WDO
-§7 Abs.2 SoldGG`}
-
-]
-},
-
-/* ---------------------------------------------------------
-   4. Prüfung Dienstvergehen
---------------------------------------------------------- */
-
-{
-id: 'dienstvergehen_pruefung',
-title: 'Prüfung eines Dienstvergehens',
-cards: [
-
-{ type: 'text', content: `
-<h3>I) Objektiver Tatbestand §23 Abs.1 SG</h3>
-- Pflichtverstoß prüfen
-- Bezug zum Sachverhalt herstellen
-- Bei Kernpflichtverletzung Bezug zu §7 SG
-- Bezug zu §31 Abs.1 WStG oder andere WStG-Normen`},
-
-{ type: 'text', content: `
-<h3>Vorsatz & Fahrlässigkeit (§15 StGB)</h3>
-Vorsatz (+): wusste und wollte
-Fahrlässigkeit (+): hätte wissen können/müssen`},
-
-{ type: 'text', content: `
-<h3>II) Subjektiver Tatbestand</h3>
-Zu 1 Vorsatz (+) …
-Zu 2 Fahrlässigkeit (+) …`},
-
-{ type: 'text', content: `
-<h3>III) Rechtswidrigkeit</h3>
-Kein Rechtfertigungsgrund`},
-
-{ type: 'text', content: `
-<h3>IV) Schuld</h3>
-Keine Schuldausschließungsgründe`}
-
-]
-},
-
-/* ---------------------------------------------------------
-   5. Wehrstrafgesetz – Tatbestände
---------------------------------------------------------- */
-
-{
-id: 'wstg',
-title: 'Wehrstrafgesetz (WStG)',
-cards: [
-
-{ type: 'text', content: `
-<h3>§15 Eigenmächtige Abwesenheit</h3>
-I) 1. Trp/Dst verlassen oder fernbleiben
-   2. eigenmächtig
-   3. >3 Kalendertage
-II) Vorsatz bzgl. Verlassen + Eigenmächtigkeit
-   Fahrlässigkeit/Vorsatz bzgl. Dauer
-III) Rechtswidrigkeit
-IV) Schuld`},
-
-{ type: 'text', content: `
-<h3>§18 Dienstentziehung durch Täuschung</h3>
-I) 1. Sich oder anderen Sdt.
-   2. dem Wehrdienst entziehen
-   3. für gewisse Zeit
-   4. durch arglistige Täuschung
-   5. auf Genehmigung hingewirkt
-Nur Vorsatz möglich.`},
-
-{ type: 'text', content: `
-<h3>§19 Ungehorsam</h3>
-I) Nichtbefolgung eines Befehls
-II) Schwerwiegende Folge (>750€)
-Vorsatz oder Fahrlässigkeit möglich.`},
-
-{ type: 'text', content: `
-<h3>§32 Missbrauch der Befehlsbefugnis</h3>
-1. Vorgesetzter
-2. Missbrauch Befehlsbefugnis/Dienststellung
-3. Befehle/Forderungen/Zumutungen
-4. Ohne Bezug zum Dienst oder dienstlichen Zwecken zuwider`}
-
-]
-},
-
-/* ---------------------------------------------------------
-   6. Beschwerderecht (WBO/WDO)
---------------------------------------------------------- */
-
-{
-id: 'beschwerde',
-title: 'Beschwerderecht',
-cards: [
-
-{ type: 'text', content: `
-<h3>Beschwerde vs. Meldung</h3>
-Meldung: kein Anspruch auf Rückmeldung
-Beschwerde: Anspruch auf Beschwerdebescheid §12 Abs.1 S.3 WBO`},
-
-{ type: 'text', content: `
-<h3>Beschwerdearten</h3>
-Disziplinarbeschwerde §42 WDO
-Truppendienstliche Beschwerde §1 WBO
-Keine aufschiebende Wirkung §3 WBO`},
-
-{ type: 'text', content: `
-<h3>Zulässigkeit §13 WBO</h3>
-Statthaftigkeit §1 I, IV WBO
-Beschwer
-Form §6 II WBO
-Fristen §6 I WBO (Nachtfrist & Monatsfrist)`},
-
-{ type: 'text', content: `
-<h3>Zuständigkeit</h3>
-§43 I WDO
-§9 I 1 WBO
-Empfangszuständigkeit §5 WBO`},
-
-{ type: 'text', content: `
-Zurücknahme §8 I 4 WBO
-Dienstaufsicht bleibt §8 II WBO`}
-
-]
-},
-
-/* ---------------------------------------------------------
-   7. Abgabe an Staatsanwaltschaft A-2160/6
---------------------------------------------------------- */
-
-{
-id: 'staatsanwaltschaft',
-title: 'Abgabe an Staatsanwaltschaft (A-2160/6)',
-cards: [
-
-{ type: 'text', content: `
-1.9.8 Muss: sämtliche Verbrechen (§12 StGB)`},
-
-{ type: 'text', content: `
-1.9.9 Soll: Straftaten nach WStG (nicht 1.9.8)`},
-
-{ type: 'text', content: `
-1126 Kann: Entscheidung durch Vorgesetzten`}
-]
-}
-
-]
+    /* ---------------------------------------------------------
+       6. Zusammenarbeit mit der Staatsanwaltschaft
+    --------------------------------------------------------- */
+    {
+      id: 'abgabe_stawa',
+      title: 'Abgabe an StA (A-2160/6)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Meldung von Straftaten</h3>
+            <b>Nr. 1.9.8 (MUSS):</b> Verbrechen (§ 12 StGB: Mindeststrafe 1 Jahr) wie Raub, Mord, schwere Brandstiftung.<br><br>
+            <b>Nr. 1.9.9 (SOLL):</b> Katalogtaten des WStG (z.B. § 15, § 17, § 19) und Straftaten von erheblicher Bedeutung.<br><br>
+            <b>Nr. 1126 (KANN):</b> Ermessen des Vorgesetzten bei einfachen Vergehen des StGB.`
+        }
+      ]
+    }
+  ]
 },
 /* =========================================================
     TAKTIK & TRUPPENFÜHRUNG – Vollständig aus Notizen
