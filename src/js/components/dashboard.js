@@ -3,7 +3,7 @@ import { getModule } from '../data.js?v=5';
 
 export function renderDashboard(container) {
     const state = getState();
-    const nextLevelXP = state.level * 100;
+    const nextLevelXP = state.level * 200;
     const progress = (state.xp / nextLevelXP) * 100;
 
     // Ranks based on level
