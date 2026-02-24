@@ -343,116 +343,206 @@ Kräfte – Raum – Zeit – Information`}
 },
 
 /* =========================================================
-   MILITÄRGESCHICHTE – vollständig aus ZIP
+    MILITÄRGESCHICHTE – vollständig aus ZIP
 ========================================================= */
 
 {
-id: 'milhistory',
-title: 'Militärgeschichte',
-icon: '⚔️',
-description: 'Vom 30-jährigen Krieg bis 1991.',
-units: [
-
-{
-id: '30_jahre',
-title: '30-jähriger Krieg',
-cards: [
-
-{ type: 'text', content: `
-1618: Prager Fenstersturz.
-Konflikt Protestanten vs. Katholiken.
-Cuius regio eius religio.`},
-
-{ type: 'text', content: `
-Wallenstein – Militärunternehmer.
-Gustav II Adolf – schwedischer König.`},
-
-{ type: 'text', content: `
-1648 Westfälischer Frieden:
-Osnabrück & Münster.
-Grundlage föderaler Ordnung.`}
-]
+  id: 'milhistory',
+  title: 'Militärgeschichte',
+  icon: '⚔️',
+  description: 'Vom 30-jährigen Krieg bis 1991.',
+  units: [
+    {
+      id: '30_jahre',
+      title: '30-jähriger Krieg & Absolutismus',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            **30-jähriger Krieg (1618–1648):**
+            • Auslöser: Prager Fenstersturz.
+            • Ursache: Konfessionelle Spannungen (Prot. vs. Kath.) seit den 1580ern verschärft.
+            • Sonderfall Böhmen: Überwiegend prot. Bevölkerung, aber katholischer König.
+            • Regel: Landesherr bestimmt Konfession (Cuius regio, eius religio).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Akteure & Westfälischer Frieden (1648):**
+            • Wallenstein (1583–1634): Militärunternehmer.
+            • Gustav II. Adolf (1594–1632): Schwedischer König.
+            • Frieden: Rathaus Osnabrück & Münster (Schwur span./niederl. Gesandte).
+            • Ergebnis: Gleichberechtigung der 3 Konfessionen (Kath., Luth., Calv.).
+            • Bedeutung: Basis für zw.staatliche Regeln & dt. Föderalismus.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Absolutismus & Preußens Aufstieg:**
+            • Absolutismus: Unbeschränkte Staatsgewalt, keine Mitwirkung Dritter, "Von Gottes Gnaden", "Diener Gottes".
+            • Siebenjähriger Krieg: Pentarchie (PR, GB, RU, FR, Ö). Preußen verbündet mit GB.` 
+        }
+      ]
+    },
+    {
+      id: 'napoleon',
+      title: 'Napoleonische Ära & Befreiungskriege',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            **Französische Revolution (1789-1799):**
+            • 1792: Kriegserklärung an Ö & Abschaffung Monarchie.
+            • 1793: Hinrichtung König.
+            • Napoleon: Überwinder & Ende der Rev. 1799.
+            • 1. Koalitionskrieg (1792): Valmy. 2. Koalitionskrieg (1798-1802): Aufstieg Napoleons.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Jena-Auerstedt (14.10.1806):**
+            • Preußen/Sachsen: Überheblichkeit, Lineartaktik, Artillerie nur Unterstützung, Manöverstrategie.
+            • Frankreich: Kriegserfahrung, flexible Divisionen, Kolonnentaktik, eigenständige Artillerie, Vernichtungsstrategie.
+            • Frieden von Tilsit (1807): Preußen verliert Besitz westl. Elbe, Heer max. 42.000 Mann, Wehrpflichtverbot, Besetzung Berlins (18.000 Mann), Pufferstaat.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Preußische Heeresreform:**
+            • Abschaffung Adelsprivileg.
+            • Krümper-System (Umgehung Wehrpflichtverbot).
+            • Kolonnen- & Tirailleur-Taktik.
+            • Selbstständige waffengemischte Divisionen.
+            • Milderung Wehrstrafrecht.
+            • Kriegsministerium, Kriegsschulen & -akademien.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Nationale Symbole & Erhebung:**
+            • Nationalfarben: Lützower Jäger (Schwarz, Rote Vorstöße, Goldene Knöpfe), "Gold gab ich für Eisen" oder Symbol für "Einheit".
+            • Eisernes Kreuz (10.03.1813): Erster Orden für jeden Soldaten (standesunabhängig).
+            • Werte: Ritterlichkeit, Vaterlandsliebe, Tapferkeit.
+            • Anlehnung an Tatenkreuz (Deutschritter). Stiftungen: 1813, 1870, 1914, 1939.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Wiener Kongress 1815 (Metternich):**
+            • Leitmotive: Restauration, Legitimität, Solidarität, Pentarchie (F, RUS, GB, PR, Ö).
+            • Ergebnisse: Preußen erhält Rheinland/Sachsen ("Wacht am Rhein"). Ö wächst nach Südosteuropa.
+            • Deutscher Dualismus: PR & Ö im Wettbewerb.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Deutscher Bund & Revolution:**
+            • 1815: Lockerer Staatenbund (41 Staaten), inkl. GB, Dänemark, Niederlande. Ziel: Kollektive Sicherheit.
+            • Vormärz (1815-1844): Restaurative Fürsten vs. liberales Bürgertum.
+            • Frankfurt 1848: Nationalstaat "von unten", Teilhabe, Grundrechte.
+            • Scheitern: Ablehnung Krone durch Friedr. Wilh. IV., Erfurter Union.` 
+        }
+      ]
+    },
+    {
+      id: 'reichseinigung',
+      title: 'Reichseinigung & Kaiserreich',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            **Einigungskriege (1864-1871):**
+            • 1864: Dänemark (Düppeler Schanzen).
+            • 1866: Bruderkrieg Ö (Königgrätz).
+            • 1870/71: FR (Sedan). Auslöser: Emser Depesche.
+            • 18.01.1871: Kaiserproklamation Versailles.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Bismarck vs. Wilhelm II.:**
+            • Bismarck: Gleichgewicht, Isolation FR, Bündnisse (Dreikaiserbund, Zweibund, Dreibund, Rückversicherungsvertrag, Mittelmeerabkommen).
+            • Dreikaiserjahr 1888: Wilhelm I. †, Friedrich III. †, Wilhelm II. übernimmt.
+            • Wilhelm II. (ab 1890): Weltpolitik, Flotte, Imperialismus. Demontage der Bündnisse.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Balkankriege 1912/13:**
+            • Balkanbund vs. Osm. Reich.
+            • RU als Schutzmacht Slawen, Ö-U mit slaw. Anteil.
+            • Ergebnis: Schaffung Albanien, Gebietsgewinne Serbien, GR, Montenegro.` 
+        }
+      ]
+    },
+    {
+      id: 'weltkriege',
+      title: 'Weltkriege & Weimar',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            **Erster Weltkrieg (1914-1918):**
+            • 28.06.14: Sarajevo (Princip ermordet Franz Ferdinand).
+            • Automatismus: Blankoscheck -> Ultimatum -> Mobilmachung -> Kriegserklärungen (28.07. bis 04.08.).
+            • Schlieffenplan: Zweifrontenkrieg-Annahme. Verdun 1916.
+            • 1917: USA-Eintritt (Zimmermann-Telegramm).
+            • 11.11.1918: Waffenstillstand (Erzberger/Foch).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Versailles & Weimarer Republik:**
+            • Versailler Vertrag (Art. 231): Alleinige Kriegsschuld.
+            • Mil. Limits: 100k Mann, keine Pz/Lw/Gas, kein GenStab.
+            • Dolchstoßlegende: "Im Felde unbesiegt" (Hindenburg/Ludendorff).
+            • Geheimrüstung: Kooperation UdSSR (Kasan, Tomka, Lipezk), Truppenamt, Führerheer, Schwarze Reichswehr.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Drittes Reich & Konferenzen:**
+            • 09.11.1923: Hitler-Putsch scheitert. Strategie: Legalität.
+            • 1938: Münchener Abkommen (Sudeten). 1939: Zerschlagung "Resttschechei".
+            • Konferenzen: Teheran (Vorgehen/Aufteilung), Jalta (Besatzungszonen/Entnazifizierung), Potsdam (5 Ds: Demil., Denaz., Dezentr., Demokr., Demontage).` 
+        }
+      ]
+    },
+    {
+      id: 'kalter_krieg',
+      title: 'Kalter Krieg & Wiederbewaffnung',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            **Bündnisse & NATO:**
+            • NATO (04.04.1949): Gründe: Tschechoslowakei-Umsturz, Berlinkrise 1948.
+            • Neutralität: IRL, Ö, CH. (FIN/SWE bis 2022).
+            • BRD-Beitritt (09.05.1955): 12 Heeresdivisionen, 20 Lw-Geschwader, 172 Schiffe.
+            • Warschauer Pakt (14.05.1955): Militärpräsenz UdSSR in Osteuropa.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Wiederbewaffnung West & Ost:**
+            • West: Himmeroder Denkschrift (1950), Koreakrieg-Angst, Abschreckung.
+            • Nov. 1955: Gründung Bundeswehr (Scharnhorst-Bezug).
+            • Ost: NVA-Gründung (01.03.1956) aus Kasernierter Volkspolizei. Wehrpflicht ab 1962.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            **Krisen & Ende:**
+            • 13.08.1961: Mauerbau ("Antifa Schutzwall").
+            • 1962: Kubakrise (Raketen TR vs. Kuba, Seeblockade, Abzug).
+            • 12.12.1979: NATO-Doppelbeschluss (Nachrüstung vs. Verhandlung).
+            • 12/1991: Auflösung UdSSR & Rücktritt Gorbatschow.` 
+        }
+      ]
+    }
+  ]
 },
-
-{
-id: 'napoleon',
-title: 'Napoleonische Ära',
-cards: [
-
-{ type: 'text', content: `
-Französische Revolution 1789.
-Napoleon 1799.`},
-
-{ type: 'text', content: `
-Jena-Auerstedt 1806:
-Preußische Niederlage.
-Lineartaktik vs. flexible Division.`},
-
-{ type: 'text', content: `
-Preußische Reformen:
-Krümper-System
-Generalstab
-Kriegsakademie
-Tirailleur-Taktik`},
-
-{ type: 'text', content: `
-Eisernes Kreuz 1813.
-Schwarz-Rot-Gold.`}
-]
-},
-
-{
-id: 'weltkriege',
-title: 'Weltkriege',
-cards: [
-
-{ type: 'text', content: `
-1914 Sarajevo.
-Schlieffen-Plan.
-Verdun.
-USA-Eintritt 1917.
-Versailler Vertrag.`},
-
-{ type: 'text', content: `
-Weimar:
-Seeckt.
-Truppenamt.
-Geheime Kooperation UdSSR.`},
-
-{ type: 'text', content: `
-Konferenzen:
-Teheran
-Jalta
-Potsdam – 4 Ds.`}
-]
-},
-
-{
-id: 'kalter_krieg',
-title: 'Kalter Krieg',
-cards: [
-
-{ type: 'text', content: `
-NATO 1949.
-Warschauer Pakt 1955.`},
-
-{ type: 'text', content: `
-Bundeswehr 1955.
-Himmeroder Denkschrift.
-Innere Führung.`},
-
-{ type: 'text', content: `
-Krisen:
-1961 Mauer
-1962 Kuba
-1979 Doppelbeschluss
-1991 Ende UdSSR.`}
-]
-}
-
-]
-},
-
+   
 /* =========================================================
    POLITISCHE BILDUNG – vollständig aus ZIP
 ========================================================= */
