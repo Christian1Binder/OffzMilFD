@@ -21,12 +21,17 @@ export function renderPractice(container) {
 
 function renderPracticeModules(container) {
     const moduleIds = getPracticeModules();
+    console.log("Practice Modules found:", moduleIds);
 
     let html = `<h2>Gefechtsübung: Modulwahl</h2><p class="text-dim mb-2">Wähle ein Themengebiet.</p><div class="module-grid">`;
 
     moduleIds.forEach(modId => {
         const mod = getModule(modId); // Helper from data.js
-        if (!mod) return;
+        console.log(`Loading Module: ${modId}`, mod);
+        if (!mod) {
+            console.error(`Module ID ${modId} from games-registry not found in data.js!`);
+            return;
+        }
 
         html += `
             <div class="module-tile" onclick="window.location.hash='#practice/${mod.id}'">

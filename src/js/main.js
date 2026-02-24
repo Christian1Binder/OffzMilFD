@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 2. Load Content Data
     await loadData();
+    console.log("Data loaded in main.js");
 
     // 3. Setup Global Listeners
     window.addEventListener('taclearn:levelup', (e) => {
