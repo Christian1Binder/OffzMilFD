@@ -7,7 +7,8 @@ export function renderDashboard(container) {
     const progress = (state.xp / nextLevelXP) * 100;
 
     // Ranks based on level
-    const ranks = ['Schütze', 'Gefreiter', 'Obergefreiter', 'Unteroffizier', 'Feldwebel', 'Leutnant', 'Hauptmann', 'Major', 'Oberst', 'General'];
+    const ranks = ['Schütze', 'Gefreiter', 'Obergefreiter', 'Hauptgefreiter', 'Stabsgefreiter', 'Oberstabsgefreiter', 'Korporal', 'Stabskorporal', 'Unteroffizier', 'Stabsunteroffizier',
+        'Feldwebel', 'Oberfeldwebel', 'Hauptfeldwebel', 'Stabsfeldwebel', 'Oberstabsfeldwebel', 'Leutnant', 'Oberleutnant', 'Hauptmann', 'Stabshauptmann', 'Major', 'Oberstleutnant', 'Oberst', 'Brigadegeneral', 'Generalmajor', 'Generalleutnant', 'General'];
     const currentRank = ranks[Math.min(state.level - 1, ranks.length - 1)];
 
     container.innerHTML = `
