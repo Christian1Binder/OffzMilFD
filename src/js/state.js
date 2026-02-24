@@ -7,7 +7,8 @@ let state = {
     lastLogin: null,
     completedUnits: [],
     badges: [],
-    perfectQuizzes: 0 // New metric for badges
+    perfectQuizzes: 0,
+    practiceXP: 0 // New metric for practice
 };
 
 export async function initState() {
@@ -35,9 +36,13 @@ export function getState() {
     return state;
 }
 
-export function addXP(amount) {
+export function addXP(amount, isPractice = false) {
     const oldLevel = state.level;
     state.xp += amount;
+    if (isPractice) {
+        state.practiceXP = (state.practiceXP || 0) + amount;
+        checkBadges();
+    }
     checkLevelUp(oldLevel);
     saveState();
     return state.level > oldLevel; // Return true if leveled up
@@ -77,7 +82,8 @@ function checkBadges() {
         { id: 'veteran_5', name: 'Veteran (5 Missionen)', condition: () => state.completedUnits.length >= 5 },
         { id: 'strategist', name: 'Stratege', condition: () => state.level >= 5 },
         { id: 'sharpshooter', name: 'Scharfschütze', condition: () => state.perfectQuizzes >= 3 },
-        { id: 'iron_will', name: 'Eiserner Wille', condition: () => state.streak >= 3 }
+        { id: 'iron_will', name: 'Eiserner Wille', condition: () => state.streak >= 3 },
+        { id: 'drill_master', name: 'Drill Sergeant', condition: () => state.practiceXP >= 500 }
     ];
 
     badges.forEach(badge => {

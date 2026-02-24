@@ -4,6 +4,7 @@ import { renderDashboard } from './components/dashboard.js';
 import { renderModules } from './components/module-view.js';
 import { renderProfile } from './components/profile.js';
 import { renderUnit } from './components/unit-view.js';
+import { renderPractice } from './components/practice-view.js';
 
 export function initRouter() {
     // Nav Button Listeners
@@ -37,6 +38,10 @@ function handleRoute() {
         case 'unit':
             renderUnit(document.getElementById('unit-view'), param1, param2);
             showView('unit-view');
+            break;
+        case 'practice':
+            renderPractice(document.getElementById('practice-view'));
+            showView('practice-view');
             break;
         case 'profile':
             renderProfile(document.getElementById('profile-view'));
