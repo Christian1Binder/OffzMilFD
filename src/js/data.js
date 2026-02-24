@@ -199,211 +199,194 @@ modules: [
   ]
 },
 /* =========================================================
-    TAKTIK & TRUPPENFÜHRUNG – Vollständig aus Notizen
+    TAKTIK & TRUPPENFÜHRUNG – ULTIMATIVE VERSION
 ========================================================= */
 
 {
-  id: 'taktik_leadership',
+  id: 'taktik_leadership_ultimate',
   title: 'Taktik & Truppenführung',
   icon: '🎖️',
-  description: 'Grundsätze der Truppenführung, Verteidigung und Gefechtsführung.',
+  description: 'Vollständige taktische Grundsätze, operative Faktoren und technische Daten.',
   units: [
     {
-      id: 'grundsaetze_führung',
-      title: 'Leitende Grundsätze & Faktoren',
+      id: 'fuehrungslehre_grundlagen',
+      title: 'Truppenführung & Handlungsfelder',
       cards: [
         { 
           type: 'text', 
           content: `
-            **Prinzipien der Truppenführung (TrpFhr):**
-            • Führen mit Auftrag (Auftragstaktik).
-            • Wirkungsorientiertes Denken.
-            • Vernetzter Ansatz.
-            • Operation verbundener Kräfte.
-            **Hauptelemente des Gefechtes:** Feuer und Bewegung in Verbindung mit Sperren.` 
+            <h3>Leitende Prinzipien der TrpFhr</h3>
+            • <b>Führen mit Auftrag:</b> Freiheit in der Ausführung.<br>
+            • <b>Wirkungsorientiertes Denken:</b> Das Ziel definiert die Mittel.<br>
+            • <b>Vernetzter Ansatz:</b> Ressortübergreifende Kooperation.<br>
+            • <b>Operation verbundener Kräfte:</b> Wirksames Zusammenspiel aller Truppengattungen.<br><br>
+            <b>Hauptelemente des Gefechtes:</b><br>
+            Feuer und Bewegung in enger Verbindung mit Sperren.` 
         },
         { 
           type: 'text', 
           content: `
-            **Faktoren & Handlungsfelder:**
-            • **Handlungsfelder:** Information (Kern des Führungsprozesses: Entscheidungsfindung).
-            • **Faktoren:** Kräfte, Raum, Zeit.
-            • **Wichtigste Faktoren für Entscheidung:** Zeit & Information.` 
+            <h3>Handlungsfelder & Faktoren</h3>
+            <b>Kern des Führungsprozesses:</b> Die Entscheidungsfindung.<br><br>
+            <b>Faktoren der Truppenführung:</b><br>
+            1. <b>Kräfte:</b> Eigene Stärke und Feindlage.<br>
+            2. <b>Raum:</b> Geländebegebenheiten und Infrastruktur.<br>
+            3. <b>Zeit:</b> Der meist limitierende Faktor.<br><br>
+            <b>Wichtigste Faktoren für die Entscheidung:</b> Zeit & Information (Handlungsfeld Information).` 
         },
         { 
           type: 'text', 
           content: `
-            **Raumordnung in Landoperationen:**
-            • **Verantwortungsbereich:** Zugewiesener Operationsraum; TrFhr ist hier voll verantwortlich.
-            • **Interessenbereich:** Raum über den Verantwortungsbereich hinaus, der für die eigene Operationsführung von Bedeutung ist.` 
+            <h3>Raumordnung & Grenzen</h3>
+            <b>Verantwortungsbereich:</b> Zugewiesener Raum; volle Verantwortung des TrFhr.<br>
+            <b>Interessenbereich:</b> Raum über den Verantwortungsbereich hinaus, der für die eigene Führung wichtig ist.<br><br>
+            <b>Grundsatz Grenze:</b><br>
+            Zusammenhängende Geländeabschnitte müssen in <b>einer</b> Verantwortung bleiben. Eigene und feindliche Schwerpunkte sind zu berücksichtigen. Verantwortung für Aufklärung und Sicherung muss klar erkennbar sein.` 
         }
       ]
     },
     {
-      id: 'schwerpunkt_reserve',
-      title: 'Schwerpunktbildung & Reserven',
+      id: 'schwerpunkt_reserve_detail',
+      title: 'Schwerpunkt & Reserven',
       cards: [
         { 
           type: 'text', 
           content: `
-            **Der Schwerpunkt (SP):**
-            • Ort, an dem der Hauptstoß des Angreifers zum Scheitern gebracht werden soll.
-            • Ziel: Höchste Wirkung von Feuer und Sperren; Herbeiführen der Entscheidung.
-            • **Bildung durch:** Zusammenfassung von Kräften, Raum oder Feuer.` 
+            <h3>Der Schwerpunkt (SP)</h3>
+            Ort, an dem der <b>Hauptstoß des Angreifers</b> zum Scheitern gebracht werden soll.<br><br>
+            <b>Zweck:</b> Herbeiführen der Entscheidung durch höchste Wirkung.<br>
+            <b>Bildung durch:</b> Zusammenfassung von Kräften, Raum oder Feuer.<br><br>
+            <b>Konkrete Maßnahmen:</b><br>
+            Vorrang beim Feuer, Verdichtung der Aufklärung, Änderung der Raumordnung, Einsatz von Reserven/zusätzlichen Mitteln, Elektronischer Kampf (EloKa).` 
         },
         { 
           type: 'text', 
           content: `
-            **Maßnahmen zur SP-Bildung:**
-            • Vorrang beim Feuer & Verdichten der Aufklärung.
-            • Änderung der Raumordnung.
-            • Planung/Einsatz von Reserven & zusätzlichen Kräften.
-            • Elektronischer Kampf (EloKa).` 
-        },
-        { 
-          type: 'text', 
-          content: `
-            **Reserven:**
-            • **Einsatz:** Werden grundsätzlich geschlossen eingesetzt.
-            • **Zweck:** Entscheidung erzwingen, SP verlegen, Krisen überwinden.
-            • **Nachsteuerung:** Ist die Reserve eingesetzt, muss schnellstmöglich eine neue gebildet werden.` 
+            <h3>Reservenführung</h3>
+            <b>Einsatz:</b> Werden grundsätzlich <b>geschlossen</b> eingesetzt.<br>
+            <b>Zweck:</b> Entscheidung erzwingen, SP verlegen, Krisen überwinden.<br><br>
+            <b>Nachsteuerung:</b> Ist die Reserve eingesetzt, muss schnellstmöglich eine neue gebildet werden.<br>
+            <b>Vorbereitungszeit:</b> Der Auftrag <b>Gegenangriff</b> bedarf der meisten Vorbereitungszeit (Erkundung, Feuerregelung, Befehlsgebung).` 
         }
       ]
     },
     {
-      id: 'verteidigung_dynamik',
+      id: 'verteidigung_aktiv',
       title: 'Verteidigung & Gegenmaßnahmen',
       cards: [
         { 
           type: 'text', 
           content: `
-            **Zweck & Ziele Verteidigen:**
-            • Angriff zum Scheitern bringen.
-            • Fokus: Halten des Raumes ODER Abnutzen/Zerschlagen feindlicher Kräfte.
-            • **Definition Aktiv:** Raum halten, Gegner aufhalten/abschwächen, Zeit gewinnen.` 
+            <h3>Zweck & Formen der Verteidigung</h3>
+            <b>Ziel:</b> Angriff zum Scheitern bringen (Raum halten oder Feind zerschlagen).<br><br>
+            <b>Defensive Aktivitäten:</b><br>
+            Eigener Raum halten, Gegner aufhalten/abschwächen, Zeit gewinnen.<br><br>
+            <b>Auffangen:</b><br>
+            Wird befohlen in tiefer Verteidigungsführung, wenn ein Einbruch nicht aufgehalten werden kann und ein Gegenangriff keine Aussicht auf Erfolg verspricht.` 
         },
         { 
           type: 'text', 
           content: `
-            **Gegenmaßnahme vs. Gegenangriff:**
-            • **Gegenangriff:** Vorgeplant/vorbereitet, meist durch Reserven geführt. Ziel: Feind zerschlagen & Handlungsfreiheit gewinnen (Fokus: Schnelligkeit/Überraschung).
-            • **Gegenstoß:** Aus eigenem Entschluss in günstiger Lage, meist ohne Vorbereitung, nah gestecktes Ziel, mit sofort verfügbaren Kräften.` 
+            <h3>Gegenstoß vs. Gegenangriff</h3>
+            <b>Gegenstoß:</b><br>
+            Angriff meist ohne Vorbereitung, nah gestecktes Ziel. Aus eigenem Entschluss mit verfügbaren Kräften in günstiger Lage.<br><br>
+            <b>Gegenangriff:</b><br>
+            Vorgeplant und vorbereitet (meist Reserven). Ziel: Feindkräfte durch Schnelligkeit/Überraschung zerschlagen und Handlungsfreiheit gewinnen.` 
         },
         { 
           type: 'text', 
           content: `
-            **Einbruch vs. Durchbruch:**
-            • **Einbruch:** Eindringen in Stellungen mit begrenztem Erfolg, keine nachhaltige Kontrolle.
-            • **Durchbruch:** Strategischer Erfolg; Stellung vollständig überwunden -> Umgruppierung -> Vorstoß ins Hinterland.` 
-        },
-        { 
-          type: 'text', 
-          content: `
-            **Spezialformen:**
-            • **Auffangen:** Tiefe Verteidigungsführung, wenn Einbruch nicht anders haltbar und Gegenangriff aussichtslos.
-            • **Verstärken:** Unterstellung von Kräften, eigener Gefechtsstreifen, frühzeitige Bedrohungsabwehr.` 
+            <h3>Einbruch vs. Durchbruch</h3>
+            <b>Einbruch:</b> Eindringen in Stellungen mit begrenztem Erfolg; keine nachhaltige Kontrolle.<br>
+            <b>Durchbruch:</b> Strategischer Erfolg; Stellungen vollständig überwunden. Folgt: Umgruppierung und Vorstoß in das Hinterland.` 
         }
       ]
     },
     {
-      id: 'gefechtsfuehrung_stf',
-      title: 'Gefechtsführung & Wirkungsformen',
+      id: 'gefechtsfuehrung_technik_stf',
+      title: 'Gefechtsführung & Technik',
       cards: [
         { 
           type: 'text', 
           content: `
-            **FAWU-Grundgliederung:**
-            • **F**ührung (Gefechtsstand)
-            • **A**ufklärung (z.B. Drohnen)
-            • **W**irkung (z.B. Sperren)
-            • **U**nterstützung (Logistik)` 
+            <h3>Strukturen & Wirkungsformen</h3>
+            <b>FAWU (Gliederung):</b> Führung (Gefechtsstand), Aufklärung (Drohnen), Wirkung (Sperren/Waffen), Unterstützung (Logistik).<br><br>
+            <b>Hammer-Amboss-Prinzip:</b><br>
+            • <b>Amboss (Feuer):</b> Feind binden, Bewegungsfreiheit einschränken.<br>
+            • <b>Hammer (Bewegung):</b> Flankenstoß/Umfassung in die Tiefe zur Zerschlagung.` 
         },
         { 
           type: 'text', 
           content: `
-            **Hammer-Amboss-Prinzip:**
-            • **Amboss (Feuer):** Feind binden (Feuerüberlegenheit/Gelände), Bewegungsfreiheit einschränken -> Zeitgewinn.
-            • **Hammer (Bewegung):** Bewegliches Element, Umfassungsbewegung/Flankenstoß in die Tiefe zur Zerschlagung.` 
+            <h3>4 Wirkforderungen STF</h3>
+            1. <b>Blind (bli):</b> Ausweichen von Kräften aus der Sichtlinie ermöglichen.<br>
+            2. <b>Overwatch (ovw):</b> Überwachung (z.B. ABRA).<br>
+            3. <b>Engage:</b> Allg. Auftrag bei gestauten Feinden an RiMiSpe.<br>
+            4. <b>Annihilate:</b> Vernichtungsauftrag.` 
         },
         { 
           type: 'text', 
           content: `
-            **4 Wirkforderungen STF (Englisch):**
-            1. **Blind (bli):** Phase Ausweichen von Kräften aus der Sichtlinie.
-            2. **Overwatch (ovw):** Überwachung (z.B. durch ABRA).
-            3. **Engage:** Allgemeiner Auftrag bei gestauten Feindkräften an Richte-Minen-Sperren (RiMiSpe).
-            4. **Annihilate:** Vernichtungsauftrag.` 
-        },
-        { 
-          type: 'text', 
-          content: `
-            **4 Arten des Feuerkampfes:**
-            1. Allg. Feuerunterstützung (AF) – General Support (GS).
-            2. Unmittelbare (UF) – Direct Support (DS).
-            3. Feuerverstärkung (FV) – Reinforcing (R).
-            4. Allg. mit Feuerverstärkung – General Support Reinforcing (GSR).` 
+            <h3>Waffensysteme & Reichweiten</h3>
+            <b>PzGrenKp (14 Pumas):</b><br>
+            • 2000m KE | 3000m ABM | 4000m MELLS.<br><br>
+            <b>PzZg (4 Leopard):</b><br>
+            • 3000m KE | 5000m HE.<br><br>
+            <b>Stellungsraum:</b> Besteht aus mehreren vorbereiteten Stellungen; ermöglicht Kampf aus wechselnden Positionen.` 
         }
       ]
     },
     {
-      id: 'pioniere_technik',
-      title: 'Pionierwesen & Kampfmittel',
+      id: 'pioniere_beratung_sperren',
+      title: 'Pionierwesen & Beratung',
       cards: [
         { 
           type: 'text', 
           content: `
-            **Pionierunterstützung:**
-            • **Unmittelbar:** Unterstützung laufender Operationen, Fokus: Schnelligkeit.
-            • **Allgemein:** Langfristige Vorbereitung, Fokus: Einsatzinfrastruktur.
-            • **4 Kernaufgaben:** Bewegungen fördern, Überlebensfähigkeit erhöhen, Hemmen/Kanalisieren (Gegner), Lagebildbeitrag.` 
+            <h3>Pionierunterstützung & Berater</h3>
+            <b>Unmittelbar:</b> Schnelle Durchführung (laufende OP).<br>
+            <b>Allgemein:</b> Einsatzinfrastruktur (langfristig).<br><br>
+            <b>Berater-Ebenen:</b><br>
+            ZgFhr → KpChef | KpChef → BtlKdr | Btl → Brig | Brig → Reg | Reg → Div.` 
         },
         { 
           type: 'text', 
           content: `
-            **Sperren:**
-            • **Zweck:** Lenken, Hemmen, Stauen, Abnutzen, Kanalisieren.
-            • **Grundsatz:** Sperren sind zwingend zu überwachen!` 
-        },
-        { 
-          type: 'text', 
-          content: `
-            **Waffensysteme & Reichweiten:**
-            • **PzGrenKp (Puma):** 14 Fahrzeuge. Kampfentf.: 2000m KE, 3000m ABM, 4000m MELLS.
-            • **PzZg (Leopard):** 4 Fahrzeuge. Kampfentf.: 3000m KE, 5000m HE.` 
+            <h3>Sperren & Kernaufgaben</h3>
+            <b>4 Kernaufgaben:</b> Bewegungen fördern (eigene), Überlebensfähigkeit erhöhen, Hemmen/Kanalisieren (Feind), Beitrag zum Lagebild.<br><br>
+            <b>Zweck Sperren:</b> Lenken, Hemmen, Stauen, Abnutzen, Kanalisieren.<br>
+            <i>Merke: Sperren sind zwingend zu überwachen!</i>` 
         }
       ]
     },
     {
-      id: 'planung_besonderheiten',
-      title: 'Planung & Besonderheiten',
+      id: 'planung_besonderheiten_vstk',
+      title: 'Planung & Verspätungen',
       cards: [
         { 
           type: 'text', 
           content: `
-            **Gegenangriff (GGAngriff) Planung:**
-            • Benötigt die meiste Vorbereitungszeit.
-            • Phasen: Erkundung Anmarsch, Feuerregelung mit Kräften am VRV, eigene Feuerplanung, Befehlsgebung.` 
+            <h3>Informationen Aufklärung</h3>
+            Bei der Aufklärung/Informationen ist zwingend zu klären:<br>
+            • Art und Stärke des Feindes.<br>
+            • Verhalten und Gliederung.<br>
+            • Absicht des Gegners.` 
         },
         { 
           type: 'text', 
           content: `
-            **Gelände & Grenzen:**
-            • **Grenzen:** Zusammenhängende Geländeabschnitte müssen in einer Verantwortung bleiben.
-            • **Stellungsraum:** Ermöglicht den Kampf aus wechselnden Stellungen (Plätze für gedeckte Aufstellung).` 
-        },
-        { 
-          type: 'text', 
-          content: `
-            **Auswirkungen verspäteter Aufträge:**
-            • Wenig Zeit zur Erkundung.
-            • Eingeschränkte Kampfkraft.
-            • Lange Dauer bis zur Bildung einer neuen Reserve.` 
+            <h3>Verspätete Aufträge (vstk/verm)</h3>
+            <b>Auswirkungen auf geplante Aufträge:</b><br>
+            • Wenig Zeit zur Erkundung.<br>
+            • Eingeschränkte Kampfkraft.<br>
+            • Lange Dauer bis zur Bildung einer neuen Reserve.<br><br>
+            <b>Phasen Angriffsvorbereitung:</b><br>
+            Erkundung Anmarsch, Absprache VRV-Kräfte (Feuerregelung), eigene Feuerplanung, Befehlsgebung.` 
         }
       ]
     }
   ]
-},
-
+}
 /* =========================================================
     MILITÄRGESCHICHTE – VOLLSTÄNDIG & DETAILREICH
 ========================================================= */
