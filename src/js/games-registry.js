@@ -1,5 +1,5 @@
 // Registry to map curriculum content to interactive games
-// Version 3.0 - Force Refresh
+// Version 4.0 - Added Crosswords
 // Does NOT modify original data.js, but references IDs from it.
 
 export const gameRegistry = {
@@ -142,6 +142,89 @@ export const gameRegistry = {
             { index: 3, answer: 'Chance' }
         ],
         xpReward: 110
+    },
+
+    // --- Crossword Puzzles ---
+    'cw_milhistory': {
+        moduleId: 'milhistory',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Militärgeschichte',
+        description: 'Löse das Rätsel zu historischen Ereignissen.',
+        xpReward: 150,
+        grid: {
+            rows: 15,
+            cols: 15,
+            words: [
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'WESTFALEN', clue: 'Ort des Friedens 1648' },
+                { id: 2, direction: 'down', x: 0, y: 0, answer: 'WALLENSTEIN', clue: 'Kaiserlicher Feldherr im 30-jährigen Krieg' },
+                { id: 3, direction: 'across', x: 0, y: 5, answer: 'NAPOLEON', clue: 'Kaiser der Franzosen, Gegner Preußens' },
+                { id: 4, direction: 'down', x: 2, y: 5, answer: 'PREUSSEN', clue: 'Verlierer der Schlacht von Jena-Auerstedt' }
+            ]
+        }
+    },
+    'cw_befehlsrecht': {
+        moduleId: 'befehlsrecht',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Befehlsrecht',
+        description: 'Teste dein Wissen zu §1-32 WStG.',
+        xpReward: 150,
+        grid: {
+            rows: 15,
+            cols: 10,
+            words: [
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'BEFEHL', clue: 'Anweisung zu einem bestimmten Verhalten' },
+                { id: 2, direction: 'down', x: 1, y: 0, answer: 'EIGENMAECHTIG', clue: 'Unerlaubte Abwesenheit (§15)' },
+                { id: 3, direction: 'across', x: 1, y: 2, answer: 'GESETZ', clue: 'Grundlage für Rechtmäßigkeit (sg.)' }
+            ]
+        }
+    },
+    'cw_polbil': {
+        moduleId: 'polbil',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Int. Politik',
+        description: 'Begriffe aus UN und Sicherheitspolitik.',
+        xpReward: 150,
+        grid: {
+            rows: 8,
+            cols: 15,
+            words: [
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'SICHERHEITSRAT', clue: 'Mächtigstes UN-Gremium' },
+                { id: 2, direction: 'down', x: 2, y: 0, answer: 'CHINA', clue: 'Ständiges UN-Mitglied (Asien)' },
+                { id: 3, direction: 'down', x: 5, y: 0, answer: 'RUSSLAND', clue: 'Ständiges UN-Mitglied (Eurasien)' }
+            ]
+        }
+    },
+    'cw_fuehrung': {
+        moduleId: 'fuehrung',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Führung',
+        description: 'Grundsätze der Führung im Einsatz.',
+        xpReward: 150,
+        grid: {
+            rows: 10,
+            cols: 15,
+            words: [
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'AUFTRAGSTAKTIK', clue: 'Führungsprinzip der Bundeswehr' },
+                { id: 2, direction: 'down', x: 2, y: 0, answer: 'FREIHEIT', clue: 'Was man in der Durchführung gewährt' },
+                { id: 3, direction: 'down', x: 0, y: 0, answer: 'ABSICHT', clue: 'Kern des Auftrags (Wille des Führers)' }
+            ]
+        }
+    },
+    'cw_taktik2': {
+        moduleId: 'taktik2',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Beurteilung',
+        description: 'Begriffe aus dem Führungsprozess.',
+        xpReward: 150,
+        grid: {
+            rows: 12,
+            cols: 12,
+            words: [
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'BEURTEILUNG', clue: 'Analyse der Lagefaktoren' },
+                { id: 2, direction: 'down', x: 1, y: 0, answer: 'ENTSCHLUSS', clue: 'Ergebnis der Beurteilung' },
+                { id: 3, direction: 'across', x: 1, y: 6, answer: 'LAGE', clue: 'Situation, Umstände' }
+            ]
+        }
     }
 };
 

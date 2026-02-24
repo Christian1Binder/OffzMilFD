@@ -1,4 +1,4 @@
-import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js?v=3';
+import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js?v=4';
 import { getModule } from '../data.js?v=3';
 
 export function renderPractice(container) {

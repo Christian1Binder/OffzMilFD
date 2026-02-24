@@ -1,10 +1,11 @@
 // Placeholder to route to specific game engines
 // In a real build step, we'd bundle this. Here we import dynamically or switch.
 
-import { getGameConfig } from '../../games-registry.js?v=3';
+import { getGameConfig } from '../../games-registry.js?v=4';
 import { renderSortingGame } from './sorting-game.js';
 import { renderDragDropGame } from './drag-drop.js';
 import { renderClozeGame } from './cloze-game.js';
+import { renderCrosswordGame } from './crossword-game.js';
 import { addXP } from '../../state.js';
 import { showXP } from '../gamification.js';
 
@@ -38,6 +39,9 @@ export function launchGame(container, gameId, moduleId) {
             break;
         case 'cloze':
             renderClozeGame(container, config, onComplete);
+            break;
+        case 'crossword':
+            renderCrosswordGame(container, config, onComplete);
             break;
         default:
             container.innerHTML = '<p>Unbekannter Spieltyp.</p>';
