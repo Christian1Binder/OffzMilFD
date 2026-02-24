@@ -1,5 +1,5 @@
-import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js?v=3';
-import { getModule } from '../data.js?v=3';
+import { getAllGames, getPracticeModules, getGamesByModule } from '../games-registry.js?v=5';
+import { getModule } from '../data.js?v=5';
 
 export function renderPractice(container) {
     const hash = window.location.hash;
@@ -73,6 +73,7 @@ function renderGameList(container, moduleId) {
         if (game.type === 'sorting') icon = '🔢';
         if (game.type === 'drag-drop') icon = '🧩';
         if (game.type === 'cloze') icon = '📝';
+        if (game.type === 'crossword') icon = '📰';
 
         html += `
             <div class="module-tile" onclick="window.location.hash='#practice/${moduleId}/${game.unitId}'">

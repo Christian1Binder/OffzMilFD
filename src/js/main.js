@@ -2,7 +2,7 @@
 
 import { initRouter } from './router.js';
 import { initState } from './state.js';
-import { loadData } from './data.js?v=3';
+import { loadData } from './data.js?v=5';
 import { showLevelUp, showBadge } from './components/gamification.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
