@@ -1,4 +1,5 @@
 // Registry to map curriculum content to interactive games
+// Version 3.0 - Force Refresh
 // Does NOT modify original data.js, but references IDs from it.
 
 export const gameRegistry = {

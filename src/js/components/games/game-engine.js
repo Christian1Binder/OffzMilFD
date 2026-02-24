@@ -1,7 +1,7 @@
 // Placeholder to route to specific game engines
 // In a real build step, we'd bundle this. Here we import dynamically or switch.
 
-import { getGameConfig } from '../../games-registry.js';
+import { getGameConfig } from '../../games-registry.js?v=3';
 import { renderSortingGame } from './sorting-game.js';
 import { renderDragDropGame } from './drag-drop.js';
 import { renderClozeGame } from './cloze-game.js';
