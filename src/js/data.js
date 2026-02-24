@@ -1,285 +1,917 @@
-// Content Repository - German Translation
+// data.js – Vollversion mit vollständigem ZIP-Inhalt
 
 export const curriculum = {
-    modules: [
-        {
-            id: 'befehlsrecht',
-            title: 'Befehlsrecht',
-            icon: '⚖️',
-            description: 'Beherrsche die rechtlichen Grundlagen der Befehlsbefugnis.',
-            units: [
-                {
-                    id: 'befehl_definitions',
-                    title: 'Befehlsbegriff',
-                    cards: [
-                        { type: 'text', content: '<h3>Befehlsdefinition (§2 Nr.2 WstG)</h3><p>Eine Anweisung zu einem bestimmten Verhalten.</p>' },
-                        { type: 'text', content: '<h3>Vorgesetztenstatus (§1(3) SG)</h3><p>Muss ein militärischer Vorgesetzter sein, der befugt ist, Befehle zu erteilen.</p>' },
-                        { type: 'text', content: '<h3>Gehorsamsanspruch (§11(1) SG)</h3><p>Der Untergebene hat keine Handlungsalternative, sondern muss gehorchen.</p>' },
-                        { type: 'quiz', question: 'Verlangt ein Befehl ein bestimmtes Verhalten?', options: ['Ja', 'Nein'], answer: 0 }
-                    ]
-                },
-                {
-                    id: 'befehl_legality',
-                    title: 'Rechtmäßigkeit & Verbindlichkeit',
-                    cards: [
-                        { type: 'text', content: '<h3>Rechtmäßigkeit (Sicht des Vorgesetzten)</h3><p>1. Dienstlicher Zweck<br>2. Beachtung des Völkerrechts (HVR, Art. 25 GG)<br>3. Beachtung der Gesetze<br>4. Beachtung der Dienstvorschriften (Dv)</p>' },
-                        { type: 'text', content: '<h3>Verbindlichkeit (Sicht des Empfängers)</h3><p>Verbindlich wenn:<br>1. Dienstlicher Zweck<br>2. Kein Verstoß gegen Menschenwürde/HVR<br>3. Zumutbar (Verhältnismäßig)<br>4. Keine Straftat befohlen</p>' },
-                        { type: 'flashcard', front: 'Kann man einen unzumutbaren Befehl verweigern?', back: 'Technisch JA, aber riskant. "Unzumutbarkeit" erfordert eine Verhältnismäßigkeitsprüfung.' }
-                    ]
-                },
-                {
-                    id: 'soldier_duties',
-                    title: 'Soldatische Pflichten (§7 - §17 SG)',
-                    cards: [
-                        { type: 'text', content: '<h3>§7: Treue zur Rechtsordnung</h3><p>Der Bundesrepublik Deutschland treu zu dienen und das Recht und die Freiheit des deutschen Volkes tapfer zu verteidigen.</p>' },
-                        { type: 'text', content: '<h3>§10: Pflichten des Vorgesetzten</h3><p>Verantwortung für Befehle. Fürsorgepflicht. Dienstaufsicht.</p>' },
-                        { type: 'text', content: '<h3>§11: Gehorsam</h3><p>Befehle vollständig, gewissenhaft und unverzüglich ausführen.</p>' },
-                        { type: 'text', content: '<h3>§12: Kameradschaft</h3><p>Hilfeleistung und gegenseitige Achtung unabhängig vom Dienstgrad.</p>' },
-                        { type: 'text', content: '<h3>§17: Verhalten</h3><p>Im Dienst: Disziplin wahren. Außer Dienst: Ansehen der Bundeswehr nicht schädigen.</p>' }
-                    ]
-                },
-                {
-                    id: 'wstg_offenses',
-                    title: 'Wehrstraftaten',
-                    cards: [
-                        { type: 'text', content: '<h3>Dienstvergehen</h3><p>Verletzung soldatischer Pflichten. Erfordert Vorsatz oder Fahrlässigkeit.</p>' },
-                        { type: 'text', content: '<h3>§15 WstG: Eigenmächtige Abwesenheit</h3><p>Verlassen der Truppe oder Fernbleiben > 3 Tage.</p>' },
-                        { type: 'text', content: '<h3>§18 WstG: Dienstentziehung</h3><p>Entziehung vom Dienst durch Täuschung. Nur Vorsatz!</p>' },
-                        { type: 'text', content: '<h3>§19 WstG: Ungehorsam</h3><p>Nichtbefolgen eines Befehls mit schwerwiegenden Folgen (>750€ Schaden oder Gefahr).</p>' },
-                        { type: 'quiz', question: 'Welche Straftat erfordert NUR Vorsatz?', options: ['Eigenmächtige Abwesenheit', 'Dienstentziehung durch Täuschung', 'Ungehorsam'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'complaints',
-                    title: 'Beschwerderecht',
-                    cards: [
-                        { type: 'text', content: '<h3>Beschwerderecht (§1 WBO)</h3><p>Jeder Soldat kann sich beschweren, wenn er glaubt, dass seine Rechte verletzt wurden.</p>' },
-                        { type: 'text', content: '<h3>Unterschied: Meldung vs. Beschwerde</h3><p>Beschwerde garantiert einen Anspruch auf einen Bescheid. Eine Meldung nicht.</p>' },
-                        { type: 'text', content: '<h3>Fristen</h3><p>Einen Monat (Monatsfrist) nach Kenntnisnahme des Vorfalls.</p>' }
-                    ]
-                }
-            ]
+modules: [
+
+/* =========================================================
+   BEFEHLSRECHT – Vollständig & prüfungstauglich integriert
+========================================================= */
+
+{
+  id: 'befehlsrecht',
+  title: 'Befehlsrecht & Wehrrecht',
+  icon: '⚖️',
+  description: 'Umfassende Rechtsgrundlagen: Soldatengesetz, Wehrstrafrecht und Beschwerdewesen.',
+  units: [
+
+    /* ---------------------------------------------------------
+       1. Der Befehlsbegriff & Vorgesetzte
+    --------------------------------------------------------- */
+    {
+      id: 'befehlsbegriff',
+      title: 'Befehlsbegriff & Vorgesetzte',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Befehlsbegriff (§ 2 Nr. 2 WStG)</h3>
+            Ein Befehl ist eine Anweisung zu einem bestimmten Verhalten, die:<br><br>
+            <b>1. Anweisung:</b> Einseitige Willensäußerung (Tun, Dulden, Unterlassen).<br>
+            <b>2. Vorgesetzter:</b> Erteilt von einem mil. Vorgesetzten (§ 1 Abs. 3 SG).<br>
+            <b>3. Gehorsamsanspruch:</b> Mit Anspruch auf Gehorsam (§ 11 Abs. 1 SG).<br>
+            <b>4. Einzelfall/Allgemein:</b> Gegenüber Soldaten (einzeln oder nach Merkmalen bestimmt).<br>
+            <i>Merke: Höflichkeitsformen ("Ich bitte Sie...") ändern nichts am Befehlscharakter.</i>`
         },
-        {
-            id: 'fuehrung',
-            title: 'Führung im Einsatz',
-            icon: '🛡️',
-            description: 'Lerne die Prinzipien moderner militärischer Führung.',
-            units: [
-                {
-                    id: 'principles',
-                    title: 'Führungsgrundsätze',
-                    cards: [
-                        { type: 'text', content: '<h3>Führen mit Auftrag</h3><p>Ziel vorgeben, Ressourcen zuteilen, Freiheit in der Durchführung gewähren. Entscheidend: Die "Absicht".</p>' },
-                        { type: 'text', content: '<h3>Wirkungsorientiertes Denken</h3><p>Fokus auf das Ergebnis, nicht auf die Methode.</p>' },
-                        { type: 'text', content: '<h3>Operation verbundener Kräfte</h3><p>Zusammenwirken verschiedener Truppengattungen (Inf, Pz, Art) zur Wirkungssteigerung.</p>' }
-                    ]
-                },
-                {
-                    id: 'elements',
-                    title: 'Hauptelemente',
-                    cards: [
-                        { type: 'text', content: '<h3>Feuer und Bewegung</h3><p>Der Kern des taktischen Manövers.</p>' },
-                        { type: 'text', content: '<h3>Schwerpunkt</h3><p>Konzentration der Kampfkraft am entscheidenden Punkt. "Klotzen, nicht kleckern!"</p>' },
-                        { type: 'text', content: '<h3>Reserve</h3><p>Kräfte, die zurückgehalten werden, um das Gefecht später zu beeinflussen. "Ohne Reserve keine Einflussnahme."</p>' },
-                        { type: 'quiz', question: 'Wozu dient eine Reserve?', options: ['Zur Erholung', 'Um das Gefecht zu beeinflussen', 'Zur Bewachung'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'operations',
-                    title: 'Operationsarten',
-                    cards: [
-                        { type: 'text', content: '<h3>Verteidigung</h3><p>Ziel: Angriff des Feindes zerschlagen. Gelände halten oder Feind abnutzen.</p>' },
-                        { type: 'text', content: '<h3>Gegenangriff</h3><p>Geplante Operation (meist durch Reserven), um die Initiative zurückzugewinnen oder Gelände zurückzuerobern.</p>' },
-                        { type: 'text', content: '<h3>Gegenstoß</h3><p>Sofortige Reaktion lokaler Kräfte, um einen Einbruch abzuriegeln.</p>' },
-                        { type: 'flashcard', front: 'Unterschied: Gegenangriff vs. Gegenstoß', back: 'Angriff = Geplant/Reserven. Stoß = Sofort/Lokal.' }
-                    ]
-                },
-                {
-                    id: 'support',
-                    title: 'Kampfunterstützung',
-                    cards: [
-                        { type: 'text', content: '<h3>Artillerie Feuerunterstützung</h3><p>GS (Allgemeine Unterstützung): Unterstützt den Großverband.<br>DS (Unmittelbare Unterstützung): Einem Truppenteil fest zugeordnet.</p>' },
-                        { type: 'text', content: '<h3>Pioniere</h3><p>Fördern (Brücken, Minenräumen).<br>Hemmen (Minen, Sperren).<br>Überleben (Stellungsbau).</p>' }
-                    ]
-                },
-                {
-                    id: 'leadership_process',
-                    title: 'Führungsprozess',
-                    cards: [
-                        { type: 'text', content: '<h3>Entscheidungsfindung</h3><p>Auftrag auswerten -> Lage beurteilen -> Entschluss fassen -> Befehl geben.</p>' },
-                        { type: 'text', content: '<h3>Faktoren</h3><p>Kräfte, Raum, Zeit, Information.</p>' }
-                    ]
-                }
-            ]
-        },
-        {
-            id: 'milhistory',
-            title: 'Militärgeschichte',
-            icon: '⚔️',
-            description: 'Vom 30-jährigen Krieg bis zum Kalten Krieg.',
-            units: [
-                {
-                    id: '30years',
-                    title: 'Der 30-jährige Krieg (1618-1648)',
-                    cards: [
-                        { type: 'text', content: '<h3>Auslöser (1618)</h3><p><strong>Prager Fenstersturz</strong>. Spannungen zwischen Protestanten und Katholiken seit 1580.</p>' },
-                        { type: 'text', content: '<h3>Kontext</h3><p><strong>Cuius regio, eius religio:</strong> Der Landesherr bestimmt die Konfession. Böhmen: Protestantische Bevölkerung, Katholischer König.</p>' },
-                        { type: 'text', content: '<h3>Schlüsselfiguren</h3><p><strong>Wallenstein (1583–1634):</strong> Der große Militärunternehmer.<br><strong>Gustav II. Adolf (1594–1632):</strong> Schwedenkönig, intervenierte für Protestanten.</p>' },
-                        { type: 'text', content: '<h3>Westfälischer Frieden (1648)</h3><p>Ende des Krieges. Unterzeichnet in <strong>Osnabrück</strong> und <strong>Münster</strong>. Anerkennung der Gleichberechtigung der drei Konfessionen.</p>' },
-                        { type: 'flashcard', front: 'Bedeutung Westfälischer Frieden', back: 'Grundlage für zwischenstaatliche Regelungen und deutschen Föderalismus.' },
-                        { type: 'quiz', question: 'Wer war der schwedische König im 30-jährigen Krieg?', options: ['Wallenstein', 'Gustav II Adolf', 'Ferdinand II'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'prussia_rise',
-                    title: 'Aufstieg Preußens (1740-1786)',
-                    cards: [
-                        { type: 'text', content: '<h3>7-jähriger Krieg</h3><p><strong>Pentarchie:</strong> Preußen, GB, Russland, Frankreich, Österreich.<br>Preußen verbündet mit GB gegen die Kontinentalmächte.</p>' },
-                        { type: 'text', content: '<h3>Absolutismus</h3><p>Monarch hat ungeteilte Staatsgewalt. "Von Gottes Gnaden". Keine Mitwirkung anderer Gruppen.</p>' }
-                    ]
-                },
-                {
-                    id: 'napoleon_era',
-                    title: 'Napoleonische Ära (1789-1815)',
-                    cards: [
-                        { type: 'text', content: '<h3>Französische Revolution (1789-1799)</h3><p>Monarchie abgeschafft (1792), König hingerichtet. Napoleon beendet die Revolution 1799.</p>' },
-                        { type: 'text', content: '<h3>Jena-Auerstedt (1806)</h3><p><strong>Preußische Niederlage:</strong> Überheblichkeit, alte Kommandeure, Lineartaktik.<br><strong>Französischer Sieg:</strong> Flexible Divisionen, Kolonnentaktik, eigenständige Artillerie.</p>' },
-                        { type: 'text', content: '<h3>Frieden von Tilsit (1807)</h3><p>Preußen verliert Gebiete westlich der Elbe. Heer auf 42.000 Mann begrenzt. Besatzung Berlins. Demütigung.</p>' },
-                        { type: 'checklist', title: 'Preußische Reformen (1807)', items: ['Abschaffung Adelsprivileg', 'Krümper-System (Wehrpflicht-Verbot umgehen)', 'Generalstab & Kriegsakademie', 'Tirailleur-Taktik', 'Eisernes Kreuz (1813)'] },
-                        { type: 'text', content: '<h3>Befreiungskriege</h3><p><strong>Eisernes Kreuz:</strong> Gestiftet 10.03.1813. Erster Orden für ALLE Dienstgrade.<br><strong>Farben:</strong> Schwarz/Rot/Gold (Lützower Jäger).</p>' },
-                        { type: 'quiz', question: 'Was war das Krümper-System?', options: ['Eine neue Waffe', 'Umgehung des Wehrpflichtverbots', 'Eine Brotsorte'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'restoration',
-                    title: 'Restauration & Kaiserreich (1815-1890)',
-                    cards: [
-                        { type: 'text', content: '<h3>Wiener Kongress (1815)</h3><p><strong>Leitung:</strong> Metternich.<br><strong>Prinzipien:</strong> Restauration, Legitimität, Solidarität.<br><strong>Gleichgewicht:</strong> Pentarchie wiederhergestellt.</p>' },
-                        { type: 'text', content: '<h3>Deutscher Bund</h3><p>Lockerer Staatenbund. Defensive Ausrichtung. Enttäuschung für Nationalisten.</p>' },
-                        { type: 'text', content: '<h3>Revolution 1848</h3><p>Paulskirche. Ziel: Nationalstaat "von unten". Gescheitert (König Friedrich Wilhelm IV lehnte Krone ab).</p>' },
-                        { type: 'text', content: '<h3>Einigungskriege</h3><p>1864: Deutsch-Dänischer Krieg (Düppel).<br>1866: Deutscher Krieg (Königgrätz).<br>1870/71: Deutsch-Französischer Krieg (Sedan). Auslöser: Emser Depesche.</p>' },
-                        { type: 'text', content: '<h3>Reichsgründung (1871)</h3><p>18.01.1871 in Versailles. Bismarcks Politik: Isolation Frankreichs, Bündnissysteme (Rückversicherungsvertrag) zur Verhinderung eines Zweifrontenkrieges.</p>' },
-                        { type: 'text', content: '<h3>Wilhelminische Ära (1890+)</h3><p>"Platz an der Sonne". Bismarck entlassen. Einkreisung Deutschlands beginnt. Flottenwettrüsten.</p>' }
-                    ]
-                },
-                {
-                    id: 'world_war_1',
-                    title: 'Erster Weltkrieg (1914-1918)',
-                    cards: [
-                        { type: 'text', content: '<h3>Der Funke (1914)</h3><p>Attentat von Sarajevo (28.06.1914). Blankoscheck an Österreich. Bündnisautomatismen.</p>' },
-                        { type: 'text', content: '<h3>Schlieffen-Plan</h3><p>Deutscher Plan gegen Zweifrontenkrieg: Schneller Sieg gegen Frankreich über Belgien, bevor Russland mobil macht. Gescheitert.</p>' },
-                        { type: 'text', content: '<h3>Kriegsjahre</h3><p>1916: Verdun (Materialschlachten).<br>1917: USA-Eintritt (Wende).<br>1918: Waffenstillstand in Compiègne (11.11.1918).</p>' },
-                        { type: 'text', content: '<h3>Versailler Vertrag</h3><p><strong>Art. 231:</strong> Alleinschuld.<br><strong>Militär:</strong> 100.000 Mann Heer, keine Luftwaffe/Panzer/U-Boote.<br><strong>Dolchstoßlegende:</strong> Mythos vom "im Felde unbesiegten" Heer.</p>' },
-                        { type: 'quiz', question: 'Was war das Ziel des Schlieffen-Plans?', options: ['Russland zuerst besiegen', 'Zweifrontenkrieg vermeiden', 'London erobern'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'interwar_ww2',
-                    title: 'Zwischenkrieg & 2.WK',
-                    cards: [
-                        { type: 'text', content: '<h3>Weimarer Militär</h3><p>Seeckt baut "Führerheer". Geheime Kooperation mit UdSSR (Kasan-Panzer, Lipezk-Luft). "Truppenamt" als getarnter Generalstab.</p>' },
-                        { type: 'text', content: '<h3>Hitlers Aufstieg</h3><p>1923: Gescheiterter Putsch (München). 1933: Machtergreifung. 1938: Münchner Abkommen (Sudetenland). 1939: Zerschlagung Rest-Tschechei.</p>' },
-                        { type: 'text', content: '<h3>Alliierte Konferenzen</h3><p><strong>Teheran (1943):</strong> Planung D-Day.<br><strong>Jalta (1945):</strong> Aufteilung Deutschlands.<br><strong>Potsdam (1945):</strong> 4 Ds (Demilitarisierung, Denazifizierung, Dezentralisierung, Demokratisierung).</p>' }
-                    ]
-                },
-                {
-                    id: 'cold_war',
-                    title: 'Kalter Krieg & Bundeswehr',
-                    cards: [
-                        { type: 'text', content: '<h3>Blockbildung</h3><p><strong>NATO (1949):</strong> Kollektive Verteidigung.<br><strong>Warschauer Pakt (1955):</strong> Sozialistisches Gegenstück.</p>' },
-                        { type: 'text', content: '<h3>Bundeswehr (1955)</h3><p><strong>Himmeroder Denkschrift (1950):</strong> Blaupause der Wiederbewaffnung.<br><strong>1955:</strong> NATO-Beitritt. 12 Divisionen geplant. Konzept der "Inneren Führung" (Staatsbürger in Uniform).</p>' },
-                        { type: 'text', content: '<h3>NVA (DDR)</h3><p>Gegründet 1956. Sowjetisches Vorbild. Vorläufer: Kasernierte Volkspolizei.</p>' },
-                        { type: 'text', content: '<h3>Krisen</h3><p><strong>Mauerbau (1961):</strong> "Antifaschistischer Schutzwall".<br><strong>Kuba (1962):</strong> Welt am Rande des Atomkriegs.<br><strong>NATO-Doppelbeschluss (1979):</strong> Nachrüstung vs. SS-20.</p>' },
-                        { type: 'text', content: '<h3>Ende des Kalten Krieges</h3><p>1991: Auflösung der Sowjetunion.</p>' },
-                        { type: 'quiz', question: 'Welches Dokument plante die Wiederbewaffnung?', options: ['Potsdamer Abkommen', 'Himmeroder Denkschrift', 'Schlieffen-Plan'], answer: 1 }
-                    ]
-                }
-            ]
-        },
-        {
-            id: 'polbil',
-            title: 'Politische Bildung',
-            icon: '🌍',
-            description: 'Internationale Sicherheit & Deutsche Politik.',
-            units: [
-                {
-                    id: 'uno',
-                    title: 'Vereinte Nationen (UN)',
-                    cards: [
-                        { type: 'text', content: '<h3>Ziel (Art. 1 Charta)</h3><p>Wahrung des Weltfriedens und der internationalen Sicherheit.</p>' },
-                        { type: 'text', content: '<h3>Organe</h3><p><strong>Generalversammlung:</strong> Alle 193 Staaten. Empfehlungen.<br><strong>Sicherheitsrat:</strong> 5 Ständige (US, RU, CN, UK, FR) mit Veto + 10 Nichtständige. Bindende Beschlüsse.<br><strong>Sekretariat:</strong> Verwaltung (Guterres).</p>' },
-                        { type: 'text', content: '<h3>Rolle Deutschlands</h3><p>Strebt ständigen Sitz an. Nichtständiges Mitglied 2019/2020 (Bewerbung 27/28).</p>' },
-                        { type: 'quiz', question: 'Wer hat ein Veto-Recht in der UN?', options: ['Generalversammlung', 'Sicherheitsrat (P5)', 'Sekretariat'], answer: 1 }
-                    ]
-                },
-                {
-                    id: 'nato',
-                    title: 'NATO',
-                    cards: [
-                        { type: 'text', content: '<h3>Nordatlantikvertrag (1949)</h3><p>Wertebündnis. <strong>Artikel 5:</strong> Bündnisfall (Angriff auf einen ist Angriff auf alle).</p>' },
-                        { type: 'text', content: '<h3>Struktur</h3><p><strong>NAC (Rat):</strong> Höchstes politisches Gremium (Botschafter).<br><strong>SACEUR:</strong> Oberbefehlshaber Europa (US-General, aktuell Cavoli).</p>' },
-                        { type: 'text', content: '<h3>Aktuelle Lage</h3><p>Stärkung der Ostflanke (Baltikum/Polen). 2%-Ziel. Beitritt Finnland/Schweden.</p>' }
-                    ]
-                },
-                {
-                    id: 'eu',
-                    title: 'Europäische Union (EU)',
-                    cards: [
-                        { type: 'text', content: '<h3>Institutionen</h3><p><strong>Europäischer Rat:</strong> Staatschefs (Impulse).<br><strong>Kommission:</strong> "Regierung" (von der Leyen).<br><strong>Rat der EU:</strong> Fachminister.<br><strong>Parlament:</strong> Gesetzgebung/Haushalt (Metsola).</p>' },
-                        { type: 'text', content: '<h3>Sicherheit (GSVP)</h3><p><strong>Petersberg-Aufgaben:</strong> Humanitäre Hilfe, Friedenserhaltung, Krisenbewältigung.<br><strong>Battlegroups (EUBG):</strong> Schnelle Eingreiftruppen.</p>' },
-                        { type: 'text', content: '<h3>Beitritt</h3><p><strong>Kopenhagener Kriterien:</strong> Demokratie, Marktwirtschaft, Übernahme EU-Recht.</p>' }
-                    ]
-                },
-                {
-                    id: 'security_policy',
-                    title: 'Deutsche Sicherheitspolitik',
-                    cards: [
-                        { type: 'text', content: '<h3>Nationale Sicherheitsstrategie (NSS)</h3><p>Integrierte Sicherheit: Politik, Wirtschaft, Militär, Gesellschaft. Resilienz ist Kern.</p>' },
-                        { type: 'text', content: '<h3>Bedrohungsanalyse</h3><p>Cyber, Terror, Hybride Bedrohungen, Russland, Klimawandel.</p>' },
-                        { type: 'text', content: '<h3>Rechtliche Basis</h3><p><strong>Parlamentsarmee:</strong> Bewaffnete Einsätze erfordern Bundestagsmandat (einfache Mehrheit). Ausnahme: Gefahr im Verzug (Rettung).</p>' },
-                        { type: 'quiz', question: 'Welche Mehrheit braucht ein Mandat?', options: ['2/3 Mehrheit', 'Einfache Mehrheit (50%+1)', 'Einstimmigkeit'], answer: 1 }
-                    ]
-                }
-            ]
-        },
-        {
-            id: 'taktik2',
-            title: 'Taktik II (Advanced)',
-            icon: '♟️',
-            description: 'Beurteilung der Lage & Entschlussfassung.',
-            units: [
-                {
-                    id: 'lageaenderung',
-                    title: 'Lageänderung',
-                    cards: [
-                        { type: 'text', content: '<h3>Kernfrage</h3><p><strong>Grundlegende Lageänderung?</strong> Hat sich die Lage so entwickelt, wie der Vorgesetzte es nicht vorhergesehen hat?</p>' },
-                        { type: 'text', content: '<h3>Prüffragen</h3><p>1. Hätte der Vorgesetzte den Befehl so gegeben, wenn er das gewusst hätte?<br>2. Ist das Gefecht noch im eigenen Verantwortungsbereich führbar?<br>3. Ist die "Wesentliche Leistung" noch erbringbar?</p>' }
-                    ]
-                },
-                {
-                    id: 'handlungsbedarf',
-                    title: 'Handlungsbedarf',
-                    cards: [
-                        { type: 'text', content: '<h3>Wann handeln?</h3><p>1. Gefährdung des Auftrags (Gefahr).<br>2. Chance zur Initiative (Gelegenheit).</p>' },
-                        { type: 'text', content: '<h3>Prozess</h3><p>Lagefeststellung -> Faktorenvergleich (Kräfte, Raum, Zeit) -> Entschluss -> Befehl.</p>' },
-                        { type: 'quiz', question: 'Was ist der Hauptgrund, einen Plan zu ändern?', options: ['Langeweile', 'Grundlegende Lageänderung', 'Funkstille'], answer: 1 }
-                    ]
-                }
-            ]
+        { 
+          type: 'text', 
+          content: `
+            <h3>Vorgesetztenverhältnisse (VvV)</h3>
+            Festlegung, wer wem Befehle erteilen darf:<br><br>
+            <b>§ 1 Dienstgrad:</b> Innerhalb der Einheit (subsidiär).<br>
+            <b>§ 2 Dienststellung:</b> Kompaniechef, Zugführer etc. (stärkstes VvV).<br>
+            <b>§ 3 Besondere Anordnung:</b> "Hiermit unterstelle ich..." (Vfg. d. BMVg).<br>
+            <b>§ 4 Fachvorgesetzter:</b> Nur für den fachlichen Bereich (z.B. Arzt/Schirrmeister).<br>
+            <b>§ 5 Besondere Aufgaben:</b> Streife, Wache, Leiter v. Dienst.<br>
+            <b>§ 6 Gefahr im Verzug:</b> Wenn d. zuständige Vorgesetzte nicht erreichbar ist.`
         }
-    ]
+      ]
+    },
+
+    /* ---------------------------------------------------------
+       2. Rechtmäßigkeit & Verbindlichkeit
+    --------------------------------------------------------- */
+    {
+      id: 'rechtmaessigkeit',
+      title: 'Rechtmäßigkeit & Verbindlichkeit',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Rechtmäßigkeit (§ 10 Abs. 4 SG)</h3>
+            Prüfung aus Sicht des Befehlsgebers:<br><br>
+            <b>1. Dienstlicher Zweck:</b> Förderung der Aufgaben der Bundeswehr.<br>
+            <b>2. Völkerrecht:</b> Einhaltung v. Verträgen & Art. 25 GG.<br>
+            <b>3. Gesetze:</b> Kein Verstoß gegen StGB, WStG, etc.<br>
+            <b>4. Dienstvorschriften:</b> Beachtung der internen Regelwerke.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verbindlichkeit (§ 11 Abs. 1 & 2 SG)</h3>
+            Wann MUSS der Soldat gehorchen?<br><br>
+            <b>1. Dienstlicher Zweck:</b> Muss erkennbar sein.<br>
+            <b>2. Menschenwürde:</b> Verbot von entwürdigender Behandlung/Schikane.<br>
+            <b>3. Zumutbarkeit:</b> Prüfung der Verhältnismäßigkeit.<br>
+            <b>4. Keine Straftat:</b> Befehle zur Begehung einer Straftat sind unverbindlich (§ 11 Abs. 2 SG).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verhältnismäßigkeit (Prüfschema)</h3>
+            Bei Eingriffen in Grundrechte (z.B. Art. 2 GG):<br><br>
+            <b>1. Geeignetheit:</b> Ist die Maßnahme zwecktauglich?<br>
+            <b>2. Erforderlichkeit:</b> Gibt es ein milderes, gleich wirksames Mittel?<br>
+            <b>3. Angemessenheit:</b> Stehen Zweck und Mittel im vernünftigen Verhältnis? (Güterabwägung)`
+        }
+      ]
+    },
+
+    /* ---------------------------------------------------------
+       3. Soldatengesetz - Pflichten des Soldaten
+    --------------------------------------------------------- */
+    {
+      id: 'soldatenpflichten',
+      title: 'Pflichtenstruktur des SG',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Kernpflichten (§§ 7 - 12 SG)</h3>
+            <b>§ 7 Treuepflicht:</b> Loyalität zur Verfassung & Schutz des Bundesvermögens.<br>
+            <b>§ 8 FDGO:</b> Aktives Eintreten für die Demokratie & Menschenwürde.<br>
+            <b>§ 10 Vorgesetztenpflichten:</b> Fürsorge (Abs. 3) & Dienstaufsicht (Abs. 2).<br>
+            <b>§ 12 Kameradschaft:</b> Beistandspflicht & Verbot von Ausgrenzung (Satz 2).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verhalten im/außer Dienst (§ 17 SG)</h3>
+            <b>Abs. 1:</b> Achtungs- & vertrauenswürdiges Verhalten (Im Dienst).<br>
+            <b>Abs. 2 S. 1/2:</b> Außer Dienst darf das Ansehen der Bw nicht ernsthaft gefährdet werden.<br>
+            <b>Abs. 2 S. 3:</b> Erhalt der Funktionsfähigkeit (z.B. Sport/Gesundheitspflicht).<br>
+            <b>Abs. 3:</b> Politische Zurückhaltung in Uniform.`
+        }
+      ]
+    },
+
+    /* ---------------------------------------------------------
+       4. Dienstvergehen & Wehrstrafrecht
+    --------------------------------------------------------- */
+    {
+      id: 'straftaten_wstg',
+      title: 'Tatbestände des WStG',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 15 WStG: Eigenmächtige Abwesenheit</h3>
+            <b>I. Objektiver Tatbestand:</b><br>
+            1. Truppe verlassen oder fernbleiben.<br>
+            2. Eigenmächtigkeit (kein Urlaub/KE/Krankmeldung).<br>
+            3. Dauer: Länger als 3 volle Kalendertage.<br><br>
+            <b>II. Subjektiv:</b> Vorsatz bzgl. Fernbleiben; bzgl. Dauer reicht Fahrlässigkeit.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 19 WStG: Ungehorsam</h3>
+            <b>I. Objektiver Tatbestand:</b><br>
+            1. Nichtbefolgung eines verbindlichen Befehls.<br>
+            2. Schwerwiegende Folge: Tod, schwere Körperverletzung oder Sachschaden > 750 €.<br><br>
+            <b>Subjektiv:</b> Vorsatz bzgl. Nichtbefolgung; Fahrlässigkeit bzgl. Folge möglich.`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>§ 32 WStG: Missbrauch der Befehlsbefugnis</h3>
+            Straftat des Vorgesetzten:<br><br>
+            1. Missbrauch der Dienststellung zu dienstfremden Zwecken.<br>
+            2. Unzumutbare Forderungen oder Kränkungen des Untergebenen.<br>
+            3. Beeinträchtigung der Menschenwürde.`
+        }
+      ]
+    },
+
+    /* ---------------------------------------------------------
+       5. Beschwerde & Meldeordnung
+    --------------------------------------------------------- */
+    {
+      id: 'beschwerde',
+      title: 'Beschwerdewesen (WBO)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zulässigkeit der Beschwerde (§ 13 WBO)</h3>
+            <b>1. Statthaftigkeit:</b> Gegen jede Maßnahme/Unterlassung (§ 1 WBO).<br>
+            <b>2. Beschwer:</b> Persönliche Beeinträchtigung/Verletzung von Rechten.<br>
+            <b>3. Frist:</b> Frühestens nach 24 Std. (Nachtfrist), spätestens nach 1 Monat (§ 6 WBO).<br>
+            <b>4. Form:</b> Schriftlich oder mündlich zu Protokoll (§ 6 II WBO).`
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zuständigkeit & Ablauf</h3>
+            <b>Empfangszuständig:</b> Der nächste Disziplinarvorgesetzte.<br>
+            <b>Entscheidungszuständig:</b> Der Vorgesetzte, der die Maßnahme angeordnet hat (§ 9 WBO).<br>
+            <b>Wirkung:</b> Keine aufschiebende Wirkung (Befehl muss i.d.R. erst ausgeführt werden).`
+        }
+      ]
+    },
+
+    /* ---------------------------------------------------------
+       6. Zusammenarbeit mit der Staatsanwaltschaft
+    --------------------------------------------------------- */
+    {
+      id: 'abgabe_stawa',
+      title: 'Abgabe an StA (A-2160/6)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Meldung von Straftaten</h3>
+            <b>Nr. 1.9.8 (MUSS):</b> Verbrechen (§ 12 StGB: Mindeststrafe 1 Jahr) wie Raub, Mord, schwere Brandstiftung.<br><br>
+            <b>Nr. 1.9.9 (SOLL):</b> Katalogtaten des WStG (z.B. § 15, § 17, § 19) und Straftaten von erheblicher Bedeutung.<br><br>
+            <b>Nr. 1126 (KANN):</b> Ermessen des Vorgesetzten bei einfachen Vergehen des StGB.`
+        }
+      ]
+    }
+  ]
+},
+/* =========================================================
+    TAKTIK & TRUPPENFÜHRUNG – ULTIMATIVE VERSION
+========================================================= */
+
+{
+  id: 'taktik_leadership_ultimate',
+  title: 'Taktik & Truppenführung',
+  icon: '🎖️',
+  description: 'Vollständige taktische Grundsätze, operative Faktoren und technische Daten.',
+  units: [
+    {
+      id: 'fuehrungslehre_grundlagen',
+      title: 'Truppenführung & Handlungsfelder',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Leitende Prinzipien der TrpFhr</h3>
+            • <b>Führen mit Auftrag:</b> Freiheit in der Ausführung.<br>
+            • <b>Wirkungsorientiertes Denken:</b> Das Ziel definiert die Mittel.<br>
+            • <b>Vernetzter Ansatz:</b> Ressortübergreifende Kooperation.<br>
+            • <b>Operation verbundener Kräfte:</b> Wirksames Zusammenspiel aller Truppengattungen.<br><br>
+            <b>Hauptelemente des Gefechtes:</b><br>
+            Feuer und Bewegung in enger Verbindung mit Sperren.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Handlungsfelder & Faktoren</h3>
+            <b>Kern des Führungsprozesses:</b> Die Entscheidungsfindung.<br><br>
+            <b>Faktoren der Truppenführung:</b><br>
+            1. <b>Kräfte:</b> Eigene Stärke und Feindlage.<br>
+            2. <b>Raum:</b> Geländebegebenheiten und Infrastruktur.<br>
+            3. <b>Zeit:</b> Der meist limitierende Faktor.<br><br>
+            <b>Wichtigste Faktoren für die Entscheidung:</b> Zeit & Information (Handlungsfeld Information).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Raumordnung & Grenzen</h3>
+            <b>Verantwortungsbereich:</b> Zugewiesener Raum; volle Verantwortung des TrFhr.<br>
+            <b>Interessenbereich:</b> Raum über den Verantwortungsbereich hinaus, der für die eigene Führung wichtig ist.<br><br>
+            <b>Grundsatz Grenze:</b><br>
+            Zusammenhängende Geländeabschnitte müssen in <b>einer</b> Verantwortung bleiben. Eigene und feindliche Schwerpunkte sind zu berücksichtigen. Verantwortung für Aufklärung und Sicherung muss klar erkennbar sein.` 
+        }
+      ]
+    },
+    {
+      id: 'schwerpunkt_reserve_detail',
+      title: 'Schwerpunkt & Reserven',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Der Schwerpunkt (SP)</h3>
+            Ort, an dem der <b>Hauptstoß des Angreifers</b> zum Scheitern gebracht werden soll.<br><br>
+            <b>Zweck:</b> Herbeiführen der Entscheidung durch höchste Wirkung.<br>
+            <b>Bildung durch:</b> Zusammenfassung von Kräften, Raum oder Feuer.<br><br>
+            <b>Konkrete Maßnahmen:</b><br>
+            Vorrang beim Feuer, Verdichtung der Aufklärung, Änderung der Raumordnung, Einsatz von Reserven/zusätzlichen Mitteln, Elektronischer Kampf (EloKa).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Reservenführung</h3>
+            <b>Einsatz:</b> Werden grundsätzlich <b>geschlossen</b> eingesetzt.<br>
+            <b>Zweck:</b> Entscheidung erzwingen, SP verlegen, Krisen überwinden.<br><br>
+            <b>Nachsteuerung:</b> Ist die Reserve eingesetzt, muss schnellstmöglich eine neue gebildet werden.<br>
+            <b>Vorbereitungszeit:</b> Der Auftrag <b>Gegenangriff</b> bedarf der meisten Vorbereitungszeit (Erkundung, Feuerregelung, Befehlsgebung).` 
+        }
+      ]
+    },
+    {
+      id: 'verteidigung_aktiv',
+      title: 'Verteidigung & Gegenmaßnahmen',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zweck & Formen der Verteidigung</h3>
+            <b>Ziel:</b> Angriff zum Scheitern bringen (Raum halten oder Feind zerschlagen).<br><br>
+            <b>Defensive Aktivitäten:</b><br>
+            Eigener Raum halten, Gegner aufhalten/abschwächen, Zeit gewinnen.<br><br>
+            <b>Auffangen:</b><br>
+            Wird befohlen in tiefer Verteidigungsführung, wenn ein Einbruch nicht aufgehalten werden kann und ein Gegenangriff keine Aussicht auf Erfolg verspricht.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Gegenstoß vs. Gegenangriff</h3>
+            <b>Gegenstoß:</b><br>
+            Angriff meist ohne Vorbereitung, nah gestecktes Ziel. Aus eigenem Entschluss mit verfügbaren Kräften in günstiger Lage.<br><br>
+            <b>Gegenangriff:</b><br>
+            Vorgeplant und vorbereitet (meist Reserven). Ziel: Feindkräfte durch Schnelligkeit/Überraschung zerschlagen und Handlungsfreiheit gewinnen.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Einbruch vs. Durchbruch</h3>
+            <b>Einbruch:</b> Eindringen in Stellungen mit begrenztem Erfolg; keine nachhaltige Kontrolle.<br>
+            <b>Durchbruch:</b> Strategischer Erfolg; Stellungen vollständig überwunden. Folgt: Umgruppierung und Vorstoß in das Hinterland.` 
+        }
+      ]
+    },
+    {
+      id: 'gefechtsfuehrung_technik_stf',
+      title: 'Gefechtsführung & Technik',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Strukturen & Wirkungsformen</h3>
+            <b>FAWU (Gliederung):</b> Führung (Gefechtsstand), Aufklärung (Drohnen), Wirkung (Sperren/Waffen), Unterstützung (Logistik).<br><br>
+            <b>Hammer-Amboss-Prinzip:</b><br>
+            • <b>Amboss (Feuer):</b> Feind binden, Bewegungsfreiheit einschränken.<br>
+            • <b>Hammer (Bewegung):</b> Flankenstoß/Umfassung in die Tiefe zur Zerschlagung.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>4 Wirkforderungen STF</h3>
+            1. <b>Blind (bli):</b> Ausweichen von Kräften aus der Sichtlinie ermöglichen.<br>
+            2. <b>Overwatch (ovw):</b> Überwachung (z.B. ABRA).<br>
+            3. <b>Engage:</b> Allg. Auftrag bei gestauten Feinden an RiMiSpe.<br>
+            4. <b>Annihilate:</b> Vernichtungsauftrag.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Waffensysteme & Reichweiten</h3>
+            <b>PzGrenKp (14 Pumas):</b><br>
+            • 2000m KE | 3000m ABM | 4000m MELLS.<br><br>
+            <b>PzZg (4 Leopard):</b><br>
+            • 3000m KE | 5000m HE.<br><br>
+            <b>Stellungsraum:</b> Besteht aus mehreren vorbereiteten Stellungen; ermöglicht Kampf aus wechselnden Positionen.` 
+        }
+      ]
+    },
+    {
+      id: 'pioniere_beratung_sperren',
+      title: 'Pionierwesen & Beratung',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Pionierunterstützung & Berater</h3>
+            <b>Unmittelbar:</b> Schnelle Durchführung (laufende OP).<br>
+            <b>Allgemein:</b> Einsatzinfrastruktur (langfristig).<br><br>
+            <b>Berater-Ebenen:</b><br>
+            ZgFhr → KpChef | KpChef → BtlKdr | Btl → Brig | Brig → Reg | Reg → Div.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Sperren & Kernaufgaben</h3>
+            <b>4 Kernaufgaben:</b> Bewegungen fördern (eigene), Überlebensfähigkeit erhöhen, Hemmen/Kanalisieren (Feind), Beitrag zum Lagebild.<br><br>
+            <b>Zweck Sperren:</b> Lenken, Hemmen, Stauen, Abnutzen, Kanalisieren.<br>
+            <i>Merke: Sperren sind zwingend zu überwachen!</i>` 
+        }
+      ]
+    },
+    {
+      id: 'planung_besonderheiten_vstk',
+      title: 'Planung & Verspätungen',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Informationen Aufklärung</h3>
+            Bei der Aufklärung/Informationen ist zwingend zu klären:<br>
+            • Art und Stärke des Feindes.<br>
+            • Verhalten und Gliederung.<br>
+            • Absicht des Gegners.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Verspätete Aufträge (vstk/verm)</h3>
+            <b>Auswirkungen auf geplante Aufträge:</b><br>
+            • Wenig Zeit zur Erkundung.<br>
+            • Eingeschränkte Kampfkraft.<br>
+            • Lange Dauer bis zur Bildung einer neuen Reserve.<br><br>
+            <b>Phasen Angriffsvorbereitung:</b><br>
+            Erkundung Anmarsch, Absprache VRV-Kräfte (Feuerregelung), eigene Feuerplanung, Befehlsgebung.` 
+        }
+      ]
+    }
+  ]
+},
+/* =========================================================
+    MILITÄRGESCHICHTE – VOLLSTÄNDIG & DETAILREICH
+========================================================= */
+
+{
+  id: 'milhistory',
+  title: 'Militärgeschichte',
+  icon: '⚔️',
+  description: 'Detaillierte Chronik vom 30-jährigen Krieg bis zum Ende der UdSSR 1991.',
+  units: [
+    {
+      id: 'fruehe_neuzeit',
+      title: 'Frühe Neuzeit & Absolutismus',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>30-jähriger Krieg (1618–1648)</h3>
+            • <b>Auslöser:</b> Prager Fenstersturz (1618).<br>
+            • <b>Konflikt:</b> Protestanten gegen Katholiken, Spannungen seit den 1580ern.<br>
+            • <b>Landesherr:</b> Bestimmt die Konfession (Cuius regio, eius religio).<br>
+            • <b>Böhmen:</b> Sonderfall (prot. Volk / kath. König).<br>
+            • <b>Akteure:</b> Wallenstein (Militärunternehmer), Gustav II. Adolf (Schwedenkönig).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Westfälischer Frieden (1648)</h3>
+            • <b>Orte:</b> Rathaus Osnabrück & Münster.<br>
+            • <b>Ereignis:</b> Schwur span. & niederl. Gesandter (Frieden von Münster).<br>
+            • <b>Kern:</b> Gleichberechtigung von Katholiken, Lutheranern und Calvinisten.<br>
+            • <b>Bedeutung:</b> Basis für dt. Föderalismus & zw.staatliche Regelungen.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Absolutismus & Preußen</h3>
+            • <b>Herrschaft:</b> Souverän mit ungeteilter Staatsgewalt, keine Mitwirkung anderer Gruppen.<br>
+            • <b>Legitimation:</b> "Von Gottes Gnaden", über dem Gesetz, aber "Diener Gottes".<br>
+            • <b>7-jähriger Krieg:</b> Aufstieg Preußens in der Pentarchie (PR, GB, RU, FR, Ö). Bündnis PR-GB.` 
+        }
+      ]
+    },
+    {
+      id: 'napoleon_reformen',
+      title: 'Napoleonische Ära & Preußische Reformen',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Französische Revolution (1789-1799)</h3>
+            • <b>04/1792:</b> Krieg an Österreich. 1792: Ende Monarchie. 1793: Hinrichtung König.<br>
+            • <b>Napoleon:</b> Beendet Rev. 1799 (Überwinder).<br>
+            • <b>Koalitionskriege:</b> 1. Krieg (1792-1797) mit Kanonade von Valmy. 2. Krieg (1798-1802) als Basis für Napoleons Aufstieg.<br>
+            • <b>Ägypten-Expedition:</b> (1798-1801).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zusammenbruch Preußens 1806/07</h3>
+            • <b>Schlacht von Jena (14.10.1806):</b> PR (Lineartaktik, alte Kommandeure, Überheblichkeit) unterliegt FR (Kolonnentaktik, flexible Divisionen, eigenst. Artillerie, Vernichtungsstrategie).<br>
+            • <b>Frieden von Tilsit (1807):</b> Preußen als Pufferstaat; Verlust aller Gebiete westl. Elbe; max. 42.000 Mann Heer; Verbot der Wehrpflicht; Besetzung Berlins (18.000 Mann Vollversorgung).<br>
+            • <b>Folge:</b> Armut & Demütigung.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Preußische Heeresreform (Kernelemente)</h3>
+            • Abschaffung Adelsprivileg.<br>
+            • <b>Krümper-System:</b> Umgehung des Wehrpflichtverbots.<br>
+            • <b>Taktik:</b> Kolonnen- & Tirailleur-Taktik.<br>
+            • <b>Struktur:</b> Waffengemischte Divisionen, Kriegsministerium, Kriegsschulen/Akademien.<br>
+            • Milderung des Wehrstrafrechts.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Nationale Erhebung & Symbole</h3>
+            • <b>Nationalfarben:</b> Uniform Lützower Jäger (Schwarz, Rot, Gold); "Gold gab ich für Eisen". Symbol für bestehende Einheit.<br>
+            • <b>Eisernes Kreuz (10.03.1813):</b> Stiftung zum Geb. von Königin Luise. Erster Orden für alle Ränge (unabh. von Stand). Anlehnung an Deutschritter-Tatenkreuz.<br>
+            • <b>Werte:</b> Ritterlichkeit, Freiheit, Vaterlandsliebe, Tapferkeit.` 
+        }
+      ]
+    },
+    {
+      id: 'restauration_einigung',
+      title: 'Restauration & Reichsgründung',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Wiener Kongress 1815 (Metternich)</h3>
+            • <b>Motive:</b> Restauration, Legitimität, Solidarität gegen Revolution, Pentarchie-Gleichgewicht.<br>
+            • <b>Ergebnisse:</b> FR bleibt Großmacht (1792); RU halbhegemonial; GB gewinnt Helgoland/Malta; PR erhält Rheinland & Sachsen ("Wacht am Rhein"); Ö wächst aus DEU heraus.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Der Deutsche Bund (1815)</h3>
+            • Lockerer Staatenbund (41 Staaten); Nachfolge HRRDN.<br>
+            • <b>Führung:</b> PR & Ö. Inkl. GB, Dänemark, Niederlande.<br>
+            • <b>Ziel:</b> Europ. Sicherheit & eigene Kriegsverfassung.<br>
+            • <b>Vormärz:</b> Konflikt Fürsten (Restauration) vs. Bürgertum (Liberalismus).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Revolution & Einigungskriege</h3>
+            • <b>Frankfurt 1848:</b> Nationalstaat "von unten", Teilhabe, Versammlungsfreiheit. Scheitert an Kronenablehnung Friedr. Wilh. IV.<br>
+            • <b>Erfurter Union:</b> Gescheiterte Einigung "von oben".<br>
+            • <b>Kriege:</b> 1864 Dänemark (Düppeler Schanzen); 1866 Ö (Königgrätz/Bruderkrieg); 1870/71 FR (Emser Depesche/Sedan).<br>
+            • <b>18.01.1871:</b> Kaiserproklamation Versailles.` 
+        }
+      ]
+    },
+    {
+      id: 'ära_wilhelm',
+      title: 'Das Kaiserreich bis 1918',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Bismarcks Bündnispolitik (Isolation FR)</h3>
+            • Dreikaiserbund (1872/73), Zweibund (1879), Dreibund (1882), Beitritt Rumänien (1883), Rückversicherungsvertrag (1887), Mittelmeerabkommen (1887).<br><br>
+            • <b>Dreikaiserjahr 1888:</b> Wilhelm I. †, Friedrich III. †, Wilhelm II. tritt an.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Wilhelminismus & Balkan</h3>
+            • <b>1890:</b> Bismarck-Entlassung; Ende Konsolidierung; Weltpolitik & Flotte.<br>
+            • Schutzzollpolitik (ab 1878); Nichtverlängerung Rückvers.-Vertrag; Einkreisung.<br>
+            • <b>Balkankriege 1912/13:</b> Balkanbund vs. Osm. Reich. RU (Schutzmacht Slawen) vs. Ö-U.<br>
+            • <b>Ergebnis:</b> Albanien-Gründung, Gebietsgewinne Serbien/GR/Montenegro.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Erster Weltkrieg (1914-1918)</h3>
+            • <b>Ausbruch:</b> 28.06. Sarajevo (Franz Ferdinand †). Blankoscheck 06.07. Ultimatum 23.07. Kriegserklärungen ab 28.07.<br>
+            • <b>Militär:</b> Schlieffenplan (Zweifrontenkrieg); Verdun 1916 (Stellungskrieg).<br>
+            • <b>Wende 1917:</b> USA-Eintritt (Zimmermann-Telegramm).<br>
+            • <b>Ende:</b> 11.11.1918, 11 Uhr, Compiègne (Erzberger/Foch).` 
+        }
+      ]
+    },
+    {
+      id: 'weimar_ns',
+      title: 'Weimarer Republik & NS-Zeit',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Versailles & Geheimrüstung</h3>
+            • <b>Versailles:</b> Art. 231 (Schuld); 100k Heer; 15k Marine; 4k Offiziere; 12/25 J. Verpflichtung; Verbot Lw/Pz/Gas/GenStab.<br>
+            • <b>Dolchstoßlegende:</b> Heer "im Felde unbesiegt" (Hindenburg/Ludendorff).<br>
+            • <b>Geheim-Kooperation UdSSR:</b> Kasan (Pz), Tomka (Chem.), Lipezk (Flugzeug).<br>
+            • <b>Struktur:</b> Führerheer, Truppenamt (GenStab-Ersatz), Schwarze Reichswehr.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>NS-Aufstieg & Kriegsvorbereitung</h3>
+            • <b>09.11.1923:</b> Hitler-Putsch scheitert; Haft; Legalitätstaktik.<br>
+            • <b>1938:</b> Münchner Abkommen (Sudeten). Chamberlain lenkt ein.<br>
+            • <b>15.03.1939:</b> Zerschlagung "Resttschechei".` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Alliierte Konferenzen</h3>
+            • <b>Teheran (1943):</b> Mil. Vorgehen, Kapitulation, Aufteilung PR.<br>
+            • <b>Jalta (02/1945):</b> 4 Zonen, Entmilitarisierung, Entnazifizierung.<br>
+            • <b>Potsdam (08/1945):</b> Die 5 Ds (Demil., Denaz., Dezentr., Demokr., Demontage).` 
+        }
+      ]
+    },
+    {
+      id: 'kalter_krieg_ende',
+      title: 'Kalter Krieg & Systemkonflikt',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>NATO & Warschauer Pakt</h3>
+            • <b>NATO (1949):</b> Reaktion auf CZ-Umsturz & Berlin-Blockade.<br>
+            • <b>WP (1955-1991):</b> Sozialist. Hilfeleistung; sowjet. Präsenz; keine Wirtschaftskomponente.<br>
+            • <b>Neutralität:</b> IRL, Ö, CH (Neutral), FIN/SWE (Neutral bis 2022).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Wiederbewaffnung BRD & DDR</h3>
+            • <b>BRD:</b> Himmeroder Denkschrift (1950); NATO-Beitritt 09.05.1955 (12 Div., 20 Geschw., 172 Schiffe).<br>
+            • <b>DDR:</b> KVP -> NVA-Gründung (01.03.1956); Wehrpflicht 1962; sowjet. Vorbild; kaum Wehrmacht-Veteranen.<br>
+            • <b>13.08.1961:</b> Mauerbau ("Antifa Schutzwall").` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Krisen bis zum Zerfall</h3>
+            • <b>Kubakrise 1962:</b> Raketen TR (USA) vs. Kuba (RU); Seeblockade; Abzug beider Seiten.<br>
+            • <b>NATO-Doppelbeschluss (1979):</b> Reaktion auf sowjet. Aufrüstung; Aufstellung Mittelstrecke vs. Verhandlung.<br>
+            • <b>12/1991:</b> Ende UdSSR; Rücktritt Gorbatschow.` 
+        }
+      ]
+    }
+  ]
+},
+   
+/* =========================================================
+    POLITISCHE BILDUNG – VOLLSTÄNDIG AUS NOTIZEN
+========================================================= */
+
+{
+  id: 'pol_education',
+  title: 'Politische Bildung',
+  icon: '🏛️',
+  description: 'Sicherheitspolitik, Bündnisse und internationale Organisationen.',
+  units: [
+    {
+      id: 'parlament_bundeswehr',
+      title: 'Parlamentsvorbehalt & Recht',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Prozess bewaffnete Einsätze (7 Schritte)</h3>
+            1. Konfliktsituation entsteht.<br>
+            2. <b>VN-Sicherheitsrat</b> analysiert + Rechtsgrundlage.<br>
+            3. NATO/VN/EU autorisiert den Einsatz.<br>
+            4. Bitte an die Bundesregierung.<br>
+            5. Mandatsentwurf & Kabinettsentschluss.<br>
+            6. Beratung in Verteidigungs- & Auswärtigem Ausschuss.<br>
+            7. <b>Bundestag-Abstimmung</b> (Genehmigung 50+1) -> Entsendung.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Parlamentsbeteiligungsgesetz</h3>
+            Gibt vor, wie/wann Anträge an den BT gestellt werden. Pflichtangaben:<br><br>
+            • Einsatzauftrag & Einsatzgebiet.<br>
+            • Rechtliche Grundlagen.<br>
+            • Höchstzahl der Soldaten & Fähigkeiten der SK.<br>
+            • Geplante Dauer & voraussichtliche Kosten.` 
+        }
+      ]
+    },
+    {
+      id: 'nss_vpr_strategie',
+      title: 'Strategien (NSS) & Aufträge (VPR)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Nationale Sicherheitsstrategie (NSS)</h3>
+            <b>Ganzheitlicher Ansatz:</b> Politik, Wirtschaft, Gesellschaft, Militär.<br><br>
+            • <b>Ziel:</b> Freiheit, Sicherheit, Stabilität, Bewahrung der Demokr. Grundordnung.<br>
+            • <b>Werte:</b> Demokratie, Rechtsstaat, Menschenrechte, int. Zusammenarbeit.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Bedrohungsanalyse gemäß NSS</h3>
+            • Cyberangriffe, Terrorismus, hybride Bedrohungen.<br>
+            • Klimawandel, globale Krisen, geopolitische Spannungen.<br>
+            • Inner-/zwischenstaatliche Konflikte, Demographie, Ressourcenkampf, Org. Kriminalität.<br><br>
+            <i>Notwendigkeit: Resilienz, schnelle Reaktion & Integration aller Bereiche.</i>` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Kernaufträge gemäß VPR</h3>
+            • <b>Abschreckung:</b> Hoheits- & Bündnisgebiet in allen Dimensionen.<br>
+            • <b>Landesverteidigung (LV):</b> & territoriale Verteidigung.<br>
+            • <b>Bündnisverteidigung (BV):</b> bei Angriffen auf Partner.<br>
+            • Abwehr terroristischer & hybrider Bedrohungen.<br>
+            • Festigung transatlantischer & europäischer Verteidigungsfähigkeit.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Single Set of Forces</h3>
+            Fähigkeiten sind in einem Kräftedispositiv gebündelt (Flexibilität/Agilität).<br><br>
+            • Ermöglicht Einsatz in versch. Regionen/Bedrohungen.<br>
+            • Einbindung multinationaler Partner zur Wirkungsgradsteigerung.<br>
+            • Schnelle Nutzung von Hochtechnologie-Innovationen.` 
+        }
+      ]
+    },
+    {
+      id: 'nato_strukturen',
+      title: 'NATO: Bündnis & Ostflanke',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Artikel 5 & LV/BV Maßnahmen</h3>
+            • <b>Art. 5:</b> Angriff auf einen = Angriff auf alle. Kollektive Verteidigung.<br><br>
+            <b>Maßnahmen:</b><br>
+            Übungen zur Einsatzbereitschaft, Modernisierung, verstärkte Präsenz im Bündnisgebiet, Verteidigungsplanung (NATO-Plan/Bund).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Führung & Gremien</h3>
+            • <b>NAC (North Atlantic Council):</b> Wichtigstes Gremium (Botschafter), polit. Entscheidungen.<br>
+            • <b>SACEUR:</b> Gen. Christopher G. Cavoli (USA).<br>
+            • <b>ACO/SHAPE:</b> Gen. Laubenthal ist Chief of Staff (COS).<br><br>
+            <i>Gipfelentscheidung W24: Ausbau mil. Kapazitäten, Fokus auf Osteuropa & Cyber/Hybrid.</i>` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Lage NATO-Ostflanke</h3>
+            • <b>Polen/Baltikum:</b> Multinationale Kampfgruppen & Präsenz.<br>
+            • <b>Rumänien/Bulgarien:</b> Sicherung Südostflanke.<br>
+            • <b>Infrastruktur:</b> Ausbau Logistik & Stützpunkte.<br>
+            • <b>Speerspitze:</b> Schnelle Eingreifkräfte für Ernstfall-Reaktion.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>DEU Verteidigungsausgaben 2024</h3>
+            • <b>Haushalt:</b> 51,95 Mrd. € | <b>Sondervermögen:</b> 19,8 Mrd. €<br><br>
+            <b>Einzelposten (Beispiele):</b><br>
+            • Munition: 280 Mio. | Kampffahrzeuge: 79 Mio.<br>
+            • Flugzeuge: 320 Mio. | Schiffe: 80 Mio.<br>
+            • Mil. Ausrüstung (allg.): 2,48 Mrd. €` 
+        }
+      ]
+    },
+    {
+      id: 'eu_europa',
+      title: 'Europäische Union (EU)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Prinzipien & Organe</h3>
+            • <b>Supranationalität:</b> EU-Recht steht vor nationalem Recht.<br>
+            • <b>Europäischer Rat:</b> Impulse (Antonio Costa).<br>
+            • <b>EU Kommission:</b> Interessen weltweit (Ursula von der Leyen).<br>
+            • <b>Rat der EU:</b> Kaja Kallas (Außen-/Sicherheitspolitik).<br>
+            • <b>EU Parlament:</b> Roberta Metsola (Bürgervertretung, Haushalt).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Beitritt & Krisenreaktion</h3>
+            <b>Kopenhagener Kriterien:</b> 1. Politisch, 2. Wirtschaftlich, 3. Rechtlich.<br><br>
+            • <b>EUBG:</b> Schnelle Eingreiftruppe zur Friedenssicherung.<br>
+            • <b>EU-RDC:</b> Teil der Verteidigungsplanung.<br>
+            • <b>Petersberg-Abkommen:</b> Aufgaben (humanitär, Krisenmanagement, Stabilisierung).` 
+        }
+      ]
+    },
+    {
+      id: 'vereinte_nationen',
+      title: 'Vereinte Nationen (VN)',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Ziele & Organe</h3>
+            • <b>Art. 1 Charta:</b> Weltfrieden, Sicherheit, friedliche Konfliktlösung.<br>
+            • <b>Sekretariat:</b> GenSek Antonio Guterres (Vermittler).<br>
+            • <b>GenVersammlung:</b> 193 Staaten, Empfehlungen.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Sicherheitsrat (SR)</h3>
+            • <b>15 Mitglieder:</b> 5 ständige (CHN, FRA, GBR, RUS, USA) mit Veto | 10 nichtständige.<br>
+            • Beschlüsse sind bindend.<br><br>
+            <b>DEU Interessen:</b> Bewerbung für 2027/28; Streben nach umfassender Reform inkl. ständigem Sitz.` 
+        }
+      ]
+    }
+  ]
+},
+
+/* =========================================================
+    TAKTIK II – VERTIEFUNG & OPERATIVE DETAILS
+========================================================= */
+
+{
+  id: 'taktik_detail_v2',
+  title: 'Taktik II (Vertiefung)',
+  icon: '⚔️',
+  description: 'Detaillierte taktische Verfahren, Wirkungsbereiche und operative Planung.',
+  units: [
+    {
+      id: 'gefechtsarten_dynamik',
+      title: 'Dynamik der Verteidigung',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Zweck des Verteidigens</h3>
+            Angriff zum Scheitern bringen durch:<br><br>
+            1. <b>Halten des Raumes:</b> Statische Komponente, Geländebehauptung.<br>
+            2. <b>Zerschlagen/Abnutzen:</b> Dynamische Komponente, Vernichtung der feindlichen Kampfkraft.<br><br>
+            <b>Definition "Aktiv":</b> Den eigenen Raum behaupten, den Gegner bereits im Vorfeld aufhalten/abschwächen und dadurch Zeit für Reserven gewinnen.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Angriffsoperationen aus der Verteidigung</h3>
+            • <b>Gegenstoß:</b> Unmittelbare Reaktion aus der Lage. Führt der Führer vor Ort aus eigenem Entschluss mit Kräften aus dem laufenden Kampf aus. <i>Ziel: Begrenzt (Einbruch rückgängig machen).</i><br><br>
+            • <b>Gegenangriff:</b> Strategische Maßnahme mit umfassender Planung. Meist durch Reserven geführt. <i>Ziel: Zerschlagung des Feindes und Rückgewinnung der Initiative.</i>` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Einbruch vs. Durchbruch</h3>
+            • <b>Einbruch:</b> Begrenztes Eindringen in die Verteidigungsstellung. Kontrolle über den Abschnitt ist noch nicht nachhaltig verloren.<br><br>
+            • <b>Durchbruch:</b> Komplette Überwindung des Stellungssystems. Feind beginnt Umgruppierung für den Stoß ins Hinterland (operative Freiheit).` 
+        }
+      ]
+    },
+    {
+      id: 'waffensysteme_technik',
+      title: 'Technische Kapazitäten & Wirkbereiche',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>PzGrenKp - Waffensystem PUMA</h3>
+            • <b>Struktur:</b> 14 Schützenpanzer pro Kompanie.<br>
+            • <b>Wirkung (KE):</b> Kinetische Energie bis 2000m.<br>
+            • <b>Wirkung (ABM):</b> Air Burst Munition bis 3000m.<br>
+            • <b>Wirkung (MELLS):</b> Lenkflugkörper-System bis 4000m.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>PzZg - Waffensystem LEOPARD 2</h3>
+            • <b>Struktur:</b> 4 Kampfpanzer pro Zug.<br>
+            • <b>Wirkung (KE):</b> Kinetische Energie bis 3000m.<br>
+            • <b>Wirkung (HE):</b> High Explosive (Sprenggranate) bis 5000m.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Stellungsbau & Raum</h3>
+            Ein <b>Stellungsraum</b> umfasst mehrere erkundete und vorbereitete Wechselstellungen sowie gedeckte Aufstellungsplätze.<br><br>
+            <b>Zweck:</b> Ermöglicht "Wirken aus der Tiefe" und schnellen Stellungswechsel zur Vermeidung von feindlichem Gegenfeuer.` 
+        }
+      ]
+    },
+    {
+      id: 'pioniere_spezial',
+      title: 'Pionierwesen & Hemmung',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Pionier-Unterstützungsarten</h3>
+            1. <b>Unmittelbar:</b> Schnelle Durchführung während der Operation (z.B. Minenräumen im Angriff).<br>
+            2. <b>Allgemein:</b> Langfristige Infrastruktur (Gefechtsstände, feste Sperren).<br><br>
+            <b>Kernaufgaben:</b><br>
+            • Bewegungen fördern (eigene).<br>
+            • Bewegungen hemmen & kanalisieren (Feind).<br>
+            • Überlebensfähigkeit erhöhen (Schanzen).<br>
+            • Beitrag zum Lagebild (Erkundung).` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Sperrwesen & Beratung</h3>
+            Sperren dienen dem Lenken, Hemmen, Stauen und Abnutzen.<br><br>
+            • <b>Wichtigster Grundsatz:</b> Sperren ohne Überwachung und Feuerbedeckung sind wertlos.<br><br>
+            <b>Hierarchie der Pi-Berater:</b><br>
+            ZgFhr → KpChef | KpChef → BtlKdr | Btl → Brigade | Brigade → Regiment | Regiment → Division.` 
+        }
+      ]
+    },
+    {
+      id: 'operative_planung',
+      title: 'Operative Planung & Zeitmanagement',
+      cards: [
+        { 
+          type: 'text', 
+          content: `
+            <h3>Der Gegenangriff (Phasen)</h3>
+            Diese Auftragsart benötigt die <b>meiste Vorbereitungszeit</b>.<br><br>
+            1. Erkundung der Anmarschwege.<br>
+            2. Absprachen mit den Kräften am VRV (Vorderer Rand der Verteidigung) zur Feuerregelung.<br>
+            3. Eigene detaillierte Planung und Befehlsgebung für den Stoß.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Führungsfaktor Zeit & Information</h3>
+            Kern des Prozesses: <b>Entscheidungsfindung</b>.<br><br>
+            • <b>Folgen von Zeitverzug:</b> Wenig Zeit für Erkundung, Absinken der Kampfkraft, verzögerte Reservebildung.<br><br>
+            • <b>60-Minuten-Regel:</b> Wenn Folgekräfte in weniger als 60 Min. wirken können, gelten sie als unmittelbar lageentscheidend.` 
+        },
+        { 
+          type: 'text', 
+          content: `
+            <h3>Wirkungsformen STF</h3>
+            • <b>Blind (bli):</b> Feind die Sicht nehmen (Nebel/Ausweichen).<br>
+            • <b>Overwatch (ovw):</b> Überwachen von Räumen (z.B. ABRA).<br>
+            • <b>Engage:</b> Bekämpfen (Auftrag bei Feindstau an RiMiSpe).<br>
+            • <b>Annihilate:</b> Vernichten (Vollständige Zerschlagung).` 
+        }
+      ]
+    }
+  ]
+}
+
+]
 };
 
 export async function loadData() {
-    return new Promise(resolve => setTimeout(() => resolve(curriculum), 10));
+return new Promise(resolve => setTimeout(() => resolve(curriculum), 10));
 }
 
 export function getModule(id) {
-    return curriculum.modules.find(m => m.id === id);
+return curriculum.modules.find(m => m.id === id);
 }
 
 export function getUnit(moduleId, unitId) {
-    const mod = getModule(moduleId);
-    return mod ? mod.units.find(u => u.id === unitId) : null;
+const mod = getModule(moduleId);
+return mod ? mod.units.find(u => u.id === unitId) : null;
 }
