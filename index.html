@@ -6,6 +6,7 @@
     <title>TacLearn: Officer Command</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/animations.css">
+    <link rel="stylesheet" href="src/css/timeline.css">
 </head>
 <body>
     <div id="particles"></div>
@@ -17,6 +18,7 @@
         <div id="quiz-view" class="view hidden"></div>
         <div id="practice-view" class="view hidden"></div>
         <div id="profile-view" class="view hidden"></div>
+        <div id="timeline-view" class="view hidden timeline-page" style="background-color: #6bb2e4; padding-top: 20px;"></div>
     </div>
 
     <!-- Navigation Bar (Always Visible) -->
@@ -30,6 +32,10 @@
             <button class="nav-btn" data-target="modules">
                 <span class="icon">📚</span>
                 <span class="label">Module</span>
+            </button>
+            <button class="nav-btn" data-target="timeline">
+                <span class="icon">⚔️</span>
+                <span class="label">Zeitstrahl</span>
             </button>
             <button class="nav-btn" data-target="practice">
                 <span class="icon">🎯</span>

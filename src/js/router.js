@@ -5,6 +5,7 @@ import { renderModules } from './components/module-view.js';
 import { renderProfile } from './components/profile.js';
 import { renderUnit } from './components/unit-view.js';
 import { renderPractice } from './components/practice-view.js';
+import { renderTimeline } from './components/timeline-view.js';
 
 export function initRouter() {
     // Nav Button Listeners
@@ -49,6 +50,10 @@ function handleRoute() {
         case 'profile':
             renderProfile(document.getElementById('profile-view'));
             showView('profile-view');
+            break;
+        case 'timeline':
+            renderTimeline(document.getElementById('timeline-view'));
+            showView('timeline-view');
             break;
         default:
             renderDashboard(document.getElementById('dashboard-view'));

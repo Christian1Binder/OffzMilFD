@@ -13,15 +13,15 @@ def run(playwright):
 
         # Go to Modules
         page.click("button[data-target='modules']")
-        page.wait_for_selector("text=Field Manuals", timeout=5000)
+        page.wait_for_selector("text=Dienstvorschriften", timeout=5000)
 
         # --- VERIFY HISTORY MODULE ---
         page.click("text=Militärgeschichte")
-        page.wait_for_selector("text=The 30 Years' War", timeout=5000)
+        page.wait_for_selector("text=Frühe Neuzeit & Absolutismus", timeout=5000)
 
         # Enter Unit: 30 Years' War
-        page.click("text=The 30 Years' War")
-        page.wait_for_selector("text=Defenestration of Prague", timeout=5000)
+        page.click("text=Frühe Neuzeit & Absolutismus")
+        page.wait_for_selector("text=30-jähriger Krieg", timeout=5000)
 
         # Card 1: Trigger (Defenestration)
         print("Card 1: Trigger")
@@ -31,11 +31,11 @@ def run(playwright):
 
         # Card 2: Key Figures (Wallenstein)
         print("Card 2: Key Figures")
-        page.wait_for_selector("text=Wallenstein", timeout=5000)
+        page.wait_for_selector("text=Westfälischer Frieden", timeout=5000)
 
         # Card 3: Peace
         page.click("#next-btn")
-        page.wait_for_selector("text=Peace of Westphalia", timeout=5000)
+        page.wait_for_selector("text=Absolutismus & Preußen", timeout=5000)
 
         print("History Module Verified.")
 
@@ -45,15 +45,15 @@ def run(playwright):
 
         # --- VERIFY POLITICS MODULE ---
         page.click("text=Politische Bildung")
-        page.wait_for_selector("text=International Organizations", timeout=5000)
-        page.click("text=International Organizations")
+        page.wait_for_selector("text=Europäische Union", timeout=5000)
+        page.click("text=Vereinte Nationen")
 
-        page.wait_for_selector("text=United Nations", timeout=5000)
+        page.wait_for_selector("text=Ziele & Organe", timeout=5000)
         page.click("#next-btn")
 
-        page.wait_for_selector("text=NATO", timeout=5000)
-        if not page.is_visible("text=Collective Defense"):
-             raise AssertionError("NATO content missing")
+        page.wait_for_selector("text=Sicherheitsrat", timeout=5000)
+        if not page.is_visible("text=15 Mitglieder"):
+             raise AssertionError("Sicherheitsrat content missing")
 
         print("Politics Module Verified.")
         print("VERIFICATION PASSED")
