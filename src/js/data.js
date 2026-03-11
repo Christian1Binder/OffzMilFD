@@ -1639,6 +1639,1098 @@ modules: [
         '<p><b>Merksatz:</b> Verstärken stabilisiert · Ablösung ordnet neu · Reserve befähigt · Gegenangriff entscheidet.</p>'
     }
   ]
+},
+     // ---------------------------------------------------------
+// Handlungsfelder der Truppenführung
+// ---------------------------------------------------------
+{
+  id: 'handlungsfelder_truppenfuehrung',
+  title: 'Handlungsfelder der Truppenführung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Handlungsfelder & Faktoren der Truppenführung</h3>
+
+        <p style="line-height:1.7; margin-bottom:16px;">
+          Mil Fhr planen Operationen in beiden Handlungsfeldern – <b>Information</b> sowie den
+          Faktoren der Truppenführung (<b>Kräfte · Raum · Zeit</b>) –
+          und gestalten den Einsatz der Kräfte stets nach Raum und Zeit.
+          Informationen schaffen die Voraussetzung für die zielgerichtete Koordination.
+        </p>
+
+        <!-- Übersichts-Grafik -->
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+
+          <!-- Dach: Truppenführung -->
+          <div style="
+            text-align:center; padding:12px;
+            background:#1e293b; color:#f1f5f9;
+            font-weight:700; font-size:1rem;
+            border-radius:10px 10px 0 0;
+            border-bottom:2px solid #38bdf8;
+          ">Truppenführung</div>
+
+          <!-- Zwei Säulen -->
+          <div style="display:flex; gap:10px;">
+
+            <!-- Information -->
+            <div style="
+              flex:1; background:#0f172a;
+              border:1px solid #38bdf8;
+              border-radius:10px; padding:14px;
+            ">
+              <div style="color:#38bdf8; font-weight:700; margin-bottom:8px;">📡 Information</div>
+              <ul style="margin:0; padding-left:18px; line-height:1.8; color:#e2e8f0; font-size:.95rem;">
+                <li>Grundlage der Entscheidungsfindung (mil Fhr / Stab)</li>
+                <li>Gleichzeitig Wirkungsmittel – gezielt auf Zielgruppen ausrichten</li>
+                <li>Schafft Voraussetzung für Koordination von Kräften, Raum und Zeit</li>
+              </ul>
+            </div>
+
+            <!-- Faktoren -->
+            <div style="
+              flex:2; background:#0f172a;
+              border:1px solid #475569;
+              border-radius:10px; padding:14px;
+            ">
+              <div style="color:#94a3b8; font-weight:700; margin-bottom:8px;">⚙️ Faktoren der Truppenführung</div>
+              <div style="display:flex; gap:8px;">
+
+                <div style="flex:1; background:#1e293b; border-radius:8px; padding:10px;">
+                  <div style="color:#34d399; font-weight:700; margin-bottom:6px;">Kräfte</div>
+                  <p style="font-size:.88rem; line-height:1.6; margin:0; color:#cbd5e1;">
+                    Truppen / Truppenteile zur Auftragserfüllung. In OpBuBa auch lokale Behörden / zivile Org.
+                    Kräfte sind stets Mitteln zugeordnet.
+                  </p>
+                </div>
+
+                <div style="flex:1; background:#1e293b; border-radius:8px; padding:10px;">
+                  <div style="color:#fb923c; font-weight:700; margin-bottom:6px;">Raum</div>
+                  <p style="font-size:.88rem; line-height:1.6; margin:0; color:#cbd5e1;">
+                    3-dim. Umfeld für Landoperationen.
+                    Schlüsselgelände · rückwärtiger Raum · Tageszeit · Jahreszeit.
+                    Grundlage: Beurteilung der Geofaktoren.
+                  </p>
+                </div>
+
+                <div style="flex:1; background:#1e293b; border-radius:8px; padding:10px;">
+                  <div style="color:#a78bfa; font-weight:700; margin-bottom:6px;">Zeit</div>
+                  <p style="font-size:.88rem; line-height:1.6; margin:0; color:#cbd5e1;">
+                    Beeinflusst durch: Abfolge · Dauer · Geschwindigkeit der Planung /
+                    Durchführung · Verfügbarkeit der Kräfte.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Maßnahmen zur Reduzierung des Zeitbedarfs</h3>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px;">
+
+          ${[
+            ['📋', 'Vorbefehl', 'Vorausschauende Bestimmungen früh erteilen'],
+            ['🗺️', 'Rahmen- & Alternativpläne', 'Optionen vorab durchdenken und planen'],
+            ['🔭', 'Frühzeitige Aufklärung & Erkundung', 'Informationsvorsprung sichern'],
+            ['🤝', 'Kollaboratives, paralleles Planen', 'Gleichzeitiges Planen auf allen Ebenen'],
+            ['📡', 'Vorausschauende Regelung', 'Unterstützung und Raumordnung vorplanen'],
+            ['📶', 'Führungsfähigkeit sicherstellen', 'Verbindungen und Stäbe frühzeitig aufbauen'],
+            ['💻', 'Informations- & Waffenstechnik', 'Konsequente Nutzung moderner Systeme'],
+          ].map(([icon, title, desc]) => `
+            <div style="background:#1e293b; border-radius:8px; padding:12px; display:flex; gap:10px; align-items:flex-start;">
+              <span style="font-size:1.4rem;">${icon}</span>
+              <div>
+                <div style="font-weight:700; color:#f1f5f9; font-size:.95rem;">${title}</div>
+                <div style="color:#94a3b8; font-size:.85rem; margin-top:4px;">${desc}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Hauptelemente des Gefechts
+// ---------------------------------------------------------
+{
+  id: 'hauptelemente_gefecht',
+  title: 'Hauptelemente des Gefechts',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Hauptelemente des Gefechts</h3>
+
+        <p style="line-height:1.7; margin-bottom:20px;">
+          Das Gefecht verbundener Kräfte besteht aus dem Zusammenwirken
+          von <b>Information</b>, <b>Abhängigkeit</b> und <b>Wirkung</b>.
+          Information ist das dominierende Element.
+        </p>
+
+        <!-- Kreisdiagramm -->
+        <div style="display:flex; justify-content:center; margin:20px 0;">
+          <svg viewBox="0 0 400 340" width="100%" max-width="400" style="max-width:400px;">
+
+            <!-- Äußerer Ring -->
+            <circle cx="200" cy="170" r="140" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="28"/>
+
+            <!-- Segmente (vereinfacht als Bögen) -->
+            <!-- Information (oben, blau) -->
+            <path d="M200,170 L200,30 A140,140 0 0,1 321,240 Z"
+              fill="rgba(56,189,248,.18)" stroke="#38bdf8" stroke-width="2"/>
+            <!-- Abhängigkeit (unten-rechts, grün) -->
+            <path d="M200,170 L321,240 A140,140 0 0,1 79,240 Z"
+              fill="rgba(52,211,153,.13)" stroke="#34d399" stroke-width="2"/>
+            <!-- Wirkung (unten-links, orange) -->
+            <path d="M200,170 L79,240 A140,140 0 0,1 200,30 Z"
+              fill="rgba(251,146,60,.13)" stroke="#fb923c" stroke-width="2"/>
+
+            <!-- Zentrum -->
+            <circle cx="200" cy="170" r="52" fill="#0f172a" stroke="rgba(255,255,255,.2)" stroke-width="2"/>
+            <text x="200" y="164" text-anchor="middle" font-size="13" fill="#e2e8f0" font-weight="700">Gefecht der</text>
+            <text x="200" y="182" text-anchor="middle" font-size="13" fill="#e2e8f0" font-weight="700">verbundenen</text>
+            <text x="200" y="200" text-anchor="middle" font-size="12" fill="#94a3b8">Waffen</text>
+
+            <!-- Labels -->
+            <text x="200" y="80" text-anchor="middle" font-size="16" fill="#38bdf8" font-weight="800">Information</text>
+            <text x="200" y="98" text-anchor="middle" font-size="11" fill="rgba(240,240,240,.75)">(dominierendes Element)</text>
+
+            <text x="320" y="278" text-anchor="middle" font-size="15" fill="#34d399" font-weight="700">Abhängigkeit</text>
+
+            <text x="80" y="278" text-anchor="middle" font-size="15" fill="#fb923c" font-weight="700">Wirkung</text>
+
+            <!-- Feuerüberlegenheit Banner unten -->
+            <rect x="60" y="310" width="280" height="28" rx="8"
+              fill="rgba(239,68,68,.15)" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="200" y="329" text-anchor="middle" font-size="13"
+              fill="#ef4444" font-weight="700">⚡ Feuerüberlegenheit</text>
+
+          </svg>
+        </div>
+
+        <p style="color:#94a3b8; font-size:.9rem; text-align:center; margin-top:4px;">
+          Feuerüberlegenheit ist zentrale Voraussetzung für den Gefechtserfolg.
+        </p>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Truppeneinteilung & Gefechtsgliederung
+// ---------------------------------------------------------
+{
+  id: 'truppeneinteilung_gefechtsgliederung',
+  title: 'Truppeneinteilung & Gefechtsgliederung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Truppeneinteilung</h3>
+
+        <p style="line-height:1.7; margin-bottom:16px;">
+          Mil Fhr weisen unterstellten Führern durch die Truppeneinteilung die
+          <b>Kräfte und Mittel</b> zu, die zur Auftragserfüllung benötigt werden.
+          Truppenteile können hierzu <b>verstärkt oder vermindert</b> werden.
+          Die Truppeneinteilung wird im <b>Anhang zum OpBef</b> festgelegt
+          und regelt gleichzeitig die <b>Unterstellungsverhältnisse</b>.
+        </p>
+
+        <!-- Schema: Unterstellungsebenen -->
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:.9rem; text-align:center;">
+            <thead>
+              <tr style="background:#1e3a5f; color:#93c5fd;">
+                <th style="padding:10px; border:1px solid #334155;">Ebene</th>
+                <th style="padding:10px; border:1px solid #334155;">Verfahren</th>
+                <th style="padding:10px; border:1px solid #334155;">Wirkung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:#0f172a;">
+                <td style="padding:10px; border:1px solid #334155; color:#f1f5f9;">Unterstellt</td>
+                <td style="padding:10px; border:1px solid #334155; color:#cbd5e1;">Vollständige Unterstellung unter höheren Führer</td>
+                <td style="padding:10px; border:1px solid #334155; color:#94a3b8;">Vollständige Verfügungsgewalt</td>
+              </tr>
+              <tr style="background:#1e293b;">
+                <td style="padding:10px; border:1px solid #334155; color:#f1f5f9;">Verstärkt</td>
+                <td style="padding:10px; border:1px solid #334155; color:#cbd5e1;">Kräfte werden zeitweilig zugewiesen</td>
+                <td style="padding:10px; border:1px solid #334155; color:#94a3b8;">Erhöhung der Kampfkraft</td>
+              </tr>
+              <tr style="background:#0f172a;">
+                <td style="padding:10px; border:1px solid #334155; color:#f1f5f9;">Vermindert</td>
+                <td style="padding:10px; border:1px solid #334155; color:#cbd5e1;">Kräfte werden abgegeben</td>
+                <td style="padding:10px; border:1px solid #334155; color:#94a3b8;">Reduzierung für eigene Operation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Gefechtsgliederung</h3>
+
+        <p style="line-height:1.7; margin-bottom:16px;">
+          Die Gefechtsgliederung ist die <b>Dislozierung der Truppe im Raum</b>
+          und beschreibt Breite, Tiefe, Auflockerung bzw. Zusammenfassung der Kräfte.
+          Sie ist abhängig von <b>Lage, Auftrag und eigener Absicht</b>
+          und wird maßgeblich vom Gelände beeinflusst.
+          Die Gefechtsgliederung wird im <b>grafischen OpPlan</b> verdeutlicht.
+        </p>
+
+        <!-- Grafik: Gefechtsgliederung Schema -->
+        <div style="display:flex; justify-content:center; margin-top:10px;">
+          <svg viewBox="0 0 480 260" width="100%" style="max-width:480px;">
+
+            <!-- Hintergrund -->
+            <rect x="0" y="0" width="480" height="260" rx="12"
+              fill="#0f172a" stroke="rgba(255,255,255,.1)" stroke-width="1"/>
+
+            <!-- Breite-Pfeil oben -->
+            <line x1="40" y1="30" x2="440" y2="30" stroke="#38bdf8" stroke-width="2"
+              marker-end="url(#arrowB)" marker-start="url(#arrowBr)"/>
+            <text x="240" y="22" text-anchor="middle" font-size="12" fill="#38bdf8">◄── Breite ──►</text>
+
+            <!-- Tiefe-Pfeil links -->
+            <line x1="22" y1="55" x2="22" y2="235" stroke="#34d399" stroke-width="2"/>
+            <text x="12" y="150" text-anchor="middle" font-size="11" fill="#34d399"
+              transform="rotate(-90,12,150)">◄── Tiefe ──►</text>
+
+            <!-- Vordere Linie -->
+            <line x1="40" y1="55" x2="440" y2="55"
+              stroke="#ef4444" stroke-width="2" stroke-dasharray="8 5"/>
+            <text x="444" y="58" font-size="10" fill="#ef4444">FLOT</text>
+
+            <!-- Einheiten (vereinfacht als Rechtecke) -->
+            <!-- Linie 1: Vorwärts -->
+            <rect x="80"  y="75"  width="80" height="40" rx="6"
+              fill="rgba(56,189,248,.15)" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="120" y="100" text-anchor="middle" font-size="13" fill="#38bdf8" font-weight="700">I</text>
+
+            <rect x="200" y="75"  width="80" height="40" rx="6"
+              fill="rgba(56,189,248,.15)" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="240" y="100" text-anchor="middle" font-size="13" fill="#38bdf8" font-weight="700">II</text>
+
+            <rect x="320" y="75"  width="80" height="40" rx="6"
+              fill="rgba(56,189,248,.15)" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="360" y="100" text-anchor="middle" font-size="13" fill="#38bdf8" font-weight="700">III</text>
+
+            <!-- Linie 2: Hinten / Reserve -->
+            <rect x="140" y="155" width="80" height="40" rx="6"
+              fill="rgba(250,204,21,.15)" stroke="#facc15" stroke-width="1.5"/>
+            <text x="180" y="175" text-anchor="middle" font-size="11" fill="#facc15">Reserve</text>
+            <text x="180" y="188" text-anchor="middle" font-size="10" fill="#94a3b8">Res</text>
+
+            <rect x="260" y="155" width="80" height="40" rx="6"
+              fill="rgba(167,139,250,.15)" stroke="#a78bfa" stroke-width="1.5"/>
+            <text x="300" y="175" text-anchor="middle" font-size="11" fill="#a78bfa">Führung</text>
+            <text x="300" y="188" text-anchor="middle" font-size="10" fill="#94a3b8">Stab</text>
+
+            <!-- Verbindungslinien -->
+            <line x1="120" y1="115" x2="180" y2="155" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="240" y1="115" x2="240" y2="155" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="360" y1="115" x2="300" y2="155" stroke="rgba(255,255,255,.2)" stroke-width="1" stroke-dasharray="4 4"/>
+
+            <!-- Rückwärtiger Raum Label -->
+            <text x="240" y="245" text-anchor="middle" font-size="11" fill="#475569">◄── rückwärtiger Raum ──►</text>
+
+          </svg>
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Raumordnung
+// ---------------------------------------------------------
+{
+  id: 'raumordnung_verantwortungsbereiche',
+  title: 'Raumordnung & Verantwortungsbereiche',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Raumordnung</h3>
+
+        <p style="line-height:1.7; margin-bottom:16px;">
+          Die Raumordnung ist Bestandteil der Planung.
+          Durch sie werden mil Fhr aller Ebenen <b>Räume und die damit verbundenen
+          Verantwortlichkeiten</b> zugewiesen.
+          Grenzen zu benachbarten Truppenteilen dürfen <b>nicht trennend wirken</b> –
+          sie dienen der Koordinierung.
+        </p>
+
+        <!-- Schema Raumordnung -->
+        <div style="display:flex; justify-content:center; margin:16px 0;">
+          <svg viewBox="0 0 520 300" width="100%" style="max-width:520px;">
+
+            <rect x="0" y="0" width="520" height="300" rx="12"
+              fill="#0f172a" stroke="rgba(255,255,255,.1)"/>
+
+            <!-- Einsatzgebiet (äußerste Grenze) -->
+            <rect x="20" y="20" width="480" height="260" rx="10"
+              fill="none" stroke="rgba(255,255,255,.15)" stroke-width="2" stroke-dasharray="12 6"/>
+            <text x="260" y="36" text-anchor="middle" font-size="11" fill="rgba(255,255,255,.4)">Einsatzgebiet</text>
+
+            <!-- Operationsraum -->
+            <rect x="50" y="50" width="420" height="200" rx="8"
+              fill="rgba(251,146,60,.05)" stroke="#fb923c" stroke-width="2" stroke-dasharray="8 5"/>
+            <text x="260" y="68" text-anchor="middle" font-size="12" fill="#fb923c" font-weight="600">Operationsraum</text>
+
+            <!-- Verantwortungsbereich BtL -->
+            <rect x="80" y="85" width="160" height="140" rx="6"
+              fill="rgba(56,189,248,.08)" stroke="#38bdf8" stroke-width="2"/>
+            <text x="160" y="104" text-anchor="middle" font-size="11" fill="#38bdf8" font-weight="700">Verantwortungsbereich</text>
+            <text x="160" y="118" text-anchor="middle" font-size="11" fill="#38bdf8">BtL</text>
+
+            <!-- FLOT Linie -->
+            <line x1="80" y1="130" x2="240" y2="130"
+              stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+            <text x="84" y="126" font-size="10" fill="#ef4444">FLOT</text>
+
+            <!-- Interessenbereich -->
+            <rect x="80" y="85" width="340" height="140" rx="6"
+              fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 5"/>
+            <text x="400" y="104" text-anchor="middle" font-size="11" fill="#a78bfa">Interessenbereich</text>
+            <text x="400" y="118" text-anchor="middle" font-size="11" fill="#a78bfa">BtL</text>
+
+            <!-- Legende -->
+            <rect x="290" y="200" width="180" height="68" rx="6"
+              fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.1)"/>
+            <line x1="298" y1="215" x2="322" y2="215" stroke="#38bdf8" stroke-width="2"/>
+            <text x="328" y="219" font-size="10" fill="#cbd5e1">Verantwortungsbereich</text>
+            <line x1="298" y1="232" x2="322" y2="232" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 5"/>
+            <text x="328" y="236" font-size="10" fill="#cbd5e1">Interessenbereich</text>
+            <line x1="298" y1="249" x2="322" y2="249" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+            <text x="328" y="253" font-size="10" fill="#cbd5e1">FLOT</text>
+
+          </svg>
+        </div>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Verantwortungsbereich & Interessenbereich</h3>
+
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:12px;">
+
+          <div style="background:#0f172a; border-left:4px solid #38bdf8;
+                      border-radius:0 8px 8px 0; padding:14px;">
+            <div style="color:#38bdf8; font-weight:700; margin-bottom:6px;">
+              🗺️ Verantwortungsbereich
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.93rem;">
+              Der zugewiesene Bereich des Operationsraumes, in dem mit Fhr Operationen führen
+              und für den sie verantwortlich sind. Umfasst auch den Bereich <b>vorwärts der FLOT</b>,
+              in dem mit Fhr Verantwortung für Aufklärung und Feuerkampf tragen.
+            </p>
+          </div>
+
+          <div style="background:#0f172a; border-left:4px solid #a78bfa;
+                      border-radius:0 8px 8px 0; padding:14px;">
+            <div style="color:#a78bfa; font-weight:700; margin-bottom:6px;">
+              🔍 Interessenbereich
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.93rem;">
+              Der für die eigene Operationsführung bedeutsame Raum
+              <b>über den eigenen Verantwortungsbereich hinaus</b>.
+              Umfasst den Operationsraum der nächsthöheren Führungsebene
+              und ggf. die angrenzenden Räume der Nachbarn.
+            </p>
+          </div>
+
+          <div style="background:#0f172a; border-left:4px solid #fb923c;
+                      border-radius:0 8px 8px 0; padding:14px;">
+            <div style="color:#fb923c; font-weight:700; margin-bottom:6px;">
+              📐 Raumordnung – Festlegung
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.93rem;">
+              Räume werden durch <b>Führungslinien</b> festgelegt.
+              Grenzen zu benachbarten Truppenteilen dürfen nicht trennend wirken –
+              sie dienen der <b>Koordinierung</b>.
+            </p>
+          </div>
+
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Bewegungen / Auftragsarten
+// ---------------------------------------------------------
+{
+  id: 'bewegungen_auftragsarten',
+  title: 'Bewegungen – Auftragsarten',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Bewegungen – Auftragsarten</h3>
+
+        <!-- Visuelle Karten -->
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:14px;">
+
+          <!-- Erreichen -->
+          <div style="
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:10px; padding:14px;
+            display:flex; gap:14px; align-items:flex-start;
+          ">
+            <div style="
+              width:48px; height:48px; border-radius:50%;
+              background:rgba(52,211,153,.15);
+              border:2px solid #34d399;
+              display:flex; align-items:center;
+              justify-content:center; font-size:1.4rem;
+              flex-shrink:0;
+            ">→</div>
+            <div>
+              <div style="color:#34d399; font-weight:700; font-size:1rem; margin-bottom:4px;">Erreichen</div>
+              <p style="color:#cbd5e1; line-height:1.6; margin:0; font-size:.9rem;">
+                Auftrag an eine Truppe, in einen bestimmten Raum zu marschieren oder dorthin zu verlegen –
+                <b>ohne dass dabei mit Feindberührung zu rechnen ist.</b>
+              </p>
+            </div>
+          </div>
+
+          <!-- Gewinnen -->
+          <div style="
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:10px; padding:14px;
+            display:flex; gap:14px; align-items:flex-start;
+          ">
+            <div style="
+              width:48px; height:48px; border-radius:50%;
+              background:rgba(251,146,60,.15);
+              border:2px solid #fb923c;
+              display:flex; align-items:center;
+              justify-content:center; font-size:1.4rem;
+              flex-shrink:0;
+            ">⚑</div>
+            <div>
+              <div style="color:#fb923c; font-weight:700; font-size:1rem; margin-bottom:4px;">Gewinnen</div>
+              <p style="color:#cbd5e1; line-height:1.6; margin:0; font-size:.9rem;">
+                Auftrag, einen bestimmten Raum ggf. gegen Widerstand
+                <b>in Besitz zu nehmen, unter Kontrolle zu bringen</b>
+                und das nachfolgende Gewinnen der Führung oder Zerstörung durch feindliche Kräfte zu verhindern.
+              </p>
+            </div>
+          </div>
+
+          <!-- Nehmen -->
+          <div style="
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:10px; padding:14px;
+            display:flex; gap:14px; align-items:flex-start;
+          ">
+            <div style="
+              width:48px; height:48px; border-radius:50%;
+              background:rgba(239,68,68,.15);
+              border:2px solid #ef4444;
+              display:flex; align-items:center;
+              justify-content:center; font-size:1.4rem;
+              flex-shrink:0;
+            ">⚔️</div>
+            <div>
+              <div style="color:#ef4444; font-weight:700; font-size:1rem; margin-bottom:4px;">Nehmen</div>
+              <p style="color:#cbd5e1; line-height:1.6; margin:0; font-size:.9rem;">
+                Auftrag an eine Truppe, einen bestimmten Raum dem Feind gegen
+                <b>erwarteten Widerstand durch Angriff zu entreißen.</b>
+              </p>
+            </div>
+          </div>
+
+          <!-- Sperren -->
+          <div style="
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:10px; padding:14px;
+            display:flex; gap:14px; align-items:flex-start;
+          ">
+            <div style="
+              width:48px; height:48px; border-radius:50%;
+              background:rgba(250,204,21,.15);
+              border:2px solid #facc15;
+              display:flex; align-items:center;
+              justify-content:center; font-size:1.4rem;
+              flex-shrink:0;
+            ">🚧</div>
+            <div>
+              <div style="color:#facc15; font-weight:700; font-size:1rem; margin-bottom:4px;">Sperren</div>
+              <p style="color:#cbd5e1; line-height:1.6; margin:0; font-size:.9rem;">
+                Durch Sperren wird die <b>feindliche Nutzung eines Raumes verwehrt</b> –
+                der Feind wird gehemmt, kanalisiert oder an der Bewegung gehindert.
+              </p>
+            </div>
+          </div>
+
+          <!-- Verwehren -->
+          <div style="
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:10px; padding:14px;
+            display:flex; gap:14px; align-items:flex-start;
+          ">
+            <div style="
+              width:48px; height:48px; border-radius:50%;
+              background:rgba(167,139,250,.15);
+              border:2px solid #a78bfa;
+              display:flex; align-items:center;
+              justify-content:center; font-size:1.4rem;
+              flex-shrink:0;
+            ">🛑</div>
+            <div>
+              <div style="color:#a78bfa; font-weight:700; font-size:1rem; margin-bottom:4px;">Verwehren</div>
+              <p style="color:#cbd5e1; line-height:1.6; margin:0; font-size:.9rem;">
+                Auftrag, die feindliche Nutzung eines Raumes zu verhindern –
+                durch Kräfte oder Wirkung aus anderen Dimensionen.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Operationsarten
+// ---------------------------------------------------------
+{
+  id: 'operationsarten',
+  title: 'Operationsarten',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Operationsarten</h3>
+
+        <p style="line-height:1.7; margin-bottom:16px;">
+          Truppenteile erhalten Aufträge, aus denen sie
+          <b>Gefechtshandlungen und allgemeine Aufgaben</b> ableiten
+          und für ihren Verantwortungsbereich lageabhängig einsetzen.
+          Die Kombination ergibt die Operation.
+        </p>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+
+          <!-- Offensiv -->
+          <div style="background:#0f172a; border:1px solid #ef4444;
+                      border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="font-size:1.5rem;">⚔️</span>
+              <span style="color:#ef4444; font-weight:700; font-size:1.05rem;">Offensivoperation</span>
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.9rem;">
+              Zweck: dem Feind durch Gewalt oder Androhung von Gewalt den eigenen Willen aufzuzwingen.
+              Zielt auf das <b>Gewinnen und Halten der Initiative</b>.
+              Kann auf feindliche Kräfte oder Inbesitznahme eines Raumes zielen.
+              Kann auch dienen um Angriffsvorbereitungen zu stören, zu täuschen, zu zersplittern oder zu binden.
+            </p>
+            <div style="margin-top:10px; padding-top:10px; border-top:1px solid rgba(239,68,68,.2);">
+              <span style="color:#94a3b8; font-size:.85rem;">
+                Kann Voraussetzungen für Stabilisierungsoperation schaffen.
+              </span>
+            </div>
+          </div>
+
+          <!-- Defensiv -->
+          <div style="background:#0f172a; border:1px solid #38bdf8;
+                      border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="font-size:1.5rem;">🛡️</span>
+              <span style="color:#38bdf8; font-weight:700; font-size:1.05rem;">Defensivoperation</span>
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.9rem;">
+              Zweck: dem Feind das <b>Erreichen seiner Ziele zu verwehren</b>.
+              Der Angriff des Feindes soll unter Nutzung des Geländes, von Sperren sowie
+              Feuerunterstützung so früh wie möglich <b>zum Stehen gebracht</b> werden.
+            </p>
+            <div style="margin-top:10px; padding-top:10px; border-top:1px solid rgba(56,189,248,.2);">
+              <span style="color:#94a3b8; font-size:.85rem;">
+                Kann Voraussetzung für offensive Folgeoperation schaffen oder Erfolge der Offensivoperation absichern.
+              </span>
+            </div>
+          </div>
+
+          <!-- Stabilisierung -->
+          <div style="background:#0f172a; border:1px solid #34d399;
+                      border-radius:10px; padding:16px;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <span style="font-size:1.5rem;">🕊️</span>
+              <span style="color:#34d399; font-weight:700; font-size:1.05rem;">Stabilisierungsoperation</span>
+            </div>
+            <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.9rem;">
+              Zweck: Rahmenbedingungen zu schaffen oder zu erhalten, die es staatlichen Akteuren
+              und anderen Organisationen ermöglichen, in einem <b>hinreichend sicheren Umfeld</b>
+              zu agieren und ihren Funktionen gerecht zu werden.
+            </p>
+            <div style="margin-top:10px; padding-top:10px; border-top:1px solid rgba(52,211,153,.2);">
+              <span style="color:#94a3b8; font-size:.85rem;">
+                Entwickelt sich oft als Konsequenz aus Offensiv- oder Defensivoperation.
+              </span>
+            </div>
+          </div>
+
+        </div>
+      `
+    },
+    {
+      type: 'text',
+      content: `
+        <h3>Gefechtshandlungen & Allgemeine Aufgaben</h3>
+
+        <div style="display:flex; gap:12px; margin-top:12px;">
+
+          <!-- Gefechtshandlungen -->
+          <div style="flex:1; background:#1e293b; border-radius:10px; padding:14px;">
+            <div style="color:#f87171; font-weight:700; margin-bottom:10px;">
+              ⚔️ Gefechtshandlungen
+            </div>
+            <ul style="margin:0; padding-left:18px; line-height:2; color:#cbd5e1; font-size:.88rem;">
+              <li>Herstellen des Entsatzes</li>
+              <li>Auszeichnen / Ausbruch</li>
+              <li>Handstreich</li>
+              <li>Rücknahme</li>
+              <li>Begegnungsgefecht</li>
+              <li>Gegenangriff</li>
+              <li>Hinterhalt</li>
+            </ul>
+          </div>
+
+          <!-- Allgemeine Aufgaben -->
+          <div style="flex:1; background:#1e293b; border-radius:10px; padding:14px;">
+            <div style="color:#86efac; font-weight:700; margin-bottom:10px;">
+              📋 Allgemeine Aufgaben
+            </div>
+            <ul style="margin:0; padding-left:18px; line-height:2; color:#cbd5e1; font-size:.88rem;">
+              <li>Aufklären</li>
+              <li>Erkundung</li>
+              <li>Lähmen / Verzehren der Nutzung</li>
+              <li>Überwachen und Sichern</li>
+              <li>Tarnen und Täuschen</li>
+              <li>Fördern, Hemmen &amp; Kanalisieren von Bewegungen</li>
+              <li>Marsch</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div style="margin-top:12px; background:#0f172a; border-radius:8px;
+                    padding:12px; border:1px solid rgba(255,255,255,.1);">
+          <p style="color:#94a3b8; font-size:.88rem; margin:0; line-height:1.6;">
+            💡 Diese Handlungen und Aufgaben können in der Operationsplanung vorgesehen sein
+            oder sich lageabhängig im laufenden Gefecht ergeben.
+            Sie werden durch <b>Einzelaufträge präzisiert</b>.
+          </p>
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Formen der Offensivoperationen
+// ---------------------------------------------------------
+{
+  id: 'formen_offensivoperationen',
+  title: 'Formen der Offensivoperationen',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Angriffsformen</h3>
+
+        <p style="line-height:1.7; margin-bottom:18px;">
+          Offensivoperationen haben den Zweck, dem Feind den eigenen Willen aufzuzwingen.
+          Je nach Lage kommen unterschiedliche Angriffsformen zum Einsatz:
+        </p>
+
+        <!-- Angriffsformen Schema SVG -->
+        <div style="display:flex; justify-content:center; margin-bottom:20px;">
+          <svg viewBox="0 0 680 340" width="100%" style="max-width:680px;">
+
+            <rect x="0" y="0" width="680" height="340" rx="12"
+              fill="#0f172a" stroke="rgba(255,255,255,.08)"/>
+
+            <!-- ===== GEGEN DIE FRONT ===== -->
+            <rect x="30" y="30" width="180" height="130" rx="8"
+              fill="rgba(239,68,68,.07)" stroke="#ef4444" stroke-width="1.5"/>
+            <text x="120" y="52" text-anchor="middle" font-size="12" fill="#ef4444" font-weight="700">Gegen die Front</text>
+
+            <!-- Feind oben -->
+            <rect x="70"  y="62" width="28" height="18" rx="3" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+            <rect x="105" y="62" width="28" height="18" rx="3" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+            <rect x="140" y="62" width="28" height="18" rx="3" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+
+            <!-- Pfeile nach oben -->
+            <line x1="84"  y1="110" x2="84"  y2="84" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+            <line x1="119" y1="110" x2="119" y2="84" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+            <line x1="154" y1="110" x2="154" y2="84" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+
+            <!-- Eigene Einheiten -->
+            <rect x="70"  y="112" width="28" height="18" rx="3" fill="rgba(52,211,153,.3)" stroke="#34d399"/>
+            <rect x="105" y="112" width="28" height="18" rx="3" fill="rgba(52,211,153,.3)" stroke="#34d399"/>
+            <rect x="140" y="112" width="28" height="18" rx="3" fill="rgba(52,211,153,.3)" stroke="#34d399"/>
+            <text x="120" y="148" text-anchor="middle" font-size="10" fill="#94a3b8">direkter Angriff</text>
+
+            <!-- ===== GEGEN DIE FLANKE ===== -->
+            <rect x="250" y="30" width="180" height="130" rx="8"
+              fill="rgba(251,146,60,.07)" stroke="#fb923c" stroke-width="1.5"/>
+            <text x="340" y="52" text-anchor="middle" font-size="12" fill="#fb923c" font-weight="700">Gegen die Flanke</text>
+
+            <!-- Feind mittig -->
+            <rect x="315" y="85" width="50" height="28" rx="4" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+            <text x="340" y="104" text-anchor="middle" font-size="11" fill="#ef4444">Feind</text>
+
+            <!-- Pfeil von links -->
+            <line x1="270" y1="99" x2="311" y2="99" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+            <!-- Pfeil von rechts (etwas versetzt) -->
+            <line x1="410" y1="99" x2="369" y2="99" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+
+            <rect x="258" y="90" width="8" height="18" rx="2" fill="rgba(52,211,153,.3)" stroke="#34d399"/>
+            <rect x="412" y="90" width="8" height="18" rx="2" fill="rgba(52,211,153,.3)" stroke="#34d399"/>
+            <text x="340" y="148" text-anchor="middle" font-size="10" fill="#94a3b8">beidseitige Flankenangriffe</text>
+
+            <!-- ===== EINFACHE UMFASSUNG ===== -->
+            <rect x="470" y="30" width="185" height="130" rx="8"
+              fill="rgba(167,139,250,.07)" stroke="#a78bfa" stroke-width="1.5"/>
+            <text x="562" y="52" text-anchor="middle" font-size="12" fill="#a78bfa" font-weight="700">Einfache Umfassung</text>
+
+            <!-- Feind -->
+            <rect x="535" y="80" width="50" height="28" rx="4" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+            <text x="560" y="99" text-anchor="middle" font-size="11" fill="#ef4444">Feind</text>
+
+            <!-- Frontangriff + Umfassungspfeil -->
+            <line x1="560" y1="130" x2="560" y2="112" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrowFront)"/>
+            <!-- Bogen von links herum -->
+            <path d="M 480 120 C 480 55, 620 55, 585 80"
+              fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="6 3" marker-end="url(#arrowPurple)"/>
+            <text x="562" y="148" text-anchor="middle" font-size="10" fill="#94a3b8">Front + Flanke</text>
+
+            <!-- ===== TIEFE UMFASSUNG ===== -->
+            <rect x="30" y="190" width="180" height="130" rx="8"
+              fill="rgba(56,189,248,.07)" stroke="#38bdf8" stroke-width="1.5"/>
+            <text x="120" y="212" text-anchor="middle" font-size="12" fill="#38bdf8" font-weight="700">Tiefe Umfassung</text>
+
+            <rect x="92" y="236" width="50" height="28" rx="4" fill="rgba(239,68,68,.3)" stroke="#ef4444"/>
+            <text x="117" y="255" text-anchor="middle" font-size="11" fill="#ef4444">Feind</text>
+
+            <!-- Pfeile von weit hinten -->
+            <path d="M 60 300 C 40 230, 80 220, 92 250"
+              fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 3" marker-end="url(#arrowBlue)"/>
+            <path d="M 180 300 C 200 230, 160 220, 145 250"
+              fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 3" marker-end="url(#arrowBlue)"/>
+            <text x="120" y="310" text-anchor="middle" font-size="10" fill="#94a3b8">tief in Rücken/Flanke</text>
+
+            <!-- ===== DURCHBRUCH ===== -->
+            <rect x="250" y="190" width="180" height="130" rx="8"
+              fill="rgba(250,204,21,.07)" stroke="#facc15" stroke-width="1.5"/>
+            <text x="340" y="212" text-anchor="middle" font-size="12" fill="#facc15" font-weight="700">Durchbruch</text>
+
+            <!-- Feindlinie -->
+            <line x1="270" y1="250" x2="410" y2="250" stroke="#ef4444" stroke-width="3"/>
+            <!-- Bresche -->
+            <line x1="325" y1="250" x2="355" y2="250" stroke="#0f172a" stroke-width="6"/>
+
+            <!-- Pfeil durch Bresche -->
+            <line x1="340" y1="300" x2="340" y2="256" stroke="#facc15" stroke-width="3" marker-end="url(#arrowYellow)"/>
+            <text x="340" y="235" text-anchor="middle" font-size="10" fill="#94a3b8">Bresche schlagen</text>
+            <text x="340" y="318" text-anchor="middle" font-size="10" fill="#94a3b8">konzentrierter Stoß</text>
+
+            <!-- ===== INFILTRATION ===== -->
+            <rect x="470" y="190" width="185" height="130" rx="8"
+              fill="rgba(52,211,153,.07)" stroke="#34d399" stroke-width="1.5"/>
+            <text x="562" y="212" text-anchor="middle" font-size="12" fill="#34d399" font-weight="700">Infiltration</text>
+
+            <!-- Feindlinie mit Lücken -->
+            <line x1="490" y1="250" x2="520" y2="250" stroke="#ef4444" stroke-width="2"/>
+            <line x1="535" y1="250" x2="560" y2="250" stroke="#ef4444" stroke-width="2"/>
+            <line x1="575" y1="250" x2="600" y2="250" stroke="#ef4444" stroke-width="2"/>
+            <line x1="615" y1="250" x2="640" y2="250" stroke="#ef4444" stroke-width="2"/>
+
+            <!-- Kleine Pfeile durch Lücken -->
+            <line x1="527" y1="295" x2="527" y2="254" stroke="#34d399" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrowGreen)"/>
+            <line x1="567" y1="295" x2="567" y2="254" stroke="#34d399" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrowGreen)"/>
+            <line x1="607" y1="295" x2="607" y2="254" stroke="#34d399" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrowGreen)"/>
+            <text x="562" y="318" text-anchor="middle" font-size="10" fill="#94a3b8">durch Lücken / verdeckt</text>
+
+            <!-- Marker-Definitionen -->
+            <defs>
+              <marker id="arrowFront" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                <path d="M0,0 L8,2.5 L0,5 Z" fill="#34d399"/>
+              </marker>
+              <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                <path d="M0,0 L8,2.5 L0,5 Z" fill="#a78bfa"/>
+              </marker>
+              <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                <path d="M0,0 L8,2.5 L0,5 Z" fill="#38bdf8"/>
+              </marker>
+              <marker id="arrowYellow" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                <path d="M0,0 L8,2.5 L0,5 Z" fill="#facc15"/>
+              </marker>
+              <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                <path d="M0,0 L8,2.5 L0,5 Z" fill="#34d399"/>
+              </marker>
+            </defs>
+
+          </svg>
+        </div>
+
+        <!-- Einschließung extra -->
+        <div style="background:#0f172a; border:1px solid #f87171;
+                    border-radius:10px; padding:14px; margin-top:4px;">
+          <div style="color:#f87171; font-weight:700; margin-bottom:8px;">🔵 Einschließung</div>
+          <p style="color:#cbd5e1; line-height:1.7; margin:0; font-size:.9rem;">
+            Vollständige Umschließung des Feindes. Ziel ist es, den Feind einzuschließen,
+            seine Versorgung zu unterbrechen und zur Kapitulation oder Vernichtung zu zwingen.
+            Eigene Reserve bleibt für möglichen Ausbruchsversuch bereit.
+          </p>
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Phasen des Angriffs
+// ---------------------------------------------------------
+{
+  id: 'phasen_angriff',
+  title: 'Phasen des Angriffs',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Phasen des Angriffs</h3>
+
+        <p style="line-height:1.7; margin-bottom:20px;">
+          Der Angriff wird in unterschiedliche, aber eng zusammenhängende Phasen unterteilt.
+          Er umfasst <b>fünf ineinander übergehende Phasen</b>:
+        </p>
+
+        <!-- Zeitstrahl / Phasendiagramm -->
+        <div style="display:flex; justify-content:center; margin-bottom:20px;">
+          <svg viewBox="0 0 620 290" width="100%" style="max-width:620px;">
+
+            <rect x="0" y="0" width="620" height="290" rx="12"
+              fill="#0f172a" stroke="rgba(255,255,255,.08)"/>
+
+            <!-- Zeitachse -->
+            <line x1="30" y1="240" x2="590" y2="240"
+              stroke="rgba(255,255,255,.2)" stroke-width="2"/>
+            <polygon points="590,236 602,240 590,244" fill="rgba(255,255,255,.4)"/>
+            <text x="608" y="244" font-size="10" fill="rgba(255,255,255,.4)">t</text>
+
+            <!-- Phasendaten: x-Start, Farbe, Nummer, Titel, Höhe der Balken -->
+            <!-- Phase 1: Vorbereitung & Anmarsch -->
+            <rect x="30" y="100" width="95" height="135" rx="4"
+              fill="rgba(148,163,184,.15)" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="77" y="125" text-anchor="middle" font-size="18" fill="#94a3b8" font-weight="800">1</text>
+            <text x="77" y="145" text-anchor="middle" font-size="9"  fill="#94a3b8">Vorbereitung</text>
+            <text x="77" y="158" text-anchor="middle" font-size="9"  fill="#94a3b8">&amp; Anmarsch</text>
+
+            <!-- Phase 2: Annäherung -->
+            <rect x="133" y="80" width="95" height="155" rx="4"
+              fill="rgba(251,146,60,.15)" stroke="#fb923c" stroke-width="1.5"/>
+            <text x="180" y="105" text-anchor="middle" font-size="18" fill="#fb923c" font-weight="800">2</text>
+            <text x="180" y="125" text-anchor="middle" font-size="9"  fill="#fb923c">Annäherung</text>
+
+            <!-- Phase 3: Einbruch (rot, Höhepunkt) -->
+            <rect x="236" y="40" width="95" height="195" rx="4"
+              fill="rgba(239,68,68,.2)" stroke="#ef4444" stroke-width="2"/>
+            <text x="283" y="65" text-anchor="middle" font-size="18" fill="#ef4444" font-weight="800">3</text>
+            <text x="283" y="85" text-anchor="middle" font-size="9"  fill="#ef4444">Einbruch</text>
+            <text x="283" y="98" text-anchor="middle" font-size="9"  fill="#ef4444">(Angriff)</text>
+
+            <!-- Phase 4: Kampf durch die Tiefe -->
+            <rect x="339" y="60" width="95" height="175" rx="4"
+              fill="rgba(239,68,68,.15)" stroke="#f87171" stroke-width="1.5"/>
+            <text x="386" y="85" text-anchor="middle" font-size="18" fill="#f87171" font-weight="800">4</text>
+            <text x="386" y="105" text-anchor="middle" font-size="9"  fill="#f87171">Kampf durch</text>
+            <text x="386" y="118" text-anchor="middle" font-size="9"  fill="#f87171">die Tiefe</text>
+
+            <!-- Phase 5: Konsolidierung -->
+            <rect x="442" y="90" width="95" height="145" rx="4"
+              fill="rgba(52,211,153,.15)" stroke="#34d399" stroke-width="1.5"/>
+            <text x="489" y="115" text-anchor="middle" font-size="18" fill="#34d399" font-weight="800">5</text>
+            <text x="489" y="135" text-anchor="middle" font-size="9"  fill="#34d399">Konsolidierung</text>
+
+            <!-- Übergangspfeile -->
+            <line x1="126" y1="167" x2="132" y2="157" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <line x1="229" y1="157" x2="235" y2="137" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <line x1="332" y1="137" x2="338" y2="147" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <line x1="435" y1="147" x2="441" y2="162" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+            <!-- Zeitachse Labels -->
+            <text x="30" y="260" font-size="9" fill="rgba(255,255,255,.3)">Start</text>
+            <text x="442" y="260" font-size="9" fill="rgba(255,255,255,.3)">Ziel erreicht</text>
+
+            <!-- Intensitätskurve (gepunktet) -->
+            <path d="M 30,235 C 80,230 130,200 283,100 C 370,60 420,90 490,185 C 540,220 580,232 590,235"
+              fill="none" stroke="rgba(239,68,68,.5)" stroke-width="2" stroke-dasharray="5 3"/>
+            <text x="283" y="24" text-anchor="middle" font-size="10" fill="rgba(239,68,68,.7)">⬆ Gefechtshöhepunkt</text>
+
+          </svg>
+        </div>
+
+        <!-- Detailtabelle -->
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:.88rem;">
+            <thead>
+              <tr style="background:#1e3a5f; color:#93c5fd; text-align:left;">
+                <th style="padding:10px; border:1px solid #334155;">Phase</th>
+                <th style="padding:10px; border:1px solid #334155;">Bezeichnung</th>
+                <th style="padding:10px; border:1px solid #334155;">Schwerpunkt</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${[
+                ['1', 'Vorbereitung und Anmarsch', 'Planung, Befehlsgebung, Heranführen der Kräfte'],
+                ['2', 'Annäherung',               'Aufklärung, Kontaktaufnahme, Marsch in Angriffsräume'],
+                ['3', 'Einbruch',                 'Feuerunterstützung, Bresche schlagen, Einbruch in feindliche Stellung'],
+                ['4', 'Kampf durch die Tiefe',    'Ausnutzen des Angriffserfolges, Vorstoß in Tiefe'],
+                ['5', 'Konsolidierung',           'Sichern des Geländes, Neuordnung, Reserve neu bilden'],
+              ].map(([n, t, s], i) => `
+                <tr style="background:${i % 2 === 0 ? '#0f172a' : '#1e293b'};">
+                  <td style="padding:10px; border:1px solid #334155; color:#f1f5f9; font-weight:700;">${n}</td>
+                  <td style="padding:10px; border:1px solid #334155; color:#e2e8f0;">${t}</td>
+                  <td style="padding:10px; border:1px solid #334155; color:#94a3b8;">${s}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `
+    }
+  ]
+},
+
+// ---------------------------------------------------------
+// Begrifflichkeiten der Raumordnung
+// ---------------------------------------------------------
+{
+  id: 'begrifflichkeiten_raumordnung',
+  title: 'Begrifflichkeiten der Raumordnung',
+  cards: [
+    {
+      type: 'text',
+      content: `
+        <h3>Begrifflichkeiten der Raumordnung</h3>
+
+        <!-- SVG Raumordnung Kompass-Schema -->
+        <div style="display:flex; justify-content:center; margin:20px 0;">
+          <svg viewBox="0 0 480 380" width="100%" style="max-width:480px;">
+
+            <rect x="0" y="0" width="480" height="380" rx="12"
+              fill="#0f172a" stroke="rgba(255,255,255,.08)"/>
+
+            <!-- Äußerer Rahmen (Gesamtraum) -->
+            <rect x="30" y="30" width="420" height="320" rx="10"
+              fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+
+            <!-- FRONT (oben, rot) -->
+            <line x1="100" y1="100" x2="380" y2="100"
+              stroke="#ef4444" stroke-width="3"/>
+            <text x="240" y="92" text-anchor="middle" font-size="15"
+              fill="#ef4444" font-weight="800">▬▬ FRONT ▬▬</text>
+
+            <!-- Zentrum (eigene Truppe) -->
+            <rect x="180" y="155" width="120" height="70" rx="8"
+              fill="rgba(56,189,248,.15)" stroke="#38bdf8" stroke-width="2"/>
+            <text x="240" y="186" text-anchor="middle" font-size="13"
+              fill="#38bdf8" font-weight="700">Eigene</text>
+            <text x="240" y="203" text-anchor="middle" font-size="13"
+              fill="#38bdf8" font-weight="700">Truppe</text>
+
+            <!-- LINKE FLANKE -->
+            <line x1="100" y1="100" x2="100" y2="290"
+              stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="6 4"/>
+            <text x="58" y="200" text-anchor="middle" font-size="12"
+              fill="#f1f5f9" font-weight="700" transform="rotate(-90,58,200)">Linke Flanke</text>
+
+            <!-- RECHTE FLANKE -->
+            <line x1="380" y1="100" x2="380" y2="290"
+              stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="6 4"/>
+            <text x="422" y="200" text-anchor="middle" font-size="12"
+              fill="#f1f5f9" font-weight="700" transform="rotate(90,422,200)">Rechte Flanke</text>
+
+            <!-- LINKER FLÜGEL -->
+            <text x="130" y="145" text-anchor="middle" font-size="11"
+              fill="#a78bfa">Linker Flügel</text>
+
+            <!-- RECHTER FLÜGEL -->
+            <text x="350" y="145" text-anchor="middle" font-size="11"
+              fill="#a78bfa">Rechter Flügel</text>
+
+            <!-- RÜCKEN (unten) -->
+            <line x1="100" y1="290" x2="380" y2="290"
+              stroke="rgba(255,255,255,.3)" stroke-width="2" stroke-dasharray="8 5"/>
+            <text x="240" y="316" text-anchor="middle" font-size="15"
+              fill="#94a3b8" font-weight="800">▬ ▬ RÜCKEN ▬ ▬</text>
+
+            <!-- LINKE TIEFE FLANKE -->
+            <text x="68" y="295" text-anchor="middle" font-size="10"
+              fill="#64748b">Linke Tiefe-Flanke</text>
+
+            <!-- RECHTE TIEFE FLANKE -->
+            <text x="412" y="295" text-anchor="middle" font-size="10"
+              fill="#64748b">Rechte Tiefe-Flanke</text>
+
+            <!-- Richtungspfeil oben -->
+            <polygon points="240,55 232,75 248,75" fill="#ef4444" opacity=".8"/>
+            <text x="240" y="50" text-anchor="middle" font-size="10" fill="#ef4444">Feindrichtung</text>
+
+          </svg>
+        </div>
+
+        <!-- Legende Tabelle -->
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:.88rem;">
+            <thead>
+              <tr style="background:#1e3a5f; color:#93c5fd; text-align:left;">
+                <th style="padding:10px; border:1px solid #334155;">Begriff</th>
+                <th style="padding:10px; border:1px solid #334155;">Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${[
+                ['Front',              '#ef4444', 'Die dem Feind zugewandte Seite der Truppe.'],
+                ['Linke / Rechte Flanke', '#f1f5f9', 'Die seitlichen Bereiche der Truppe (aus eigener Sicht: linke und rechte Seite).'],
+                ['Linker / Rechter Flügel', '#a78bfa', 'Die vorderen Seitenenden der Gefechtsgliederung.'],
+                ['Rücken',             '#94a3b8', 'Die dem Feind abgewandte Seite der Truppe.'],
+                ['Linke/Rechte Tiefe-Flanke', '#64748b', 'Tiefgestaffelte Seitenbereiche, rückwärtig der Hauptkampflinie.'],
+              ].map(([t, c, d], i) => `
+                <tr style="background:${i % 2 === 0 ? '#0f172a' : '#1e293b'};">
+                  <td style="padding:10px; border:1px solid #334155; color:${c}; font-weight:700;">${t}</td>
+                  <td style="padding:10px; border:1px solid #334155; color:#94a3b8;">${d}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `
+    }
+  ]
 }
 
 
