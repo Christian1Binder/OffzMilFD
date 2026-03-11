@@ -1,5 +1,5 @@
 // Registry to map curriculum content to interactive games
-// Version 5.0 - Added Crosswords with Icon Fix
+// Version 6.0 - Added Taktik Grundlagen
 // Does NOT modify original data.js, but references IDs from it.
 
 export const gameRegistry = {
@@ -144,6 +144,180 @@ export const gameRegistry = {
         xpReward: 110
     },
 
+    // --- Taktik Grundlagen ---
+    'taktik_phasen_angriff': {
+        moduleId: 'taktik_grundlagen',
+        type: 'sorting',
+        title: 'Phasen des Angriffs',
+        description: 'Bringe die fünf Phasen des Angriffs in die richtige Reihenfolge.',
+        items: [
+            { id: 1, text: 'Vorbereitung und Anmarsch', order: 1 },
+            { id: 2, text: 'Annäherung',                order: 2 },
+            { id: 3, text: 'Einbruch',                  order: 3 },
+            { id: 4, text: 'Kampf durch die Tiefe',     order: 4 },
+            { id: 5, text: 'Konsolidierung',            order: 5 }
+        ],
+        xpReward: 120
+    },
+    'taktik_fuehren_mit_auftrag_schritte': {
+        moduleId: 'taktik_grundlagen',
+        type: 'sorting',
+        title: 'Führen mit Auftrag: Voraussetzungen',
+        description: 'Bringe die Voraussetzungen für erfolgreiches Führen mit Auftrag in eine sinnvolle Reihenfolge.',
+        items: [
+            { id: 1, text: 'Eindeutige Formulierung der eigenen Absicht',         order: 1 },
+            { id: 2, text: 'Zuweisung erforderlicher Kräfte, Mittel und Zeit',    order: 2 },
+            { id: 3, text: 'Willen zur Delegation von Verantwortung',             order: 3 },
+            { id: 4, text: 'Handlungsfreiheit nutzen und gewähren',               order: 4 },
+            { id: 5, text: 'Bereitschaft, Fehler zu akzeptieren',                 order: 5 }
+        ],
+        xpReward: 110
+    },
+    'taktik_grundsaetze_zuordnung': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Grundsätze der Operationsführung',
+        description: 'Ordne jeden Grundsatz seiner Kernaussage zu.',
+        pairs: [
+            { source: 'Klarheit und Einfachheit',  target: 'Nur das Einfache hat Erfolg' },
+            { source: 'Beweglichkeit',             target: 'Ständig der Lage anpassen, schnell und überlegt handeln' },
+            { source: 'Schnelligkeit',             target: 'Tempo in Entscheidungsfindung, Planung und Befehlsgebung' },
+            { source: 'Schwerpunktbildung',        target: 'Wirkung aller Kräfte zur richtigen Zeit am richtigen Ort' },
+            { source: 'Erfolg und Risiko',         target: 'Initiative fordert Risikobereitschaft – niemals unkalkulierbar' }
+        ],
+        xpReward: 110
+    },
+    'taktik_operationsarten': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Operationsarten – Zweck',
+        description: 'Ordne jeder Operationsart ihren Zweck zu.',
+        pairs: [
+            { source: 'Offensivoperation',        target: 'Dem Feind den eigenen Willen aufzwingen' },
+            { source: 'Defensivoperation',        target: 'Dem Feind das Erreichen seiner Ziele verwehren' },
+            { source: 'Stabilisierungsoperation', target: 'Sicheres Umfeld für staatliche Akteure schaffen' },
+            { source: 'Gegenangriff',             target: 'Nach Grundsätzen des Angriffs – wenn Feind verlustreich aufgelaufen' }
+        ],
+        xpReward: 100
+    },
+    'taktik_bewegungen': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Bewegungen: Auftragsarten',
+        description: 'Ordne die Auftragsart der richtigen Beschreibung zu.',
+        pairs: [
+            { source: 'Erreichen', target: 'Raum beziehen – ohne Feindberührung' },
+            { source: 'Gewinnen',  target: 'Raum ggf. gegen Widerstand in Besitz nehmen und halten' },
+            { source: 'Nehmen',    target: 'Raum dem Feind gegen erwarteten Widerstand durch Angriff entreißen' },
+            { source: 'Sperren',   target: 'Feindliche Nutzung eines Raumes verwehren / kanalisieren' }
+        ],
+        xpReward: 100
+    },
+    'taktik_vernetzter_ansatz': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Vernetzter Ansatz: Zuordnung',
+        description: 'Ordne das Ministerium / Akteur dem Handlungsfeld zu.',
+        pairs: [
+            { source: 'BMVg',            target: 'Militär / Sicherheit' },
+            { source: 'BMI',             target: 'Polizei / Innere Stabilität' },
+            { source: 'BMZ',             target: 'Entwicklungshilfe / Wiederaufbau' },
+            { source: 'Auswärtiges Amt', target: 'Diplomatie / Außenpolitik' }
+        ],
+        xpReward: 90
+    },
+    'taktik_reserven_einsatz': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Reserven – Einsatzzwecke',
+        description: 'Ordne die Aussage dem richtigen Grundsatz zum Thema Reserve zu.',
+        pairs: [
+            { source: 'Entscheidung erzwingen', target: 'Einsatzzweck der Reserve' },
+            { source: 'Schwerpunkt verlegen',   target: 'Einsatzzweck der Reserve' },
+            { source: 'Krisen überwinden',      target: 'Einsatzzweck der Reserve' },
+            { source: 'Geschlossen einsetzen',  target: 'Grundsatz – Zersplitterung führt zum Misserfolg' }
+        ],
+        xpReward: 100
+    },
+    'taktik_raumordnung_begriffe': {
+        moduleId: 'taktik_grundlagen',
+        type: 'drag-drop',
+        title: 'Raumordnung – Begriffe',
+        description: 'Ordne den Begriff der richtigen Definition zu.',
+        pairs: [
+            { source: 'Verantwortungsbereich', target: 'Zugewiesener Raum inkl. Bereich vorwärts der FLOT' },
+            { source: 'Interessenbereich',     target: 'Über eigenen Verantwortungsbereich hinausgehender Raum' },
+            { source: 'Operationsraum',        target: 'Gesamter Raum der Operation aller Ebenen' },
+            { source: 'Führungslinien',        target: 'Legen Raumgrenzen zwischen Truppenteilen fest' }
+        ],
+        xpReward: 100
+    },
+    'taktik_schwerpunkt_cloze': {
+        moduleId: 'taktik_grundlagen',
+        type: 'cloze',
+        title: 'Lückentext: Schwerpunktbildung',
+        description: 'Ergänze die fehlenden Begriffe.',
+        text: 'Es ist stets {1} Schwerpunkt zu bilden. {2} der Kräfte ist zu vermeiden. Erfolg hat, wer die Wirkung aller nötigen Kräfte und Mittel zur richtigen Zeit am richtigen Ort auf das richtige {3} konzentriert.',
+        blanks: [
+            { index: 1, answer: 'ein' },
+            { index: 2, answer: 'Zersplitterung' },
+            { index: 3, answer: 'Ziel' }
+        ],
+        xpReward: 90
+    },
+    'taktik_fuehren_auftrag_cloze': {
+        moduleId: 'taktik_grundlagen',
+        type: 'cloze',
+        title: 'Lückentext: Führen mit Auftrag',
+        description: 'Ergänze die Kernbegriffe.',
+        text: 'Die eigene Absicht leitet sich aus der Absicht der {1} Führung sowie dem eigenen {2} ab und zielt auf die Erfüllung der wesentlichen {3} unter Beachtung von Auflagen.',
+        blanks: [
+            { index: 1, answer: 'übergeordneten' },
+            { index: 2, answer: 'Auftrag' },
+            { index: 3, answer: 'Leistung' }
+        ],
+        xpReward: 90
+    },
+    'taktik_reserven_cloze': {
+        moduleId: 'taktik_grundlagen',
+        type: 'cloze',
+        title: 'Lückentext: Reserven',
+        description: 'Ergänze die Grundsätze zum Einsatz von Reserven.',
+        text: 'Reserven werden {1} eingesetzt. Zersplitterung führt zum {2}. Ist die Reserve eingesetzt, muss schnellstmöglich eine {3} gebildet werden.',
+        blanks: [
+            { index: 1, answer: 'geschlossen' },
+            { index: 2, answer: 'Misserfolg' },
+            { index: 3, answer: 'neue' }
+        ],
+        xpReward: 80
+    },
+    'taktik_opvguw_cloze': {
+        moduleId: 'taktik_grundlagen',
+        type: 'cloze',
+        title: 'Lückentext: Operation verbundener Kräfte',
+        description: 'Ergänze die Merkmale der Operation verbundener Kräfte.',
+        text: 'Die Operation verbundener Kräfte ist das Zusammenwirken verschiedener {1} oder multinationaler Kräfte unter einheitlicher {2} Führung mit gemeinsamer {3}.',
+        blanks: [
+            { index: 1, answer: 'nationaler' },
+            { index: 2, answer: 'militärischer' },
+            { index: 3, answer: 'Zielsetzung' }
+        ],
+        xpReward: 90
+    },
+    'taktik_schnelligkeit_cloze': {
+        moduleId: 'taktik_grundlagen',
+        type: 'cloze',
+        title: 'Lückentext: Schnelligkeit',
+        description: 'Ergänze die Aussagen zur Schnelligkeit in der Operationsführung.',
+        text: 'Schnelligkeit in der Operationsführung wird bestimmt durch die Geschwindigkeit der {1}, Planung, {2} sowie deren Umsetzung. Schnelligkeit darf nicht zur {3} verleiten.',
+        blanks: [
+            { index: 1, answer: 'Entscheidungsfindung' },
+            { index: 2, answer: 'Befehlsgebung' },
+            { index: 3, answer: 'Hast' }
+        ],
+        xpReward: 90
+    },
+
     // --- Crossword Puzzles ---
     'cw_milhistory': {
         moduleId: 'milhistory',
@@ -155,10 +329,10 @@ export const gameRegistry = {
             rows: 15,
             cols: 15,
             words: [
-                { id: 1, direction: 'across', x: 0, y: 0, answer: 'WESTFALEN', clue: 'Ort des Friedens 1648' },
-                { id: 2, direction: 'down', x: 0, y: 0, answer: 'WALLENSTEIN', clue: 'Kaiserlicher Feldherr im 30-jährigen Krieg' },
-                { id: 3, direction: 'across', x: 0, y: 5, answer: 'NAPOLEON', clue: 'Kaiser der Franzosen, Gegner Preußens' },
-                { id: 4, direction: 'down', x: 2, y: 5, answer: 'PREUSSEN', clue: 'Verlierer der Schlacht von Jena-Auerstedt' }
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'WESTFALEN',   clue: 'Ort des Friedens 1648' },
+                { id: 2, direction: 'down',   x: 0, y: 0, answer: 'WALLENSTEIN', clue: 'Kaiserlicher Feldherr im 30-jährigen Krieg' },
+                { id: 3, direction: 'across', x: 0, y: 5, answer: 'NAPOLEON',    clue: 'Kaiser der Franzosen, Gegner Preußens' },
+                { id: 4, direction: 'down',   x: 2, y: 5, answer: 'PREUSSEN',    clue: 'Verlierer der Schlacht von Jena-Auerstedt' }
             ]
         }
     },
@@ -172,9 +346,9 @@ export const gameRegistry = {
             rows: 15,
             cols: 10,
             words: [
-                { id: 1, direction: 'across', x: 0, y: 0, answer: 'BEFEHL', clue: 'Anweisung zu einem bestimmten Verhalten' },
-                { id: 2, direction: 'down', x: 1, y: 0, answer: 'EIGENMAECHTIG', clue: 'Unerlaubte Abwesenheit (§15)' },
-                { id: 3, direction: 'across', x: 1, y: 2, answer: 'GESETZ', clue: 'Grundlage für Rechtmäßigkeit (sg.)' }
+                { id: 1, direction: 'across', x: 0, y: 0, answer: 'BEFEHL',        clue: 'Anweisung zu einem bestimmten Verhalten' },
+                { id: 2, direction: 'down',   x: 1, y: 0, answer: 'EIGENMAECHTIG', clue: 'Unerlaubte Abwesenheit (§15)' },
+                { id: 3, direction: 'across', x: 1, y: 2, answer: 'GESETZ',        clue: 'Grundlage für Rechtmäßigkeit (sg.)' }
             ]
         }
     },
@@ -189,8 +363,8 @@ export const gameRegistry = {
             cols: 15,
             words: [
                 { id: 1, direction: 'across', x: 0, y: 0, answer: 'SICHERHEITSRAT', clue: 'Mächtigstes UN-Gremium' },
-                { id: 2, direction: 'down', x: 2, y: 0, answer: 'CHINA', clue: 'Ständiges UN-Mitglied (Asien)' },
-                { id: 3, direction: 'down', x: 5, y: 0, answer: 'RUSSLAND', clue: 'Ständiges UN-Mitglied (Eurasien)' }
+                { id: 2, direction: 'down',   x: 2, y: 0, answer: 'CHINA',          clue: 'Ständiges UN-Mitglied (Asien)' },
+                { id: 3, direction: 'down',   x: 5, y: 0, answer: 'RUSSLAND',       clue: 'Ständiges UN-Mitglied (Eurasien)' }
             ]
         }
     },
@@ -205,8 +379,8 @@ export const gameRegistry = {
             cols: 15,
             words: [
                 { id: 1, direction: 'across', x: 0, y: 0, answer: 'AUFTRAGSTAKTIK', clue: 'Führungsprinzip der Bundeswehr' },
-                { id: 2, direction: 'down', x: 2, y: 0, answer: 'FREIHEIT', clue: 'Was man in der Durchführung gewährt' },
-                { id: 3, direction: 'down', x: 0, y: 0, answer: 'ABSICHT', clue: 'Kern des Auftrags (Wille des Führers)' }
+                { id: 2, direction: 'down',   x: 2, y: 0, answer: 'FREIHEIT',       clue: 'Was man in der Durchführung gewährt' },
+                { id: 3, direction: 'down',   x: 0, y: 0, answer: 'ABSICHT',        clue: 'Kern des Auftrags (Wille des Führers)' }
             ]
         }
     },
@@ -221,8 +395,31 @@ export const gameRegistry = {
             cols: 12,
             words: [
                 { id: 1, direction: 'across', x: 0, y: 0, answer: 'BEURTEILUNG', clue: 'Analyse der Lagefaktoren' },
-                { id: 2, direction: 'down', x: 1, y: 0, answer: 'ENTSCHLUSS', clue: 'Ergebnis der Beurteilung' },
-                { id: 3, direction: 'across', x: 1, y: 6, answer: 'LAGE', clue: 'Situation, Umstände' }
+                { id: 2, direction: 'down',   x: 1, y: 0, answer: 'ENTSCHLUSS',  clue: 'Ergebnis der Beurteilung' },
+                { id: 3, direction: 'across', x: 1, y: 6, answer: 'LAGE',        clue: 'Situation, Umstände' }
+            ]
+        }
+    },
+    'cw_taktik_grundlagen': {
+        moduleId: 'taktik_grundlagen',
+        type: 'crossword',
+        title: 'Kreuzworträtsel: Taktik Grundlagen',
+        description: 'Begriffe aus Truppenführung, Operationsarten und Raumordnung.',
+        xpReward: 150,
+        grid: {
+            rows: 15,
+            cols: 15,
+            words: [
+                { id: 1,  direction: 'across', x: 0, y: 0,  answer: 'SCHWERPUNKT',   clue: 'Konzentration der Wirkung – stets nur einer' },
+                { id: 2,  direction: 'down',   x: 0, y: 0,  answer: 'SCHNELLIGKEIT', clue: 'Tempo in Entscheidungsfindung und Befehlsgebung' },
+                { id: 3,  direction: 'across', x: 2, y: 3,  answer: 'RESERVE',       clue: 'Mittel zur Einflussnahme – geschlossen einsetzen' },
+                { id: 4,  direction: 'down',   x: 2, y: 3,  answer: 'RAUMORDNUNG',   clue: 'Zuweisung von Räumen und Verantwortlichkeiten' },
+                { id: 5,  direction: 'across', x: 1, y: 7,  answer: 'EINBRUCH',      clue: '3. Phase des Angriffs' },
+                { id: 6,  direction: 'down',   x: 5, y: 5,  answer: 'INFILTRATION',  clue: 'Angriffsform: verdecktes Eindringen durch Lücken' },
+                { id: 7,  direction: 'across', x: 0, y: 11, answer: 'ABSICHT',       clue: 'Kern des Führungsprinzips – leitet sich aus übergeordneter Führung ab' },
+                { id: 8,  direction: 'down',   x: 9, y: 7,  answer: 'DURCHBRUCH',    clue: 'Angriffsform: Bresche schlagen und Tiefe ausnutzen' },
+                { id: 9,  direction: 'across', x: 3, y: 13, answer: 'FLANKE',        clue: 'Seitlicher Bereich der Truppe' },
+                { id: 10, direction: 'down',   x: 0, y: 11, answer: 'AUFTRAG',       clue: 'Grundlage des Führens – zusammen mit Absicht der übergeordneten Führung' }
             ]
         }
     }
