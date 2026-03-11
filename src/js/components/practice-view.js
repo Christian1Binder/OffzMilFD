@@ -2,18 +2,18 @@ import { getAllGames, getPracticeModules, getGamesByModule } from '../games-regi
 import { getModule } from '../data.js?v=5';
 
 export function renderPractice(container) {
-    const hash = window.location.hash;
-    const parts = hash.split('/');
+    const hash = window.location.hash || '#practice';
+    const parts = hash.slice(1).split('/');
 
-    // #practice -> Show Module List
+    // practice -> Show Module List
     if (parts.length === 1) {
         renderPracticeModules(container);
     }
-    // #practice/moduleId -> Show Game List for Module
+    // practice/moduleId -> Show Game List for Module
     else if (parts.length === 2) {
         renderGameList(container, parts[1]);
     }
-    // #practice/moduleId/gameId -> Launch Game
+    // practice/moduleId/gameId -> Launch Game
     else if (parts.length === 3) {
         renderGame(container, parts[2], parts[1]);
     }
