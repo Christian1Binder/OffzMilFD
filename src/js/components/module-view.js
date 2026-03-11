@@ -2,8 +2,9 @@ import { curriculum, getModule } from '../data.js?v=5';
 import { getState } from '../state.js';
 
 export function renderModules(container) {
-    const hash = window.location.hash;
-    const parts = hash.split('/');
+    const hash = window.location.hash || '#modules';
+    // Remove the leading '#' before splitting
+    const parts = hash.slice(1).split('/');
 
     // If route is #modules, show list of modules
     if (parts.length === 1) {
